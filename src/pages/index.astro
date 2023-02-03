@@ -3,13 +3,194 @@ import Layout from '../layouts/Default.astro';
 ---
 
 <Layout>
-	<div class="bg-gradient-to-b from-gray-800 to-[#833F46] relative h-[500px] animate-[gradient_3s_ease-in-out_infinite]">
+	<div class="bg-gradient-to-b from-gray-800 to-[#833F46] relative py-64 animate-[gradient_3s_ease-in-out_infinite]">
 		<div class="absolute mr-[-50%] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-center">
 			<h1 class="text-6xl font-bold">palera1n</h1>
-			<div class="mb-[15px]"></div>
-			<p class="text-lg">palera1n is a developer-oriented jailbreak for checkm8 devices (A8-A11) on iOS 15.0-16.3</p>
-			<div class="mb-[20px]"></div>
+			<p class="text-lg mt-6">palera1n is a developer-oriented jailbreak for checkm8 devices (A8-A11) on iOS 15.0-16.3</p>
+			<div class="mb-[25px]"></div>
 			<a href="https://ios.cfw.guide/installing-palera1n" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 lg:px-5 py-3 lg:py-3.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out]">Get Started</a>
 		</div>
 	</div>
+
+	<div class="p-12">
+		<h1 class="text-5xl font-bold text-gray-800 dark:text-white uppercase text-center">FAQ</h1>
+		<p class="text-center text-gray-600 dark:text-gray-300 mt-2 text-lg">Here are some of the most frequently asked questions</p>
+		<div class="space-y-12 px-2 xl:px-16 mt-12">
+			<div class="mt-4 flex">
+				<div>
+					<div class="flex items-center h-16 border-l-4 border-blue-600 dark:border-blue-400">
+						<span class="text-4xl text-blue-600 dark:text-blue-400 px-4">Q.</span>
+					</div>
+					<div class="flex items-center h-16 border-l-4 border-gray-400 dark:border-gray-200">
+						<span class="text-4xl text-gray-400 dark:text-gray-200 px-4">A.</span>
+					</div>
+				</div>
+				<div>
+					<div class="flex items-center h-16">
+						<span class="text-lg text-blue-600 dark:text-blue-400 font-bold">How can I jailbreak?</span>
+					</div>
+					<div class="flex items-center py-2">
+						<span class="text-gray-500 dark:text-gray-200">The following steps on <a href="https://ios.cfw.guide/installing-palera1n" class="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 dark:hover:text-blue-500 transition-[color] duration-[0.2s] ease-[ease-in-out]">ios.cfw.guide</a> can help you.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-4 flex">
+				<div>
+					<div class="flex items-center h-16 border-l-4 border-blue-600 dark:border-blue-400">
+						<span class="text-4xl text-blue-600 dark:text-blue-400 px-4">Q.</span>
+					</div>
+					<div class="flex items-center h-16 border-l-4 border-gray-400 dark:border-gray-200">
+						<span class="text-4xl text-gray-400 dark:text-gray-200 px-4">A.</span>
+					</div>
+				</div>
+				<div>
+					<div class="flex items-center h-16">
+						<span class="text-lg text-blue-600 dark:text-blue-400 font-bold">What platforms are supported?</span>
+					</div>
+					<div class="flex items-center py-2">
+						<span class="text-gray-500 dark:text-gray-200">You may jailbreak any A8-A11 device on iOS 15.0-16.3 using macOS or Linux. There is no Windows support and we do not know if palera1n will ever have it.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-4 flex">
+				<div>
+					<div class="flex items-center h-16 border-l-4 border-blue-600 dark:border-blue-400">
+						<span class="text-4xl text-blue-600 dark:text-blue-400 px-4">Q.</span>
+					</div>
+					<div class="flex items-center h-16 border-l-4 border-gray-400 dark:border-gray-200">
+						<span class="text-4xl text-gray-400 dark:text-gray-200 px-4">A.</span>
+					</div>
+				</div>
+				<div>
+					<div class="flex items-center h-16">
+						<span class="text-lg text-blue-600 dark:text-blue-400 font-bold">Can I use my tweaks?</span>
+					</div>
+					<div class="flex items-center py-2">
+						<span class="text-gray-500 dark:text-gray-200">Yes, we have tweak support, but only tweaks that work on iOS 15-16 will work, there's no guarantee that iOS 14 and lower tweaks will work.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-4 flex">
+				<div>
+					<div class="flex items-center h-16 border-l-4 border-blue-600 dark:border-blue-400">
+						<span class="text-4xl text-blue-600 dark:text-blue-400 px-4">Q.</span>
+					</div>
+					<div class="flex items-center h-16 border-l-4 border-gray-400 dark:border-gray-200">
+						<span class="text-4xl text-gray-400 dark:text-gray-200 px-4">A.</span>
+					</div>
+				</div>
+				<div>
+					<div class="flex items-center h-16">
+						<span class="text-lg text-blue-600 dark:text-blue-400 font-bold">What is rootless?</span>
+					</div>
+					<div class="flex items-center py-2">
+						<span class="text-gray-500 dark:text-gray-200">Rootless is the future of iOS 15+ jailbreaks. As of now, palera1n has full root support, at the expense of 5-10 GB of storage (or tethered). We aim to switch to rootless, to also bring a smoother experience.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-4 flex">
+				<div>
+					<div class="flex items-center h-16 border-l-4 border-blue-600 dark:border-blue-400">
+						<span class="text-4xl text-blue-600 dark:text-blue-400 px-4">Q.</span>
+					</div>
+					<div class="flex items-center h-16 border-l-4 border-gray-400 dark:border-gray-200">
+						<span class="text-4xl text-gray-400 dark:text-gray-200 px-4">A.</span>
+					</div>
+				</div>
+				<div>
+					<div class="flex items-center h-16">
+						<span class="text-lg text-blue-600 dark:text-blue-400 font-bold">I need more help or I have more questions!</span>
+					</div>
+					<div class="flex items-center py-2">
+						<span class="text-gray-500 dark:text-gray-200">Join our <a href="https://dsc.gg/palera1n" class="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 dark:hover:text-blue-500 transition-[color] duration-[0.2s] ease-[ease-in-out]">Discord</a>! We have helpers who can help you with your issues, and answer your questions.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg-gray-200 dark:bg-gray-800">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+			<h1 class="text-5xl font-bold text-gray-800 dark:text-white text-center">Our team</h1>
+			<p class="text-center text-gray-600 dark:text-gray-300 mt-2 text-lg">The palera1n team worked hard together to make a usable jailbreak</p>
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+				<a href="https://github.com/itsnebulalol">
+					<div class="w-full bg-white dark:bg-gray-700 rounded-lg p-12 flex flex-col justify-center items-center">
+						<div class="mb-8">
+							<img class="object-center object-cover rounded-full h-36 w-36" src="https://github.com/itsnebulalol.png" alt="photo">
+						</div>
+						<div class="text-center">
+							<p class="text-xl text-gray-800 dark:text-white font-bold mb-2">Nebula</p>
+							<p class="text-base text-gray-800 dark:text-white font-normal">Owner and Lead Developer</p>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://github.com/mineek">
+					<div class="w-full bg-white dark:bg-gray-700 rounded-lg p-12 flex flex-col justify-center items-center">
+						<div class="mb-8">
+							<img class="object-center object-cover rounded-full h-36 w-36" src="https://github.com/mineek.png" alt="photo">
+						</div>
+						<div class="text-center">
+							<p class="text-xl text-gray-800 dark:text-white font-bold mb-2">Mineek</p>
+							<p class="text-base text-gray-800 dark:text-white font-normal">Lead Developer</p>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://github.com/verygenericname">
+					<div class="w-full bg-white dark:bg-gray-700 rounded-lg p-12 flex flex-col justify-center items-center">
+						<div class="mb-8">
+							<img class="object-center object-cover rounded-full h-36 w-36" src="https://github.com/verygenericname.png" alt="photo">
+						</div>
+						<div class="text-center">
+							<p class="text-xl text-gray-800 dark:text-white font-bold mb-2">Nathan</p>
+							<p class="text-base text-gray-800 dark:text-white font-normal">Ramdisk and Kernel Development</p>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://github.com/llsc12">
+					<div class="w-full bg-white dark:bg-gray-700 rounded-lg p-12 flex flex-col justify-center items-center">
+						<div class="mb-8">
+							<img class="object-center object-cover rounded-full h-36 w-36" src="https://github.com/llsc12.png" alt="photo">
+						</div>
+						<div class="text-center">
+							<p class="text-xl text-gray-800 dark:text-white font-bold mb-2">Lakhan Lothiyi</p>
+							<p class="text-base text-gray-800 dark:text-white font-normal">Loader and macOS Development</p>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://github.com/guacaplushy">
+					<div class="w-full bg-white dark:bg-gray-700 rounded-lg p-12 flex flex-col justify-center items-center">
+						<div class="mb-8">
+							<img class="object-center object-cover rounded-full h-36 w-36" src="https://github.com/guacaplushy.png" alt="photo">
+						</div>
+						<div class="text-center">
+							<p class="text-xl text-gray-800 dark:text-white font-bold mb-2">Tom</p>
+							<p class="text-base text-gray-800 dark:text-white font-normal">Kernel Development</p>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://github.com/asdfugil">
+					<div class="w-full bg-white dark:bg-gray-700 rounded-lg p-12 flex flex-col justify-center items-center">
+						<div class="mb-8">
+							<img class="object-center object-cover rounded-full h-36 w-36" src="https://github.com/asdfugil.png" alt="photo">
+						</div>
+						<div class="text-center">
+							<p class="text-xl text-gray-800 dark:text-white font-bold mb-2">Nick Chan</p>
+							<p class="text-base text-gray-800 dark:text-white font-normal">jbinit and palera1n-c Developer</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
 </Layout>
