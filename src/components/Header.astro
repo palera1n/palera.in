@@ -14,10 +14,17 @@ import { Icon } from 'astro-icon'
 
     const mobile_menu_button: HTMLElement | null = document.getElementById("mobile_menu_button");
     const mobile_menu: HTMLElement | null = document.getElementById("mobile_menu");
+    const open_svg: HTMLElement | null = document.getElementById("open_svg");
+    const close_svg: HTMLElement | null = document.getElementById("close_svg");
 
     if (mobile_menu_button && mobile_menu) {
         mobile_menu_button.addEventListener("click", () => {
             mobile_menu.classList.toggle("hidden");
+            
+            if (open_svg && close_svg) {
+                open_svg.classList.toggle("hidden");
+                close_svg.classList.toggle("hidden");
+            }
         });
     }
 </script>
