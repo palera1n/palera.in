@@ -35,9 +35,6 @@ import Layout from '../layouts/Default.astro';
 	} else if (isWindows) {
 		document.querySelector('#windows-error').classList.remove('hidden');
 		document.querySelector('#windows-text').classList.remove('hidden');
-	} else {
-	  // Hide all download buttons
-	  document.querySelector('#error').classList.remove('hidden');
 	}
 </script>
 
@@ -98,13 +95,6 @@ import Layout from '../layouts/Default.astro';
 							<span class="text-center">Use palen1x instead</span>
 						</a>
 					</div>
-
-					<!-- Error Button based on useragent -->
-
-					<a href="https://http.cat/401" download id="error" class="bg-red-400 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center mt-4 max-w-max hidden">
-						<Icon pack="mdi" name="alert-circle" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-						<span class="text-center">Your platform is unsupported.</span>
-					</a>
 
 					<!-- Documentation -->
 
