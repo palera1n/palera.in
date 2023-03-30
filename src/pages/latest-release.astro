@@ -42,85 +42,93 @@ import Layout from '../layouts/Default.astro';
 	<style>
 	code {
 		font-family: 'Fira Code', monospace;
-	 	color: black;
-		background-color: #e5e7eb;
+	 	color: #111827;
+		background-color: #FFFFFF;
 		padding: 2px;
 	 	font-size: 105%;
 	 	border-radius: 5px;
 	}
+
+	@media (prefers-color-scheme: dark) {
+		code {
+			color: white;
+			background-color: #111827;
+		}
+	}
 	</style>
 </head>
 
+
 <Layout>
 	<!-- Hero -->
-	<div class="bg-gradient-to-b from-gray-800 to-[#833F46] relative py-14 animate-[gradient_3s_ease-in-out_infinite]">
+	<div class="bg-gradient-to-b from-gray-900 to-[#833F46] relative py-14 animate-[gradient_3s_ease-in-out_infinite]">
 		<div class="absolute mr-[-50%] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-center">
 			<h1 class="text-1xl font-bold text-white">Latest Release</h1>
 		</div>
 	</div>
 
 	<!-- Releases -->
-	<div class="p-3 md:p-12">
-		<h3 class="text-1xl font-bold text-gray-800 dark:text-white text-center md:text-left">v2.0.0 beta 5: Tumbleweed</h3>
-		<div class="space-y-12 px-2 md:px-16 md:mt-12 mt-3">
-			<div class="w-full bg-gray-100 dark:bg-gray-700 rounded-lg p-6 md:p-12 flex flex-col justify-center items-start">
+	<div class="bg-gradient-to-b from-gray-100 via-gray-300 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative p-12">
+
+		<h3 class="text-1xl font-bold text-gray-800 dark:text-white text-center">v2.0.0 beta 5: "Tumbleweed"</h3>
+		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-3 md:py-12 space-y-12">
+			<div class="w-full bg-gray-200 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 rounded-2xl p-6 md:p-12 flex flex-col justify-center items-start">
 				<div class="text-left">
-					<p class="text-base text-gray-800 dark:text-white font-normal">Published on: 03 / 22 / 2023</p>
 					  
 					<!-- Buttons based on useragent -->
-
-					<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-macos-universal" download id="mac-download-button" class="bg-gray-200 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center mt-4 max-w-max hidden">
-						<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-						<span class="text-center">Download for MacOS (CLI, universal)</span>
-					</a>
-					  
-					<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86_64" download id="linux-x86_64-download-button" class="bg-gray-200 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center mt-4 max-w-max hidden">
-						<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-						<span class="text-center">Download for Linux (CLI, x86_64)</span>
-					</a>
-					  
-					<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-arm64" download id="linux-aarch64-download-button" class="bg-gray-200 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center mt-4 max-w-max hidden">
-						<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-						<span class="text-center">Download for Linux (CLI, aarch64)</span>
-					</a>
-					  
-					<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86" download id="linux-i686-download-button" class="bg-gray-200 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center mt-4 max-w-max hidden">
-						<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-						<span class="text-center">Download for Linux (CLI, i686)</span>
-					</a>
-
-					<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-armel" download id="linux-armel-download-button" class="bg-gray-200 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center mt-4 max-w-max hidden">
-						<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-						<span class="text-center">Download for Linux (CLI, armel)</span>
-					</a>
-
-					<!-- Error Buttons based on Windows -->
-
-					<div style="display: flex; gap: 10px; margin: 10px 0;">
-						<a href="https://http.cat/401" download id="windows-error" class="bg-red-400 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center max-w-max hidden">
-							<Icon pack="mdi" name="alert-circle" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-							<span class="text-center">Your platform is unsupported (Windows).</span>
-						</a>
 					
-						<a href="https://ios.cfw.guide/using-palen1x" download id="windows-text" class="bg-gray-200 text-gray-800 dark:text-black dark:white rounded-lg p-4 flex flex-row justify-center items-center max-w-max hidden">
-							<Icon pack="mdi" name="open-in-new" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
-							<span class="text-center">Use palen1x instead</span>
+					<div style="display: flex; justify-content: center; align-items: center; margin-top: -20px;">
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-macos-universal" download id="mac-download-button" class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+							<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+							<span class="text-center">Download for MacOS (CLI, universal)</span>
+						</a>				
+					  
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86_64" download id="linux-x86_64-download-button" class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+							<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, x86_64)</span>
 						</a>
+						
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-arm64" download id="linux-aarch64-download-button" class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+							<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, aarch64)</span>
+						</a>
+						
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86" download id="linux-i686-download-button" class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+							<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, i686)</span>
+						</a>
+
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-armel" download id="linux-armel-download-button" class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+							<Icon pack="mdi" name="download" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, armel)</span>
+						</a>
+
+						<!-- Error Buttons based on Windows -->
+
+						<div style="display: flex; gap: 10px; margin: 10px 0;">
+							<a href="https://http.cat/401" download id="windows-error" class="bg-red-400 dark:bg-red-600 border-2 border-red-700 dark:border-red-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+								<Icon pack="mdi" name="alert-circle" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+								<span class="text-center">Your platform is unsupported (Windows).</span>
+							</a>
+						
+							<a href="https://ios.cfw.guide/using-palen1x" download id="windows-text" class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 text-gray-800 text-white dark:white rounded-xl p-3 flex flex-row justify-center items-center mt-4 max-w-max hidden">
+								<Icon pack="mdi" name="open-in-new" class="fill-gray-800 dark:fill-white h-[1.4em] mr-2" />
+								<span class="text-center">Use palen1x instead</span>
+							</a>
+						</div>
 					</div>
 
 					<!-- Documentation -->
 
-					<h3 class="font-bold text-gray-800 dark:text-white text-left mt-4">Full Documenation</h3>
-					<div class="border border-gray-500 dark:border-gray-300 mt-2 mb-2"></div>
-
+					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Documentation</h5>
+					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 					<a href="https://cdn.nickchan.lol/palera1n/c-rewrite/releases/v2.0.0-beta.5/palera1n.1.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700 pr-2">
 						https://cdn.nickchan.lol/palera1n/c-rewrite/releases/v2.0.0-beta.5/palera1n.1.html
 					</a>
 
 					<!-- Notes -->
 					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Notes</h5>
-					<div class="border border-gray-300 dark:border-gray-500 mt-2 mb-2"></div>
-
+					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> Able to jailbreak the device in fakefs-rootful mode, where <code>/</code> is writable, as well as rootless mode, where <code>/</code> cannot be written to.
 					</p>
@@ -137,9 +145,10 @@ import Layout from '../layouts/Default.astro';
 					<!-- Changelog -->
 					
 					<h3 class="font-bold text-gray-800 dark:text-white text-left mt-4">Changelog</h3>
-					<div class="border border-gray-500 dark:border-gray-300 mt-2 mb-2"></div>
-					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">palera1n Loader</h5>
-					<div class="border border-gray-300 dark:border-gray-500 mt-2 mb-2"></div>
+					<div class="border border-gray-500 dark:border-gray-600 mt-2 mb-2"></div>
+
+					<h6 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">palera1n Loader</h6>
+					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> Removed palera1n droplet from title
@@ -169,8 +178,8 @@ import Layout from '../layouts/Default.astro';
 						<span class="pl-4 pr-2">-</span> Rootless will not display an option to install other package managers
 					</p>
 
-					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Other device-side changes</h5>
-					<div class="border border-gray-300 dark:border-gray-500 mt-2 mb-2"></div>
+					<h6 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Other device-side changes</h6>
+					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> Dyld patch
@@ -185,8 +194,8 @@ import Layout from '../layouts/Default.astro';
 						<span class="pl-4 pr-2">-</span> Kernel patchfidner does not crash on 16.4 anymore (<b>NOTE: palera1n still does not work on iOS 16.4</b>)
 					</p>
 
-					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">CLI changes</h5>
-					<div class="border border-gray-300 dark:border-gray-500 mt-2 mb-2"></div>
+					<h6 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">CLI changes</h6>
+					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> Changed format of the version string
@@ -201,9 +210,8 @@ import Layout from '../layouts/Default.astro';
 						<span class="pl-4 pr-2">-</span> <code>-O, --disable-ohio</code> is gone because Ohio has been deleted
 					</p>
 
-					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Documentation</h5>
-					<div class="border border-gray-300 dark:border-gray-500 mt-2 mb-2"></div>
-
+					<h6 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Documentation</h6>
+					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> Clarified about the <code>-f, --fakefs</code> flag.
 					</p>
@@ -211,7 +219,7 @@ import Layout from '../layouts/Default.astro';
 					<!-- Known issues -->
 
 					<h5 class="text-2xl font-bold text-gray-800 dark:text-white text-left mt-4">Known Issues</h5>
-					<div class="border border-gray-500 dark:border-gray-300 mt-2 mb-2"></div>
+					<div class="border border-gray-500 dark:border-gray-600 mt-2 mb-2"></div>
 					
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> If stuck at booting pongoOS or found Pongo USB mode device, Ctrl+C, type exit, then retry, don't reboot the device. It happens on A9 and older devices.
@@ -229,81 +237,61 @@ import Layout from '../layouts/Default.astro';
 				</div>
 			</div>
 					<!-- All Downloads -->
-			<div class="w-full bg-gray-100 dark:bg-gray-700 rounded-lg p-12 flex flex-col mx-auto text-center">
-				<a href="https://github.com/palera1n/palera1n/releases/tag/v2.0.0-beta.5" class="flex items-center justify-center">
-					<Icon pack="mdi" name="link-variant" class="fill-gray-800 h-[1.4em] md:mr-2" />
-					<h5 class="text-3xl font-bold text-black dark:text-white cursor-pointer"> All Builds</h5>
-				  </a>
-				
-				<style>
-					@media screen and (max-width: 368px) {
-					  .flex-wrap {
-						flex-wrap: wrap;
-					  }
-					  .flex-nowrap {
-						flex-wrap: nowrap;
-					  }
-					  .flex {
-						display: flex;
-					  }
-					  .flex-col {
-						display: flex;
-						flex-direction: column;
-					  }
-					  .md\\:flex-nowrap {
-						flex-wrap: nowrap;
-					  }
-					}
-				  </style>
+		<div class="bg-gray-200 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 rounded-2xl p-12 mx-auto text-center">
+			<a href="https://github.com/palera1n/palera1n/releases/tag/v2.0.0-beta.5" class="flex items-center justify-center">
+				<Icon pack="mdi" name="link-variant" class="fill-gray-800 h-[1.4em] mr-2" />
+				<h5 class="text-3xl font-bold text-black dark:text-white cursor-pointer">All Builds</h5>
+			</a>
+				<div class="justify-start mt-8">
+					<div class="w-full">
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-macos-universal" download id="mac-download-button" class="w-full bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-xl p-2 flex items-center mt-4 md:mt-0 mr-4">
+							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] mr-2" />
+							<span class="text-center">Download for macOS (CLI, universal)</span>
+						</a>
+					</div>
+				</div>
 
-				<div class="mt-8 flex justify-center flex-wrap md:flex-nowrap">
-					<div class="max-w-[960px] mx-auto mt-4 flex justify-center flex-wrap md:flex-nowrap">
-						<div class="w-full md:w-auto md:flex-shrink-0">
-						  <a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-macos-universal" download id="mac-download-button" class="w-full bg-white text-gray-800 rounded-lg p-2 flex flex-row justify-center items-center mt-4 md:mt-0 md:mr-4">
-							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] md:mr-2" />
-							<span class="text-center">Download for macOS (CLI, universal) </span>
-						  </a>
-						</div>
-						<div class="w-full md:w-auto md:flex-shrink-0">
-						  <a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86_64" download id="linux-download-button" class="w-full bg-white text-gray-800 rounded-lg p-2 flex flex-row justify-center items-center mt-4 md:mt-0 md:ml-4">
-							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] md:mr-2" />
-							<span class="text-center">Download for Linux (CLI, x86_64) </span>
-						  </a>
-						</div>
-					  </div>
-			    </div>
+				<div class="justify-start mt-4">
+					<div class="w-full">
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86_64" download id="mac-download-button" class="w-full bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-xl p-2 flex items-center mt-4 md:mt-0 mr-4">
+							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, x64_64)</span>
+						</a>
+					</div>
+				</div>
 
-				<div class="mt-2 flex justify-center flex-wrap md:flex-nowrap">
-					<div class="max-w-[960px] mx-auto mt-2 flex justify-center flex-wrap md:flex-nowrap">
-						<div class="w-full md:w-auto md:flex-shrink-0">
-						  <a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86" download id="mac-download-button" class="w-full bg-white text-gray-800 rounded-lg p-2 flex flex-row justify-center items-center mt-4 md:mt-0 md:mr-4">
-							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] md:mr-2" />
-							<span class="text-center">Download for Linux (CLI, i686) </span>
-						  </a>
-						</div>
-						<div class="w-full md:w-auto md:flex-shrink-0">
-						  <a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-armel" download id="linux-download-button" class="w-full bg-white text-gray-800 rounded-lg p-2 flex flex-row justify-center items-center mt-4 md:mt-0 md:ml-4">
-							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] md:mr-2" />
-							<span class="text-center">Download for Linux (CLI, armel) </span>
-						  </a>
-						</div>
-					  </div>
-			    </div>
-				<div class="mt-2 flex justify-center flex-wrap md:flex-nowrap">
-					<div class="max-w-[960px] mx-auto mt-2 flex justify-center flex-wrap md:flex-nowrap">
-						<div class="w-full md:w-auto md:flex-shrink-0">
-						  <a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-arm64" download id="mac-download-button" class="w-full bg-white text-gray-800 rounded-lg p-2 flex flex-row justify-center items-center mt-4 md:mt-0 md:mr-4">
-							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] md:mr-2" />
-							<span class="text-center">Download for Linux (CLI, arm64) </span>
-						  </a>
-						</div>
-					  </div>
-			    </div>
+				<div class="justify-start mt-4">
+					<div class="w-full">
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-x86" download id="mac-download-button" class="w-full bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-xl p-2 flex items-center mt-4 md:mt-0 mr-4">
+							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, i486)</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="justify-start mt-4">
+					<div class="w-full">
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-arm64" download id="mac-download-button" class="w-full bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-xl p-2 flex items-center mt-4 md:mt-0 mr-4">
+							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, arm64)</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="justify-start mt-4">
+					<div class="w-full">
+						<a href="https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.5/palera1n-linux-armel" download id="mac-download-button" class="w-full bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-xl p-2 flex items-center mt-4 md:mt-0 mr-4">
+							<Icon pack="mdi" name="download" class="fill-gray-800 h-[1.4em] mr-2" />
+							<span class="text-center">Download for Linux (CLI, armel)</span>
+						</a>
+					</div>
+				</div>
+
 			</div>
-	      	  <a href="/older-releases" class="flex items-center justify-center">
+	      	<a href="/older-releases" class="flex items-center justify-center">
 				<Icon pack="mdi" name="open-in-new" class="fill-gray-800 h-[1.4em] md:mr-2" />
 				<h5 class="text-1xl font-bold text-black dark:text-white cursor-pointer"> Older Releases</h5>
-			  </a>
+		    </a>
 		</div>
 	</div>
 </Layout>
