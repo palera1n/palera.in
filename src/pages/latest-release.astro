@@ -130,6 +130,9 @@ import Layout from '../layouts/Default.astro';
 					<h5 class="text-1xl font-bold text-gray-800 dark:text-white text-left mt-4">Notes</h5>
 					<div class="border border-gray-300 dark:border-gray-900 mt-2 mb-2"></div>
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
+						<span class="pl-4 pr-2">-</span> This public build of palera1n does not work on iOS 16.4, attempting to do so will cause an infinite loop trying to mount the rootfs. We are currently working on fixing up palera1n for a new beta.
+					</p>
+					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> Able to jailbreak the device in fakefs-rootful mode, where <code>/</code> is writable, as well as rootless mode, where <code>/</code> cannot be written to.
 					</p>
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
@@ -230,9 +233,6 @@ import Layout from '../layouts/Default.astro';
 					</p>
 					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
 						<span class="pl-4 pr-2">-</span> ( Rootful ) "panic: mount exited (exit status 66)" issue with BindFS on iOS 16, use FakeFS instead.
-					</p>
-					<p class="text-base text-gray-800 dark:text-white font-normal mt-2">
-						<span class="pl-4 pr-2">-</span> Public build of palera1n does not work on iOS 16.4, attempting to do so will cause an infinite loop trying to mount the rootfs
 					</p>
 				</div>
 			</div>
