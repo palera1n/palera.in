@@ -1,0 +1,84 @@
+{
+    "credits": [
+        {
+            "name": "Nick Chan",
+            "github": "asdfugil",
+            "desc": "jbinit & palera1n 2.0.0 cli"
+        },
+        {
+            "name": "Tom",
+            "github": "plooshi",
+            "desc": "KPF & Kernel patches"
+        },
+        {
+            "name": "dora2ios",
+            "github": "kok3shidoll",
+            "desc": "jbinit & KPF"
+        },
+        {
+            "name": "Flower",
+            "github": "flowerible",
+            "desc": "Loader Development"
+        },
+        {
+            "name": "staturnz",
+            "github": "staturnzz",
+            "desc": "Loader Development & jbinit"
+        },
+        {
+            "name": "Nebula",
+            "github": "itsnebulalol",
+            "desc": "Loader Contributions"
+        }
+    ],
+    "thanks": [
+        {
+            "github": "mineek"
+        },
+        {
+            "github": "llsc12"
+        },
+        {
+            "github": "verygenericname"
+        },
+        {
+            "github": "junepark678"
+        },
+        {
+            "github": "tihmstar"
+        },
+        {
+            "github": "nikias"
+        },
+        {
+            "github": "libimobiledevice"
+        },
+        {
+            "github": "checkra1n"
+        },
+        {
+            "github": "ProcursusTeam"
+        },
+        {
+            "github": "evelyneee"
+        },
+        {
+            "github": "sbingner"
+        },
+        {
+            "github": "raspberryenvoie"
+        },
+        {
+            "github": "asineth0"
+        },
+        {
+            "github": "opa334"
+        },
+        {
+            "github": "elihwyma"
+        },
+        {
+            "github": "zbrateam"
+        }
+    ]
+}
