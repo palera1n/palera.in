@@ -16,7 +16,7 @@
             "desc": "jbinit & KPF"
         },
         {
-            "name": "Flower",
+            "name": "flower",
             "github": "flowerible",
             "desc": "Loader Development"
         },
@@ -33,52 +33,106 @@
     ],
     "thanks": [
         {
-            "github": "mineek"
+            "github": "mineek",
+            "desc": "palera1n Legacy"
         },
         {
-            "github": "llsc12"
+            "github": "verygenericname",
+            "desc": "palera1n Legacy"
         },
         {
-            "github": "verygenericname"
+            "github": "llsc12",
+            "desc": "palera1n loader Legacy"
         },
         {
-            "github": "junepark678"
+            "github": "junepark678",
+            "desc": "palera1n 2.0.0 makefile"
         },
         {
-            "github": "tihmstar"
+            "github": "tihmstar",
+            "desc": "jbinit v1"
         },
         {
-            "github": "nikias"
+            "github": "libimobiledevice",
+            "desc": "libimobiledevice & libirecovery"
         },
         {
-            "github": "libimobiledevice"
+            "github": "checkra1n",
+            "desc": "checkra1n 1337.1 & KPF"
         },
         {
-            "github": "checkra1n"
+            "github": "ProcursusTeam",
+            "desc": "Bootstrap"
         },
         {
-            "github": "ProcursusTeam"
+            "github": "evelyneee",
+            "desc": "Ellekit"
         },
         {
-            "github": "evelyneee"
+            "github": "sbingner",
+            "desc": "Substitute"
         },
         {
-            "github": "sbingner"
+            "github": "raspberryenvoie",
+            "desc": "odysseyn1x"
         },
         {
-            "github": "raspberryenvoie"
+            "github": "asineth0",
+            "desc": "checkn1x"
         },
         {
-            "github": "asineth0"
+            "github": "opa334",
+            "desc": "cfprefs hook"
         },
         {
-            "github": "opa334"
+            "github": "elihwyma",
+            "desc": "Sileo & Pogo"
         },
         {
-            "github": "elihwyma"
+            "github": "zbrateam",
+            "desc": "Zebra"
+        }
+    ],
+    "translations": [
+        {
+            "name": "hg13",
+            "github": "hg13bs",
+            "lang": "ar"
         },
         {
-            "github": "zbrateam"
+            "name": "Azreal",
+            "github": "0x6ff",
+            "lang": "pl"
+        },
+        {
+            "name": "Nick Chan",
+            "github": "asdfugil",
+            "lang": "zh-Hant"
+        },
+        {
+            "name": "kok3shidoll",
+            "github": "kok3shidoll",
+            "lang": "jp"
+        },
+        {
+            "name": "a slow audi r8",
+            "github": "afastaudir8",
+            "lang": "fr"
+        },
+        {
+            "name": "Lost",
+            "github": "lost_fmn",
+            "lang": "de"
+        },
+        {
+            "name": "xanti",
+            "github": "xanti043",
+            "lang": "de"
+        },
+        {
+            "name": "TheArexH4CKER",
+            "github": "TheArexH4CKER",
+            "lang": "hu"
         }
     ]
 }
