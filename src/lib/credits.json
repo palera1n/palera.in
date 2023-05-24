@@ -3,7 +3,7 @@
         {
             "name": "Nick Chan",
             "github": "asdfugil",
-            "desc": "jbinit & palera1n 2.0.0 cli"
+            "desc": "palera1n 2.0.0 cli & jbinit"
         },
         {
             "name": "Tom",
@@ -13,12 +13,12 @@
         {
             "name": "kok3shidoll",
             "github": "kok3shidoll",
-            "desc": "jbinit & KPF"
+            "desc": "KPF & jbinit"
         },
         {
             "name": "flower",
             "github": "flowerible",
-            "desc": "Loader Development"
+            "desc": "Loader Development & Website"
         },
         {
             "name": "staturnz",
@@ -28,67 +28,87 @@
         {
             "name": "Nebula",
             "github": "itsnebulalol",
-            "desc": "Loader Contributions"
+            "desc": "Team Management & Website"
         }
     ],
     "thanks": [
         {
+            "name": "Mineek",
             "github": "mineek",
             "desc": "palera1n Legacy"
         },
         {
+            "name": "Nathan",
             "github": "verygenericname",
             "desc": "palera1n Legacy"
         },
         {
+            "name": "Lakhan Lothiyi",
             "github": "llsc12",
-            "desc": "palera1n loader Legacy"
+            "desc": "loader Legacy"
         },
         {
+            "name": "pythonplayer",
             "github": "junepark678",
-            "desc": "palera1n 2.0.0 makefile"
+            "desc": "Contributions"
         },
         {
+            "name": "Alexia",
+            "github": "0xallie",
+            "desc": "Various Contributions"
+        },
+        {
+            "name": "tihmstar",
             "github": "tihmstar",
             "desc": "jbinit v1"
         },
         {
+            "name": "libimobiledevice",
             "github": "libimobiledevice",
-            "desc": "libimobiledevice & libirecovery"
+            "desc": "libimobiledevice"
         },
         {
+            "name": "checkra1n",    
             "github": "checkra1n",
-            "desc": "checkra1n 1337.1 & KPF"
+            "desc": "checkra1n 1337.1"
         },
         {
+            "name": "Procursus",    
             "github": "ProcursusTeam",
             "desc": "Bootstrap"
         },
         {
+            "name": "Evelyn",    
             "github": "evelyneee",
-            "desc": "Ellekit"
+            "desc": "ElleKit"
         },
         {
+            "name": "sbingner",    
             "github": "sbingner",
             "desc": "Substitute"
         },
         {
+            "name": "raspberry",    
             "github": "raspberryenvoie",
             "desc": "odysseyn1x"
         },
         {
+            "name": "asineth0",    
             "github": "asineth0",
             "desc": "checkn1x"
         },
         {
+            "name": "opa334",    
             "github": "opa334",
             "desc": "cfprefs hook"
         },
         {
+            "name": "Amy While",    
             "github": "elihwyma",
             "desc": "Sileo & Pogo"
         },
         {
+            "name": "Zebra",    
             "github": "zbrateam",
             "desc": "Zebra"
         }
@@ -97,42 +117,42 @@
         {
             "name": "hg13",
             "github": "hg13bs",
-            "lang": "ar"
+            "lang": "Arabic"
         },
         {
             "name": "Azreal",
             "github": "0x6ff",
-            "lang": "pl"
+            "lang": "Polish"
         },
         {
             "name": "Nick Chan",
             "github": "asdfugil",
-            "lang": "zh-Hant"
+            "lang": "Chinese (Traditional)"
         },
         {
             "name": "kok3shidoll",
             "github": "kok3shidoll",
-            "lang": "jp"
+            "lang": "Japanese"
         },
         {
             "name": "a slow audi r8",
             "github": "afastaudir8",
-            "lang": "fr"
+            "lang": "French"
         },
         {
             "name": "Lost",
             "github": "lost_fmn",
-            "lang": "de"
+            "lang": "German"
         },
         {
             "name": "xanti",
-            "github": "xanti043",
-            "lang": "de"
+            "github": "xantiago0",
+            "lang": "German"
         },
         {
-            "name": "TheArexH4CKER",
+            "name": "Arex",
             "github": "TheArexH4CKER",
-            "lang": "hu"
+            "lang": "Hungarian"
         }
     ]
 }

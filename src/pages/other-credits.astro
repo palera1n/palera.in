@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Default.astro';
+import credits from '../lib/credits.json';
+---
+
+<Layout>
+	<!-- Hero -->
+	<div class="bg-gradient-to-b from-gray-900 to-[#833F46] relative py-14 animate-[gradient_3s_ease-in-out_infinite]">
+		<div class="absolute mr-[-50%] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-center">
+			<h1 class="text-1xl font-bold text-white">Other Credits</h1>
+		</div>
+	</div>
+
+	<!-- Thanks Credits -->
+	<div class="bg-gradient-to-b from-gray-100 via-gray-300 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative p-12">
+		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 space-y-12">
+		<h1 class="text-3xl font-bold text-gray-800 dark:text-white text-center" >Thank you to</h1>
+		<p class="text-center text-gray-600 dark:text-gray-300 mt-2 text-lg" style="margin-block: 15px;">Everyone who contributed & tools used in the palera1n project</p>
+		  <div class="mt-12">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+			  {credits.thanks.map((thank: any) => {
+				return (
+				  <div class="flex flex-col bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-2xl p-3">
+					<a href={`https://github.com/${thank.github}`} class="flex flex-row items-center">
+					  <div class="mr-2">
+						<img class="object-center object-cover rounded-2xl h-12 w-12" src={`https://github.com/${thank.github}.png`} alt="photo">
+					  </div>
+					  <div class="flex-1">
+						<p class="text-base text-gray-800 dark:text-white font-bold mb-1">{thank.name}</p>
+						<p class="text-sm text-gray-800 dark:text-white font-normal">{thank.desc}</p>
+					  </div>
+					</a>
+				  </div>
+				);
+			  })}
+			</div>
+		</div>
+	</div>
+	
+	<!-- Translator Credits -->
+	<div class="">
+		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 space-y-12">
+		<h1 class="text-3xl font-bold text-gray-800 dark:text-white text-center" >Loader Translators</h1>
+		<p class="text-center text-gray-600 dark:text-gray-300 mt-2 text-lg" style="margin-block: 15px;">These are the people who contributed to translate our loader application</p>
+		  <div class="mt-12">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+			  {credits.translations.map((lang: any) => {
+				return (
+				  <div class="flex flex-col bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-2xl p-3">
+					<a href={`https://github.com/${lang.github}`} class="flex flex-row items-center">
+					  <div class="mr-2">
+						<img class="object-center object-cover rounded-2xl h-12 w-12" src={`https://github.com/${lang.github}.png`} alt="photo">
+					  </div>
+					  <div class="flex-1">
+						<p class="text-base text-gray-800 dark:text-white font-bold mb-1">{lang.name}</p>
+						<p class="text-sm text-gray-800 dark:text-white font-normal">{lang.lang}</p>
+					  </div>
+					</a>
+				  </div>
+				);
+			  })}
+			</div>
+		</div>
+	</div>
+</Layout>
