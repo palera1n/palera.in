@@ -141,7 +141,7 @@
         },
         {
             "name": "Lost",
-            "github": "lost_fmn",
+            "github": "lostfmn",
             "lang": "German"
         },
         {
@@ -153,6 +153,21 @@
             "name": "Arex",
             "github": "TheArexH4CKER",
             "lang": "Hungarian"
+        },
+        {
+            "name": "flower",
+            "github": "flowerible",
+            "lang": "LOLCat"
+        },
+        {
+            "name": "Nebula",
+            "github": "itsnebulalol",
+            "lang": "Pirate English"
+        },
+        {
+            "name": "Jan",
+            "github": "JanCraft",
+            "lang": "Catalan"
         }
     ]
 }
