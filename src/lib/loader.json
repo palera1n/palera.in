@@ -37,11 +37,13 @@
             "items": [
                 {
                     "name": "Sileo",
-                    "uri": "https://static.palera.in/sileo.deb"
+                    "uri": "https://static.palera.in/sileo.deb",
+                    "icon": "https://palera.in/sileo.png"
                 },
                 {
                     "name": "Zebra",
-                    "uri": "https://static.palera.in/zebra.deb"
+                    "uri": "https://static.palera.in/zebra.deb",
+                    "icon": "https://palera.in/zeeb.png"
                 }
             ]
         },
@@ -50,11 +52,13 @@
             "items": [
                 {
                     "name": "Sileo",
-                    "uri": "https://static.palera.in/rootless/sileo.deb"
+                    "uri": "https://static.palera.in/rootless/sileo.deb",
+                    "icon": "https://palera.in/sileo.png"
                 },
                 {
                     "name": "Zebra",
-                    "uri": "https://static.palera.in/rootless/zebra.deb"                
+                    "uri": "https://static.palera.in/rootless/zebra.deb",
+                    "icon": "https://palera.in/zeeb.png"             
                 }
             ]
         }
