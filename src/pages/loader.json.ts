@@ -1,5 +1,5 @@
-import credits from "../lib/loader.json";
+import loader from "../lib/loader.json";
 
 export async function get({ params, request }) {
-    return { body: JSON.stringify(credits) };
+    return { body: JSON.stringify(loader) };
 }
