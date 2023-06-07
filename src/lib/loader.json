@@ -1,0 +1,62 @@
+{
+    "bootstraps": [
+        {
+            "label": "Rootful",
+            "items": [
+                {
+                    "cfver": "1800",
+                    "uri": "https://static.palera.in/bootstrap-1800.tar.zst"
+                },
+                {
+                    "cfver": "1900",
+                    "uri": "https://static.palera.in/bootstrap-1900.tar.zst"
+                }
+            ]
+        },
+        {
+            "label": "Rootless",
+            "items": [
+                {
+                    "cfver": "1800",
+                    "uri": "https://apt.procurs.us/bootstraps/1800/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                },
+                {
+                    "cfver": "1900",
+                    "uri": "https://apt.procurs.us/bootstraps/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                },
+                {
+                    "cfver": "2000",
+                    "uri": "https://apt.procurs.us/bootstraps/2000/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                }
+            ]
+        }
+    ],
+    "managers": [
+        {
+            "label": "Rootful",
+            "items": [
+                {
+                    "name": "Sileo",
+                    "uri": "https://static.palera.in/sileo.deb"
+                },
+                {
+                    "name": "Zebra",
+                    "uri": "https://static.palera.in/zebra.deb"
+                }
+            ]
+        },
+        {
+            "label": "Rootless",
+            "items": [
+                {
+                    "name": "Sileo",
+                    "uri": "https://static.palera.in/rootless/sileo.deb"
+                },
+                {
+                    "name": "Zebra",
+                    "uri": "https://static.palera.in/rootless/zebra.deb"                
+                }
+            ]
+        }
+    ]
+}
