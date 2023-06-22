@@ -5,11 +5,11 @@
             "items": [
                 {
                     "cfver": "1800",
-                    "uri": "https://static.palera.in/bootstrap-1800.tar.zst"
+                    "uri": "https://zeusteam.dev"
                 },
                 {
                     "cfver": "1900",
-                    "uri": "https://static.palera.in/bootstrap-1900.tar.zst"
+                    "uri": "https://zeusteam.dev"
                 }
             ]
         },
@@ -18,15 +18,15 @@
             "items": [
                 {
                     "cfver": "1800",
-                    "uri": "https://apt.procurs.us/bootstraps/1800/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                    "uri": "https://zeusteam.dev"
                 },
                 {
                     "cfver": "1900",
-                    "uri": "https://apt.procurs.us/bootstraps/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                    "uri": "https://zeusteam.dev"
                 },
                 {
                     "cfver": "2000",
-                    "uri": "https://apt.procurs.us/bootstraps/2000/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                    "uri": "https://zeusteam.dev"
                 }
             ]
         }
@@ -37,19 +37,19 @@
             "items": [
                 {
                     "name": "Sileo",
-                    "uri": "https://static.palera.in/sileo.deb",
-                    "icon": "https://palera.in/sileo.png",
+                    "uri": "https://zeusteam.dev",
+                    "icon": "https://zeusteam.dev",
                     "filePaths": [
-                        "/Applications/Sileo.app",
-                        "/Applications/Sileo-Nightly.app"
+                        "https://zeusteam.dev",
+                        "https://zeusteam.dev"
                     ]
                 },
                 {
                     "name": "Zebra",
-                    "uri": "https://static.palera.in/zebra.deb",
-                    "icon": "https://palera.in/zeeb.png",
+                    "uri": "https://zeusteam.dev",
+                    "icon": "https://zeusteam.dev",
                     "filePaths": [
-                        "/Applications/Zebra.app"
+                        "https://zeusteam.dev"
                     ]
                 }
             ]
@@ -59,19 +59,19 @@
             "items": [
                 {
                     "name": "Sileo",
-                    "uri": "https://static.palera.in/rootless/sileo.deb",
-                    "icon": "https://palera.in/sileo.png",
+                    "uri": "https://zeusteam.dev",
+                    "icon": "https://zeusteam.dev",
                     "filePaths": [
-                        "/var/jb/Applications/Sileo.app",
-                        "/var/jb/Applications/Sileo-Nightly.app"
+                        "https://zeusteam.dev",
+                        "https://zeusteam.dev"
                     ]
                 },
                 {
                     "name": "Zebra",
-                    "uri": "https://static.palera.in/rootless/zebra.deb",
-                    "icon": "https://palera.in/zeeb.png",
+                    "uri": "https://zeusteam.dev",
+                    "icon": "https://zeusteam.dev",
                     "filePaths": [
-                        "/var/jb/Applications/Zebra.app"
+                        "https://zeusteam.dev"
                     ]
                 }
             ]

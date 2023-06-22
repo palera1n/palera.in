@@ -3,35 +3,40 @@
         {
             "name": "Nick Chan",
             "github": "asdfugil",
-            "desc": "palera1n 2.0.0 cli & jbinit"
+            "desc": "this nice person made palera1n 2.0.0 (good job tbh /srs)"
         },
         {
             "name": "Tom",
             "github": "plooshi",
-            "desc": "KPF & Kernel patches"
+            "desc": "kenral dan pkf ptachse"
         },
         {
             "name": "kok3shidoll",
             "github": "kok3shidoll",
-            "desc": "KPF & jbinit"
+            "desc": "kpf and jbinitaaaaaaaaaaaaaaaaaaaaaa"
         },
         {
             "name": "flower",
             "github": "samiiau",
-            "desc": "Loader Development & Website"
+            "desc": "shitra1n loader"
         },
         {
             "name": "staturnz",
             "github": "staturnzz",
-            "desc": "Loader Development & jbinit"
+            "desc": "loader maker balls"
         },
         {
             "name": "Nebula",
             "github": "itsnebulalol",
-            "desc": "Team Management & Website"
+            "desc": "this guy is kinda decent ngl"
         }
     ],
     "thanks": [
+        {
+            "name": "I don't feel like touching this section, so you all are safe"
+            "github": "LunarN0v4"
+            "desc": "- N0v4"
+        },
         {
             "name": "Mineek",
             "github": "mineek",
@@ -168,6 +173,11 @@
             "name": "Jan",
             "github": "JanCraft",
             "lang": "Catalan"
+        },
+        {
+            "name": "no one"
+            "github": "LunarN0v4"
+            "lang": "LOLCAT"
         }
     ]
 }
