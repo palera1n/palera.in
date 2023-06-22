@@ -156,7 +156,7 @@
         },
         {
             "name": "flower",
-            "github": "flowerible",
+            "github": "samiiau",
             "lang": "LOLCat"
         },
         {
@@ -168,6 +168,31 @@
             "name": "Jan",
             "github": "JanCraft",
             "lang": "Catalan"
+        },
+        {
+            "name": "Saraaaa",
+            "github": "Saraaa2103",
+            "lang": "Vietnamese"
+        },
+        {
+            "name": "Gamono",
+            "github": "gamono23",
+            "lang": "Russian"
+        },
+        {
+            "name": "Mac",
+            "github": "itsmaclol",
+            "lang": "Albanian"
+        },
+        {
+            "name": "thepyrite",
+            "github": "thepyrite",
+            "lang": "Persian"
+        },
+        {
+            "name": "PythonPlayer",
+            "github": "junepark678",
+            "lang": "Korean"
         }
     ]
 }
