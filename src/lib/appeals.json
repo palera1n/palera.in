@@ -1,0 +1,9 @@
+{
+	"comment": "YOU HAVE TO CHANGE THE CLIENT ID AND REDIRECT URI (IN THE OAUTH URL), BACKEND URL AND APPEALS LINK IN THE PRODUCTION DEPLOYMENT",
+	"oauth": {
+    "client_id": "1097923332587929682",
+    "redirect_uri": "http://localhost:3000/appealform"
+  },
+  "backend_url": "http://localhost:8069/bridget/appeal",
+	"appeals_link": "https://discord.gg/N7gEBXUGx"
+}

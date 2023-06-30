@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Default.astro';
+import { appeals_link } from '../lib/appeals.json';
+---
+
+<Layout>
+	<!-- Hero -->
+	<div class="bg-gradient-to-b from-gray-900 to-[#833F46] relative py-14 animate-[gradient_3s_ease-in-out_infinite]">
+		<div class="absolute mr-[-50%] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-center">
+			<h1 class="text-1xl font-bold text-white">Ban Appeals</h1>
+		</div>
+	</div>
+
+	<div class="bg-gradient-to-b from-gray-100 via-gray-300 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative p-12">
+		<form>
+			<div class="relative z-0 w-full mb-6 group">
+					<input type="text" name="ban_reason" id="ban_reason" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+					<label for="ban_reason" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Why were you banned?</label>
+			</div>
+			<div class="relative z-0 w-full mb-6 group">
+					<input type="text" name="unban_reason" id="unban_reason" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+					<label for="unban_reason" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Why should you be unbanned?</label>
+			</div>
+			<div class="relative z-0 w-full mb-6 group flex items-start">
+				<div class="flex items-center h-5">
+					<input id="has_ban_date" name="has_ban_date" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800">
+				</div>
+				<label for="has_ban_date" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I remember <b>when</b> I was banned</label>
+			</div>
+			<div class="relative z-0 w-full mb-6 group hidden">
+					<input type="date" name="ban_date" id="ban_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+					<label for="ban_date" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">When were you banned?</label>
+			</div>
+			<div class="relative z-0 w-full mb-6 group">
+					<input type="text" name="meow" id="meow" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+					<label for="meow" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">meow :3 meow nya~~ :333 meow meow nyaaaa~ :3 meow mreow mrrp</label>
+					<!-- see https://discord.com/channels/1028398973452570725/1028398976640229380/1122857713748160533  -->
+			</div>
+			<div class="grid md:grid-cols-2 md:gap-6">
+				<div class="relative z-0 w-full mb-6 group flex items-start">
+					<div class="flex items-center h-5">
+						<input id="joined_appeals" name="joined_appeals" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800">
+					</div>
+					<label for="joined_appeals" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I have joined the <a class="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 dark:hover:text-blue-500 transition-[color] duration-[0.2s] ease-[ease-in-out]" target="palera1n appeals" href={appeals_link}>appeals server</a></label>
+				</div>
+				<div class="relative z-0 w-full mb-6 group flex items-start">
+					<div class="flex items-center h-5">
+						<input id="dms_enabled" name="dms_enabled" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800">
+					</div>
+					<label for="dms_enabled" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I have enabled DMs in the appeals server's settings</label>
+				</div>
+			</div>
+			<button id="appeal-btn" type="submit" class="text-black dark:text-white bg-gray-200 dark:bg-gray-800 hover:bg-grey focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-sm px-7 py-4 dark:hover:bg-gray-700 focus:outline-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out]">
+				<div id="submit-txt">Submit Ban Appeal</div>
+				<div role="status" id="loader" hidden>
+					<svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+						<path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+					</svg>
+					<span class="sr-only">Loading...</span>
+				</div>
+		</button>
+
+		<div class="m-7">
+			<div id="toast-success" class="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800 opacity-0 ease-out duration-300 transition-opacity" role="alert">
+				<div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+					<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+					<span class="sr-only">Check icon</span>
+				</div>
+				<div class="ml-3 text-sm font-normal">Appeal submitted!</div>
+			</div>
+		</div>
+		<div class="m-7">
+			<div id="toast-danger" class="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800 opacity-0 ease-out duration-300 transition-opacity" role="alert">
+				<div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg dark:bg-red-800 dark:text-red-200">
+					<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+					<span class="sr-only">Error icon</span>
+				</div>
+				<div class="ml-3 text-sm font-normal">Error submitting appeal!</div>
+			</div>
+		</div>
+		</form>
+	</div>
+
+</Layout>
+
+<script>
+import { backend_url } from '../lib/appeals.json';
+
+function success() {
+	document.querySelector('#toast-success').classList.remove('opacity-0')
+}
+function danger(reason) {
+	document.querySelector('#toast-danger div.font-normal').textContent = reason
+	document.querySelector('#toast-danger').classList.remove('opacity-0')
+
+	setTimeout(_ => {
+		document.querySelector('#toast-danger').classList.add('opacity-0')
+	}, 5000)
+}
+
+const urlparamSearch = new URLSearchParams(location.search.substring(1))
+const urlparamHash = new URLSearchParams(location.hash.substring(1))
+function param(key) {
+	return urlparamSearch.get(key) || urlparamHash.get(key)
+}
+
+if (param('error')) {
+	location.href = '/appeals'
+}
+
+document.querySelector('form').addEventListener('keydown', ev => {
+	if (ev.key == 'Enter')
+		ev.preventDefault()
+})
+
+document.querySelector('#has_ban_date').addEventListener('change', ev => {
+	if (ev.target.checked) {
+		document.querySelector('#ban_date').parentElement.classList.remove('hidden')
+	} else {
+		document.querySelector('#ban_date').parentElement.classList.add('hidden')
+	}
+})
+
+document.querySelector('form').addEventListener('submit', async ev => {
+	ev.preventDefault()
+	document.querySelector('#appeal-btn').disabled = true
+	document.querySelector('#submit-txt').hidden = true
+	document.querySelector('#loader').hidden = false
+
+	let data = {
+		access_token: param('access_token'),
+		token_type: param('token_type')
+	}
+	let inputs = document.querySelectorAll('input')
+	for (let input of inputs) {
+		if (input.type == 'checkbox') {
+			data[input.name ?? input.id] = input.checked
+		} else {
+			data[input.name ?? input.id] = input.value
+		}
+	}
+
+	try {
+		let f = await fetch(backend_url, {
+			method: 'post',
+			body: JSON.stringify(data),
+		})
+		if (f.ok) {
+			success()
+		} else {
+			document.querySelector('#appeal-btn').disabled = false
+			let txt = await f.text()
+			danger(txt.trim() || 'Error submitting appeal!')
+			if (f.status == 401) {
+				setTimeout(_ => {
+					location.href = '/appeals'
+				}, 4500)
+			}
+		}
+	} catch(_) {
+		document.querySelector('#appeal-btn').disabled = false
+		danger()
+	}
+
+	document.querySelector('#submit-txt').hidden = false
+	document.querySelector('#loader').hidden = true
+})
+</script>

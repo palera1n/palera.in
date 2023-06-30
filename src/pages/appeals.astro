@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Default.astro';
+import { oauth } from '../lib/appeals.json';
+---
+
+<Layout>
+	<!-- Hero -->
+	<div class="bg-gradient-to-b from-gray-900 to-[#833F46] relative py-14 animate-[gradient_3s_ease-in-out_infinite]">
+		<div class="absolute mr-[-50%] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-center">
+			<h1 class="text-1xl font-bold text-white">Ban Appeals</h1>
+		</div>
+	</div>
+
+	<div class="bg-gradient-to-b from-gray-100 via-gray-300 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative p-12">
+		<ul>
+			<li>You may not throw a fit with staff if your appeal was declined. We accept appeals we think are real and when you really mean it. Staff are doing their jobs and we ask you to not make things any harder for them.</li>
+			<li>If you get unbanned you may NOT get another warning, you will get permanently banned and will be unable to appeal.</li>
+
+			<li>You must follow Discord ToS. If you don't know it, please <a href="https://discord.com/tos">read it</a> If you were banned for being underage, your appeal will be automatically declined.</li>
+
+			<li>We highly recommend waiting at least 3 months until appealing.</li>
+		</ul>
+	</div>
+
+	<div class="">
+		<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-4 py-12 space-y-12">
+			<div class="text-center">
+				<a href={`https://discord.com/api/oauth2/authorize?client_id=${oauth.client_id}&redirect_uri=${encodeURIComponent(oauth.redirect_uri)}&response_type=token&scope=identify`} class="text-black dark:text-white bg-gray-200 dark:bg-gray-800 hover:bg-grey focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-sm px-7 py-4 dark:hover:bg-gray-700 focus:outline-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out]">Log in with Discord</a> to submit an appeal
+			</div>
+		<div>
+	</div>
+</Layout>
