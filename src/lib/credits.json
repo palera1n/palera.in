@@ -11,6 +11,11 @@
             "desc": "KPF & jbinit"
         },
         {
+            "name": "Tom",
+            "github": "plooshi",
+            "desc": "KPF & Kernel patches"
+        },
+        {
             "name": "Samara",
             "github": "samiiau",
             "desc": "Loader Development & Website"
@@ -106,11 +111,6 @@
             "name": "Zebra",    
             "github": "zbrateam",
             "desc": "Zebra"
-        },
-        {
-            "name": "Tom",
-            "github": "plooshi",
-            "desc": "KPF & Kernel patches"
         }
     ],
     "translations": [
