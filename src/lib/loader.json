@@ -76,5 +76,48 @@
                 }
             ]
         }
+    ],
+    "assets":[
+        {
+            "label": "Rootful",
+            "repositories": [
+                {
+                    "uri": "https://strap.palera.in",
+                    "suite": "{cfver}",
+                    "component": "main"
+                },
+                {
+                    "uri": "https://repo.palera.in",
+                    "suite": "./",
+                    "component": ""
+                }
+            ],
+            "packages": [
+                "nebula-keyring", "libkrw0-tfp0", "openssh", "openssh-client"
+            ]
+        },
+        {
+            "label": "Rootless",
+            "repositories": [
+                {
+                    "uri": "https://apt.procurs.us",
+                    "suite": "{cfver}",
+                    "component": "main"
+                },
+                {
+                    "uri": "https://repo.palera.in",
+                    "suite": "./",
+                    "component": ""
+                },
+                {
+                    "uri": "https://ellekit.space",
+                    "suite": "./",
+                    "component": ""
+                }
+            ],
+            "packages": [
+                "nebula-keyring", "libkrw0-tfp0"
+            ]
+        }
     ]
 }
