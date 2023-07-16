@@ -93,7 +93,7 @@
                 }
             ],
             "packages": [
-                "nebula-keyring", "libkrw0-tfp0", "openssh"
+                "nebula-keyring", "libkrw0-tfp0", "openssh", "openssh-client", "shshd"
             ]
         },
         {
@@ -116,7 +116,7 @@
                 }
             ],
             "packages": [
-                "nebula-keyring", "libkrw0-tfp0"
+                "nebula-keyring", "libkrw0-tfp0", "shshd"
             ]
         }
     ]
