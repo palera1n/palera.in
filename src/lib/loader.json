@@ -40,8 +40,7 @@
                     "uri": "https://static.palera.in/sileo.deb",
                     "icon": "https://palera.in/sileo.png",
                     "filePaths": [
-                        "/Applications/Sileo.app",
-                        "/Applications/Sileo-Nightly.app"
+                        "/Applications/Sileo.app"
                     ]
                 },
                 {
