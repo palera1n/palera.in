@@ -65,8 +65,7 @@
                     "uri": "https://static.palera.in/rootless/sileo.deb",
                     "icon": "https://palera.in/sileo.png",
                     "filePaths": [
-                        "/var/jb/Applications/Sileo.app",
-                        "/var/jb/Applications/Sileo-Nightly.app"
+                        "/var/jb/Applications/Sileo.app"
                     ]
                 },
                 {
@@ -102,11 +101,6 @@
         {
             "label": "Rootless",
             "repositories": [
-                {
-                    "uri": "https://apt.procurs.us",
-                    "suite": "{cfver}",
-                    "component": "main"
-                },
                 {
                     "uri": "https://repo.palera.in",
                     "suite": "./",
