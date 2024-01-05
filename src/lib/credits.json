@@ -3,7 +3,7 @@
         {
             "name": "Nick Chan",
             "github": "asdfugil",
-            "desc": "palera1n 2.0.0 cli & jbinit"
+            "desc": "Lead Developer"
         },
         {
             "name": "kok3shidoll",
@@ -13,33 +13,33 @@
         {
             "name": "Tom",
             "github": "plooshi",
-            "desc": "KPF & Kernel patches"
+            "desc": "KPF"
         },
         {
             "name": "Samara",
             "github": "ssalggnikool",
-            "desc": "Loader Development & Website"
+            "desc": "Loader & Website"
         },
         {
             "name": "staturnz",
             "github": "staturnzz",
-            "desc": "Loader Development & jbinit"
-        },
-        {
-            "name": "Nebula",
-            "github": "itsnebulalol",
-            "desc": "Team Management & Website"
+            "desc": "Loader & jbinit"
         },
         {
             "name": "mineek",
             "github": "mineek",
-            "desc": "MINEEK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+            "desc": "jbinit"
         }
     ],
     "thanks": [
         {
             "name": "Mineek",
             "github": "mineek",
+            "desc": "palera1n Legacy"
+        },
+        {
+            "name": "Nebula",
+            "github": "itsnebulalol",
             "desc": "palera1n Legacy"
         },
         {
