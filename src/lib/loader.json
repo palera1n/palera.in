@@ -43,6 +43,10 @@
                 {
                     "cfver": "2300",
                     "uri": "https://apt.procurs.us/bootstraps/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+                },
+                {
+                    "cfver": "2400",
+                    "uri": "https://apt.procurs.us/bootstraps/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
                 }
             ]
         }
