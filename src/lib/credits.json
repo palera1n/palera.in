@@ -103,6 +103,11 @@
             "desc": "cfprefs hook"
         },
         {
+            "name": "Serena",    
+            "github": "NSAntoine",
+            "desc": "Antoine code used for loader. thank you"
+        },
+        {
             "name": "Amy While",    
             "github": "elihwyma",
             "desc": "Sileo & Pogo"
