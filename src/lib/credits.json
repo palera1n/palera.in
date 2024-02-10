@@ -1,208 +1,219 @@
 {
-    "credits": [
+    "sections": [
         {
-            "name": "Nick Chan",
-            "github": "asdfugil",
-            "desc": "Lead Developer"
+            "name": "Credits",
+            "data": [
+                {
+                    "name": "Nick Chan",
+                    "github": "asdfugil",
+                    "desc": "Lead Developer"
+                },
+                {
+                    "name": "kok3shidoll",
+                    "github": "kok3shidoll",
+                    "desc": "KPF & jbinit"
+                },
+                {
+                    "name": "Tom",
+                    "github": "plooshi",
+                    "desc": "KPF"
+                },
+                {
+                    "name": "Samara",
+                    "github": "ssalggnikool",
+                    "desc": "Loader & Website"
+                },
+                {
+                    "name": "staturnz",
+                    "github": "staturnzz",
+                    "desc": "Loader & jbinit"
+                },
+                {
+                    "name": "mineek",
+                    "github": "mineek",
+                    "desc": "jbinit"
+                }
+            ]
         },
         {
-            "name": "kok3shidoll",
-            "github": "kok3shidoll",
-            "desc": "KPF & jbinit"
+            "name": "Thanks",
+            "data": [
+                {
+                    "name": "Mineek",
+                    "github": "mineek",
+                    "desc": "palera1n Legacy"
+                },
+                {
+                    "name": "Nebula",
+                    "github": "itsnebulalol",
+                    "desc": "palera1n Legacy"
+                },
+                {
+                    "name": "Nathan",
+                    "github": "verygenericname",
+                    "desc": "palera1n Legacy"
+                },
+                {
+                    "name": "Lakhan Lothiyi",
+                    "github": "llsc12",
+                    "desc": "loader Legacy"
+                },
+                {
+                    "name": "pythonplayer123",
+                    "github": "junepark678",
+                    "desc": "Contributions"
+                },
+                {
+                    "name": "Alexia",
+                    "github": "0xallie",
+                    "desc": "Various Contributions"
+                },
+                {
+                    "name": "tihmstar",
+                    "github": "tihmstar",
+                    "desc": "jbinit v1"
+                },
+                {
+                    "name": "libimobiledevice",
+                    "github": "libimobiledevice",
+                    "desc": "libimobiledevice"
+                },
+                {
+                    "name": "checkra1n",
+                    "github": "checkra1n",
+                    "desc": "checkra1n 1337.2"
+                },
+                {
+                    "name": "Procursus",
+                    "github": "ProcursusTeam",
+                    "desc": "Bootstrap"
+                },
+                {
+                    "name": "Evelyn",
+                    "github": "evelyneee",
+                    "desc": "ElleKit"
+                },
+                {
+                    "name": "sbingner",
+                    "github": "sbingner",
+                    "desc": "Substitute"
+                },
+                {
+                    "name": "raspberry",
+                    "github": "raspberryenvoie",
+                    "desc": "odysseyn1x"
+                },
+                {
+                    "name": "asineth0",
+                    "github": "asineth0",
+                    "desc": "checkn1x"
+                },
+                {
+                    "name": "opa334",
+                    "github": "opa334",
+                    "desc": "cfprefs hook"
+                },
+                {
+                    "name": "Amy While",
+                    "github": "elihwyma",
+                    "desc": "Sileo & Pogo"
+                },
+                {
+                    "name": "Zebra",
+                    "github": "zbrateam",
+                    "desc": "Zebra"
+                }
+            ]
         },
         {
-            "name": "Tom",
-            "github": "plooshi",
-            "desc": "KPF"
-        },
-        {
-            "name": "Samara",
-            "github": "ssalggnikool",
-            "desc": "Loader & Website"
-        },
-        {
-            "name": "staturnz",
-            "github": "staturnzz",
-            "desc": "Loader & jbinit"
-        },
-        {
-            "name": "mineek",
-            "github": "mineek",
-            "desc": "jbinit"
-        }
-    ],
-    "thanks": [
-        {
-            "name": "Mineek",
-            "github": "mineek",
-            "desc": "palera1n Legacy"
-        },
-        {
-            "name": "Nebula",
-            "github": "itsnebulalol",
-            "desc": "palera1n Legacy"
-        },
-        {
-            "name": "Nathan",
-            "github": "verygenericname",
-            "desc": "palera1n Legacy"
-        },
-        {
-            "name": "Lakhan Lothiyi",
-            "github": "llsc12",
-            "desc": "loader Legacy"
-        },
-        {
-            "name": "pythonplayer123",
-            "github": "junepark678",
-            "desc": "Contributions"
-        },
-        {
-            "name": "Alexia",
-            "github": "0xallie",
-            "desc": "Various Contributions"
-        },
-        {
-            "name": "tihmstar",
-            "github": "tihmstar",
-            "desc": "jbinit v1"
-        },
-        {
-            "name": "libimobiledevice",
-            "github": "libimobiledevice",
-            "desc": "libimobiledevice"
-        },
-        {
-            "name": "checkra1n",    
-            "github": "checkra1n",
-            "desc": "checkra1n 1337.2"
-        },
-        {
-            "name": "Procursus",    
-            "github": "ProcursusTeam",
-            "desc": "Bootstrap"
-        },
-        {
-            "name": "Evelyn",    
-            "github": "evelyneee",
-            "desc": "ElleKit"
-        },
-        {
-            "name": "sbingner",    
-            "github": "sbingner",
-            "desc": "Substitute"
-        },
-        {
-            "name": "raspberry",    
-            "github": "raspberryenvoie",
-            "desc": "odysseyn1x"
-        },
-        {
-            "name": "asineth0",    
-            "github": "asineth0",
-            "desc": "checkn1x"
-        },
-        {
-            "name": "opa334",    
-            "github": "opa334",
-            "desc": "cfprefs hook"
-        },
-        {
-            "name": "Amy While",    
-            "github": "elihwyma",
-            "desc": "Sileo & Pogo"
-        },
-        {
-            "name": "Zebra",    
-            "github": "zbrateam",
-            "desc": "Zebra"
-        }
-    ],
-    "translations": [
-        {
-            "name": "hg13",
-            "github": "hg13bs",
-            "lang": "Arabic"
-        },
-        {
-            "name": "Stereo.Luigi",
-            "github": "stereoDotLuigi",
-            "lang": "Turkish"
-        },
-        {
-            "name": "Genesis",
-            "github": "0x6ff",
-            "lang": "Polish"
-        },
-        {
-            "name": "Nick Chan",
-            "github": "asdfugil",
-            "lang": "Chinese (Traditional)"
-        },
-        {
-            "name": "kok3shidoll",
-            "github": "kok3shidoll",
-            "lang": "Japanese"
-        },
-        {
-            "name": "a slow audi r8",
-            "github": "afastaudir8",
-            "lang": "French"
-        },
-        {
-            "name": "Lost",
-            "github": "lostfnm",
-            "lang": "German"
-        },
-        {
-            "name": "xanti",
-            "github": "xantiago0",
-            "lang": "Spanish & German"
-        },
-        {
-            "name": "Arex",
-            "github": "TheArexH4CKER",
-            "lang": "Hungarian"
-        },
-        {
-            "name": "Samara",
-            "github": "ssalggnikool",
-            "lang": "LOLCat"
-        },
-        {
-            "name": "Nebula",
-            "github": "itsnebulalol",
-            "lang": "Pirate English"
-        },
-        {
-            "name": "Ainara",
-            "github": "ainaracatgirl",
-            "lang": "Catalan"
-        },
-        {
-            "name": "Saraaaa",
-            "github": "Saraaa2103",
-            "lang": "Vietnamese"
-        },
-        {
-            "name": "Gamono",
-            "github": "gamono23",
-            "lang": "Russian"
-        },
-        {
-            "name": "Mac",
-            "github": "itsmaclol",
-            "lang": "Albanian"
-        },
-        {
-            "name": "thepyrite",
-            "github": "thepyrite",
-            "lang": "Persian"
-        },
-        {
-            "name": "pythonplayer123",
-            "github": "junepark678",
-            "lang": "Korean"
+            "name": "Translations",
+            "data": [
+                {
+                    "name": "hg13",
+                    "github": "hg13bs",
+                    "desc": "Arabic"
+                },
+                {
+                    "name": "Stereo.Luigi",
+                    "github": "stereoDotLuigi",
+                    "desc": "Turkish"
+                },
+                {
+                    "name": "Genesis",
+                    "github": "0x6ff",
+                    "desc": "Polish"
+                },
+                {
+                    "name": "Nick Chan",
+                    "github": "asdfugil",
+                    "desc": "Chinese (Traditional)"
+                },
+                {
+                    "name": "kok3shidoll",
+                    "github": "kok3shidoll",
+                    "desc": "Japanese"
+                },
+                {
+                    "name": "a slow audi r8",
+                    "github": "afastaudir8",
+                    "desc": "French"
+                },
+                {
+                    "name": "Lost",
+                    "github": "lostfnm",
+                    "desc": "German"
+                },
+                {
+                    "name": "xanti",
+                    "github": "xantiago0",
+                    "desc": "Spanish & German"
+                },
+                {
+                    "name": "Arex",
+                    "github": "TheArexH4CKER",
+                    "desc": "Hungarian"
+                },
+                {
+                    "name": "Samara",
+                    "github": "ssalggnikool",
+                    "desc": "LOLCat"
+                },
+                {
+                    "name": "Nebula",
+                    "github": "itsnebulalol",
+                    "desc": "Pirate English"
+                },
+                {
+                    "name": "Ainara",
+                    "github": "ainaracatgirl",
+                    "desc": "Catalan"
+                },
+                {
+                    "name": "Saraaaa",
+                    "github": "Saraaa2103",
+                    "desc": "Vietnamese"
+                },
+                {
+                    "name": "Gamono",
+                    "github": "gamono23",
+                    "desc": "Russian"
+                },
+                {
+                    "name": "Mac",
+                    "github": "itsmaclol",
+                    "desc": "Albanian"
+                },
+                {
+                    "name": "thepyrite",
+                    "github": "thepyrite",
+                    "desc": "Persian"
+                },
+                {
+                    "name": "pythonplayer123",
+                    "github": "junepark678",
+                    "desc": "Korean"
+                }
+            ]
         }
     ]
 }

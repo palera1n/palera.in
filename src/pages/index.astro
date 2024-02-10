@@ -82,32 +82,33 @@ import credits from '../lib/credits.json';
 		</div>
 	</div>	
 
-	<!-- Our team section -->
-	<div class="bg-gradient-to-b to-gray-100 dark:to-gray-900 from-gray-300 dark:from-gray-800 relative">
-		<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-			<h1 class="text-3xl font-bold text-gray-800 dark:text-white text-center" style="margin-top: -80px;">Credits</h1>
-			<p class="text-center text-gray-600 dark:text-gray-300 mt-2 text-lg">We worked hard together to make palera1n possible :)</p>
-			<div class="mt-12">
-				{credits.credits.map((credit: any) => {
-					return (
-						<a href={`https://github.com/${credit.github}`}>
-							<div class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-full p-2 flex flex-row items-center mb-4">
-								<div class="mr-2">
-									<img class="object-center object-cover rounded-full h-12 w-12" src={`https://github.com/${credit.github}.png`} alt="photo">
-								</div>
-								<div>
-									<p class="text-base text-gray-800 dark:text-white font-bold mb-1">{credit.name}</p>
-									<p class="text-sm text-gray-800 dark:text-white font-normal">{credit.desc}</p>
-								</div>
-							</div>
-						</a>
-					)
-				})}
-			</div>
-			<a href="/other-credits" class="flex items-center mt-10 justify-center">
-				<Icon pack="mdi" name="open-in-new" class="fill-gray-800 h-[1.4em] md:mr-2" />
-				<h5 class="text-1xl font-bold text-black dark:text-white cursor-pointer"> Other Credits</h5>
-			</a>
-		</div>
-	</div>
+<!-- Our team section -->
+<div class="bg-gradient-to-b to-gray-100 dark:to-gray-900 from-gray-300 dark:from-gray-800 relative">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-white text-center" style="margin-top: -80px;">Credits</h1>
+        <p class="text-center text-gray-600 dark:text-gray-300 mt-2 text-lg">We worked hard together to make palera1n possible :)</p>
+        <div class="mt-12">
+            {credits.sections.find(section => section.name === "Credits").data.map((credit: any) => {
+                return (
+                    <a href={`https://github.com/${credit.github}`}>
+                        <div class="bg-gray-400 dark:bg-gray-600 border-2 border-gray-500 dark:border-gray-400 rounded-full p-2 flex flex-row items-center mb-4">
+                            <div class="mr-2">
+                                <img class="object-center object-cover rounded-full h-12 w-12" src={`https://github.com/${credit.github}.png`} alt="photo">
+                            </div>
+                            <div>
+                                <p class="text-base text-gray-800 dark:text-white font-bold mb-1">{credit.name}</p>
+                                <p class="text-sm text-gray-800 dark:text-white font-normal">{credit.desc}</p>
+                            </div>
+                        </div>
+                    </a>
+                );
+            })}
+        </div>
+        <a href="/other-credits" class="flex items-center mt-10 justify-center">
+            <Icon pack="mdi" name="open-in-new" class="fill-gray-800 h-[1.4em] md:mr-2" />
+            <h5 class="text-1xl font-bold text-black dark:text-white cursor-pointer"> Other Credits</h5>
+        </a>
+    </div>
+</div>
+
 </Layout>
