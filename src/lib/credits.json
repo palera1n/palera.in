@@ -131,87 +131,77 @@
                 {
                     "name": "hg13",
                     "github": "hg13bs",
-                    "desc": "Arabic"
+                    "lang": "Arabic"
                 },
                 {
                     "name": "Stereo.Luigi",
                     "github": "stereoDotLuigi",
-                    "desc": "Turkish"
+                    "lang": "Turkish"
                 },
                 {
                     "name": "Genesis",
                     "github": "0x6ff",
-                    "desc": "Polish"
+                    "lang": "Polish"
                 },
                 {
                     "name": "Nick Chan",
                     "github": "asdfugil",
-                    "desc": "Chinese (Traditional)"
+                    "lang": "Chinese (Traditional)"
                 },
                 {
                     "name": "kok3shidoll",
                     "github": "kok3shidoll",
-                    "desc": "Japanese"
+                    "lang": "Japanese"
                 },
                 {
                     "name": "a slow audi r8",
                     "github": "afastaudir8",
-                    "desc": "French"
+                    "lang": "French"
                 },
                 {
                     "name": "Lost",
                     "github": "lostfnm",
-                    "desc": "German"
+                    "lang": "German"
                 },
                 {
                     "name": "xanti",
                     "github": "xantiago0",
-                    "desc": "Spanish & German"
+                    "lang": "Spanish & German"
                 },
                 {
                     "name": "Arex",
                     "github": "TheArexH4CKER",
-                    "desc": "Hungarian"
-                },
-                {
-                    "name": "Samara",
-                    "github": "ssalggnikool",
-                    "desc": "LOLCat"
-                },
-                {
-                    "name": "Nebula",
-                    "github": "itsnebulalol",
-                    "desc": "Pirate English"
+                    "lang": "Hungarian"
                 },
                 {
                     "name": "Ainara",
                     "github": "ainaracatgirl",
-                    "desc": "Catalan"
+                    "lang": "Catalan"
                 },
                 {
                     "name": "Saraaaa",
                     "github": "Saraaa2103",
-                    "desc": "Vietnamese"
+                    "lang": "Vietnamese"
                 },
                 {
                     "name": "Gamono",
                     "github": "gamono23",
-                    "desc": "Russian"
+                    "lang": "Russian"
                 },
                 {
                     "name": "Mac",
                     "github": "itsmaclol",
-                    "desc": "Albanian"
+                    "lang": "Albanian"
                 },
                 {
                     "name": "thepyrite",
                     "github": "thepyrite",
-                    "desc": "Persian"
+                    "lang": "Persian"
                 },
                 {
                     "name": "pythonplayer123",
                     "github": "junepark678",
-                    "desc": "Korean"
+                    "lang": "Korean"
                 }
             ]
         }
