@@ -1,7 +1,7 @@
 {
     "sections": [
         {
-            "name": "Credits",
+            "name": "Made By",
             "data": [
                 {
                     "name": "Nick Chan",
@@ -59,14 +59,9 @@
                     "desc": "loader Legacy"
                 },
                 {
-                    "name": "pythonplayer123",
-                    "github": "junepark678",
-                    "desc": "Contributions"
-                },
-                {
                     "name": "Alexia",
                     "github": "0xallie",
-                    "desc": "Various Contributions"
+                    "desc": "Contributions"
                 },
                 {
                     "name": "tihmstar",
@@ -76,12 +71,12 @@
                 {
                     "name": "libimobiledevice",
                     "github": "libimobiledevice",
-                    "desc": "libimobiledevice"
+                    "desc": ""
                 },
                 {
                     "name": "checkra1n",
                     "github": "checkra1n",
-                    "desc": "checkra1n 1337.2"
+                    "desc": "1337"
                 },
                 {
                     "name": "Procursus",
@@ -116,7 +111,7 @@
                 {
                     "name": "Amy While",
                     "github": "elihwyma",
-                    "desc": "Sileo & Pogo"
+                    "desc": "Sileo"
                 },
                 {
                     "name": "Zebra",
@@ -142,16 +137,6 @@
                     "name": "Genesis",
                     "github": "0x6ff",
                     "desc": "Polish"
-                },
-                {
-                    "name": "Nick Chan",
-                    "github": "asdfugil",
-                    "desc": "Chinese (Traditional)"
-                },
-                {
-                    "name": "kok3shidoll",
-                    "github": "kok3shidoll",
-                    "desc": "Japanese"
                 },
                 {
                     "name": "a slow audi r8",
@@ -199,7 +184,7 @@
                     "desc": "Persian"
                 },
                 {
-                    "name": "pythonplayer123",
+                    "name": "June",
                     "github": "junepark678",
                     "desc": "Korean"
                 }

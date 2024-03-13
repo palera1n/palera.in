@@ -1,0 +1,97 @@
+---
+import Tabs from "../download/Tabs.astro";
+---
+<style>
+    .hero-container {
+        position: relative;
+        height: 20vh; /* Default height */
+        overflow: hidden;
+        border-bottom: 0.6px solid #4d4d4d;
+    }
+
+    @media screen and (max-width: 767px) {
+        .hero-container {
+            height: 30vh;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    .hero-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("/assets/appbackgrounds/p1splash222.png")
+            center/cover no-repeat;
+        opacity: 1;
+        z-index: -1;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero-container::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        bottom: 0;
+        background: linear-gradient(
+            to top,
+            rgba(39, 39, 39, 0.9),
+            transparent
+        );
+        z-index: -1;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        max-width: 900px;
+        opacity: 0.57;
+    }
+
+    @media screen and (max-width: 767px) {
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero-content p {
+            font-size: 0.8rem;
+        }
+    }
+
+    @keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+</style>
+
+<astro-block>
+	<div class="hero-container">
+		<div class="hero-content">
+			<main>
+                <slot/>
+            </main>
+		</div>
+	</div>
+</astro-block>
