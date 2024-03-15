@@ -1,6 +1,8 @@
 ---
 import { MAIN_SOURCE_CODE } from "../scripts/constants";
 import { MAIN_TWITTE_LINK } from "../scripts/constants";
+import { MAIN_MASTOD_LINK } from "../scripts/constants";
+import { MAIN_REPO_SOURCE } from "../scripts/constants";
 ---
 
 <style>
@@ -36,12 +38,15 @@ import { MAIN_TWITTE_LINK } from "../scripts/constants";
     <div class="header-container">
         <div class="header-icons"></div>
 
-        <div class="header-icons">
-            <a href={ MAIN_SOURCE_CODE }>
-                <img src="assets/svg/github_w.svg" alt="GitHub Icon">
+        <div class="header-icons" style="margin-top: 8px;">
+            <a href={ MAIN_REPO_SOURCE }>
+                <img src="assets/svg/sileo.svg" alt="Sileo Repo Icon" />
+            </a>
+            <a style="margin-left: 20px;" href={ MAIN_SOURCE_CODE }>
+                <img src="assets/svg/github_w.svg" alt="GitHub Icon" />
             </a>
             <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
-                <img src="assets/svg/twitter_w.svg" alt="Twitter Icon">
+                <img src="assets/svg/twitter_w.svg" alt="Twitter Icon" />
             </a>
         </div>
     </div>
