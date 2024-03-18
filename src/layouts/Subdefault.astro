@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-import Subheader from '../components/Subheader.astro';
+import Subheader from '../components/sub/Subheader.astro';
 import Head from '../components/Head.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -13,10 +13,8 @@ import Footer from '../components/Footer.astro';
     </head>
 
     <body class="bg-black text-white">
-        <Subheader/>
         <main>
             <slot/>
         </main>
-        <Footer/>
     </body>
 </html>

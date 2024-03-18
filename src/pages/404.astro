@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Subdefault.astro";
+import "../components/pagestyle.css";
+---
+
+<Layout>
+    <style>
+        .page-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .cat-image {
+            width: 400px;
+            margin-right: 20px;
+            border: 2px dotted white;
+            padding: 15px;
+        }
+    </style>
+
+    <div class="page-center">
+        <div class="center-text">
+            <div>
+                <center>
+                    <p>Very good kitty!</p>
+                    <img style="margin-bottom: 20px" src="../../public/assets/cat.png" alt="Cat Image" class="cat-image"/>
+                    <h1>404</h1>
+                    <p>Page Not Found</p>
+                    <a href="/">>> Go Back to palera1n</a>
+                </center>
+            </div>
+        </div>
+    </div>
+</Layout>
