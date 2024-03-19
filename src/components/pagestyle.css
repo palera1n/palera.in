@@ -23,6 +23,15 @@
     animation: fadeIn 1s ease-in-out;
 }
 
+.link-normal {
+    display: block;
+    opacity: 1;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
 /* Image modifications */
 
 .img-container {
@@ -61,6 +70,12 @@ h2 {
     justify-content: center;
 }
 
+h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 bold {
     font-weight: bold;
 }
@@ -91,6 +106,17 @@ p {
     background-color: #151515;
 }
 
+.hyper {
+    background-color: #333e49;
+    background-image: url('assets/chevron.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 9px auto;
+    padding-right: 10px;
+    background-origin: content-box;
+    color: #87c3ff;
+}
+
 .alert-box {
     overflow: auto;
     padding: 1rem 1rem 1rem 1rem;
@@ -116,4 +142,22 @@ a:hover {
 
 a:visited {
     color: #c28df6;
+}
+
+.clickable-button {
+    display: inline-block;
+    padding: 10px 40px 10px 20px;
+    border-radius: 20px;
+    background-color: #151515;
+    text-decoration: none;
+    font-size: 15px;
+    background-image: url('assets/chevron.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 7px auto;
+    background-origin: padding-box;
+}
+
+.clickable-button:hover {
+    background-color: #242424;
 }
