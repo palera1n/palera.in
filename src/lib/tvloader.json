@@ -36,7 +36,13 @@
     "assets":[
         {
             "label": "Rootful",
-            "repositories": [ ],
+            "repositories": [
+                {
+                    "uri": "https://repo.palera.in",
+                    "suite": "./",
+                    "component": ""
+                }
+            ],
             "packages": [
                 "libkrw0-tfp0"
             ]
