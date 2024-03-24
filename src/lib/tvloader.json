@@ -41,6 +41,11 @@
                     "uri": "https://repo.palera.in",
                     "suite": "./",
                     "component": ""
+                },
+                {
+                    "uri": "https://repo.thanos.lol/tv",
+                    "suite": "./",
+                    "component": ""
                 }
             ],
             "packages": [
