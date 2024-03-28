@@ -23,11 +23,11 @@
             "label": "Rootful",
             "items": [
                 {
-                    "name": "Spartan",
-                    "uri": "https://github.com/WhitetailAni/Spartan/releases/download/1.0.0RC7-nightly-20240113105525/com.whitetailani.spartan_1.0.0-RC7-nightly-20240113105525_appletvos-arm64.deb",
-                    "icon": "https://github.com/WhitetailAni/Spartan/blob/1.0.0RC3/Spartan/Assets.xcassets/App%20Icon%20&%20Top%20Shelf%20Image.brandassets/Top%20Shelf%20Image.imageset/ThisIsSparta4KThin.png?raw=true",
+                    "name": "PurePKG",
+                    "uri": "https://github.com/Lrdsnow/PurePKG/releases/latest/download/uwu.lrdsnow.purepkg_appletvos-arm64.deb",
+                    "icon": "https://github.com/Lrdsnow/PurePKG/raw/215b3f4b0b3c86a7637d8013305c58da9d08d4a8/PurePKG/Assets.xcassets/AppIcon.appiconset/Untitled drawing-29-2.png",
                     "filePaths": [
-                        "/Applications/Spartan.app"
+                        "/Applications/PurePKG.app"
                     ]
                 }
             ]
@@ -46,7 +46,13 @@
                     "uri": "https://repo.thanos.lol/tv",
                     "suite": "./",
                     "component": ""
+                },
+                {
+                    "uri": "https://lrdsnow.github.io/PurePKG",
+                    "suite": "./",
+                    "component": ""
                 }
+
             ],
             "packages": [
                 "libkrw0-tfp0"
