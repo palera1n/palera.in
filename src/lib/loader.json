@@ -4,16 +4,16 @@
             "label": "Rootful",
             "items": [
                 {
+                    "cfver": "1700",
+                    "uri": "https://static.palera.in/bootstrap-1700.tar.zst"
+                },
+                {
                     "cfver": "1800",
                     "uri": "https://static.palera.in/bootstrap-1800.tar.zst"
                 },
                 {
                     "cfver": "1900",
                     "uri": "https://static.palera.in/bootstrap-1900.tar.zst"
-                },
-                {
-                    "cfver": "2000",
-                    "uri": ""
                 }
             ]
         },
