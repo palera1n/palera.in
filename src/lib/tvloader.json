@@ -4,6 +4,10 @@
             "label": "Rootful",
             "items": [
                 {
+                    "cfver": "1700",
+                    "uri": "https://static.palera.in/tvbootstrap-1700.tar.zst"
+                },
+                {
                     "cfver": "1800",
                     "uri": "https://static.palera.in/tvbootstrap-1800.tar.zst"
                 },
