@@ -59,7 +59,7 @@
 
             ],
             "packages": [
-                 "libkrw0-tfp0", "autosign", "ellekit", "ldid"
+                 "libkrw0-tfp0", "autosign"
             ]
         }
     ]
