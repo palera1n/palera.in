@@ -107,6 +107,11 @@
                     "uri": "https://repo.palera.in",
                     "suite": "./",
                     "component": ""
+                },
+                {
+                    "uri": "https://ellekit.space",
+                    "suite": "./",
+                    "component": ""
                 }
             ],
             "packages": [
