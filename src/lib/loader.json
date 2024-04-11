@@ -14,6 +14,10 @@
                 {
                     "cfver": "1900",
                     "uri": "https://static.palera.in/bootstrap-1900.tar.zst"
+                },
+                {
+                    "cfver": "2000",
+                    "uri": "https://static.palera.in/bootstrap-2000.tar.zst"
                 }
             ]
         },
