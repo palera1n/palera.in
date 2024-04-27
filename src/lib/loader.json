@@ -137,7 +137,7 @@
                 }
             ],
             "packages": [
-                "libkrw0-tfp0"
+                "libkrw0-tfp0", "dhinakg-keyring"
             ]
         }
     ]
