@@ -2,7 +2,7 @@
     "min_loader_version": "2.1",
     "palera1n_version_with_min_loader": "2.0",
     "min_bridge_bootstrapper_version": "1.0",
-    "footer_notice": "This is a first run :o",
+    "footer_notice": "Be sure to report any issues at https://github.com/palera1n/palera1n/issues!",
     "contents": [
         {
             "platform": 2,
