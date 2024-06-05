@@ -78,7 +78,7 @@
                         "uri": "https://static.palera.in/bootstraps/1800/bootstrap-iphoneos-arm64.tar.zst",
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/1800/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1800/libkrw0_1.1.1_iphoneos-arm64.deb"
+                            "https://static.palera.in/bootstraps/1800/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
                         ]
                     },
                     {
@@ -86,7 +86,7 @@
                         "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1900/libkrw0_1.1.1_iphoneos-arm64.deb"
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
                         ]
                     }
                 ],
