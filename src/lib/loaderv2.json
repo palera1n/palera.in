@@ -178,7 +178,7 @@
                             "https://static.palera.in/bootstraps/appletvos-arm64/3000/lrdsnow-keyring_2024.03.28_all.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/3000/ellekit_1.1.2-palera1n_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/3000/ldid_2.1.5-procursus7_appletvos-arm64.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/libkrw0-tfp0_1.1.1-2_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/3000/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb"
                         ]
                     }
