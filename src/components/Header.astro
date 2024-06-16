@@ -2,25 +2,26 @@
 import { MAIN_SOURCE_CODE } from "../scripts/constants";
 import { MAIN_TWITTE_LINK } from "../scripts/constants";
 import { MAIN_MASTOD_LINK } from "../scripts/constants";
-import { MAIN_REPO_SOURCE } from "../scripts/constants";
+import { MAIN_DISCOR_LINK } from "../scripts/constants";
 ---
 
 <style>
     .header-container {
         color: #fff;
-        font-size: 16px;
-        max-width: 750px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: transparent;
+        background-color: #1f1f21;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        position: absolute;
-        width: 100%;
-        z-index: 1000;
-        left: 50%;
-        transform: translateX(-50%);
+        height: 56px;
+    }
+
+    .header-content {
+        padding-inline: 20px;
+        width: 800px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .header-icons {
@@ -36,15 +37,22 @@ import { MAIN_REPO_SOURCE } from "../scripts/constants";
 
 <header>
     <div class="header-container">
-        <div class="header-icons"></div>
-
-        <div class="header-icons" style="margin-top: 8px;">
-            <a href={ MAIN_SOURCE_CODE }>
-                <img src="assets/svg/github_w.svg" alt="GitHub Icon" />
-            </a>
-            <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
-                <img src="assets/svg/twitter_w.svg" alt="Twitter Icon" />
-            </a>
+        <div class="header-content">
+            <div></div>
+            <div class="header-icons">
+                <a href={ MAIN_SOURCE_CODE }>
+                    <img src="assets/svg/github_w.svg" alt="GitHub Icon" />
+                </a>
+                <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
+                    <img src="assets/svg/discord_w.svg" alt="Twitter Icon" />
+                </a>
+                <a style="margin-left: 20px;" href={ MAIN_MASTOD_LINK }>
+                    <img src="assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
+                </a>
+                <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
+                    <img src="assets/svg/twitter_w.svg" alt="Twitter Icon" />
+                </a>
+            </div>
         </div>
     </div>
 </header>
