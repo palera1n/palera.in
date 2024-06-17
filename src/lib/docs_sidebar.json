@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Getting Started",
+        "children": [
+            {
+                "name": "Intro",
+                "url": "/docs/intro"
+            },
+            {
+                "name": "Installation",
+                "url": "/docs/installation"
+            }
+        ]
+    },
+    {
+        "name": "Reference",
+        "children": [
+            {
+                "name": "Compatibility Chart",
+                "url": "/docs/compatibility-chart"
+            },
+            {
+                "name": "palera1n CLI Arguments",
+                "url": "/docs/cli-args"
+            }
+        ]
+    }
+]

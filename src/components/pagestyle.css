@@ -16,5 +16,24 @@ body {
 }
 
 .coolshit:visited {
-    color: #a226af;
+    color: #f6a1ff;
+}
+
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    border-right: 1px solid #404040;
+}
+
+.docs-content-container {
+    padding-left: 300px;
+    padding-top: 56px;
+}
+
+.docs-content {
+    padding: 2rem;
 }

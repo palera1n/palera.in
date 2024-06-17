@@ -3,6 +3,8 @@ import { MAIN_SOURCE_CODE } from "../scripts/constants";
 import { MAIN_TWITTE_LINK } from "../scripts/constants";
 import { MAIN_MASTOD_LINK } from "../scripts/constants";
 import { MAIN_DISCOR_LINK } from "../scripts/constants";
+
+const { showNavbar } = Astro.props;
 ---
 
 <style>
@@ -16,8 +18,9 @@ import { MAIN_DISCOR_LINK } from "../scripts/constants";
     }
 
     .header-content {
-        padding-inline: 20px;
-        width: 800px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -27,30 +30,67 @@ import { MAIN_DISCOR_LINK } from "../scripts/constants";
     .header-icons {
         display: flex;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .header-icons img {
         width: 27px;
         height: auto;
     }
+
+
+.navbar-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.5rem;
+}
+
+.navbar-link h1 {
+    font-size: 24px;
+    display: inline;
+        padding-right: 0.5rem;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+        font-size: 24px;
+}
+
+.header-fixed {
+    position: fixed;
+    width: 100vw;
+}
 </style>
 
 <header>
-    <div class="header-container">
+    <div class={"header-container" + (showNavbar ? " header-fixed" : "")}>
         <div class="header-content">
-            <div></div>
+            <div class="header-content">
+                { showNavbar && <div class="navbar-content">
+                    <img class="navbar-logo" src="/favicons/128@2x.png" alt="palera1n logo" />
+                    <a href="/" class="navbar-link"><h1>palera1n</h1>docs</a>
+                </div> }
+            </div>
             <div class="header-icons">
                 <a href={ MAIN_SOURCE_CODE }>
-                    <img src="assets/svg/github_w.svg" alt="GitHub Icon" />
+                    <img src="/assets/svg/github_w.svg" alt="GitHub Icon" />
                 </a>
                 <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
-                    <img src="assets/svg/discord_w.svg" alt="Twitter Icon" />
+                    <img src="/assets/svg/discord_w.svg" alt="Twitter Icon" />
                 </a>
                 <a style="margin-left: 20px;" href={ MAIN_MASTOD_LINK }>
-                    <img src="assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
+                    <img src="/assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
                 </a>
                 <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
-                    <img src="assets/svg/twitter_w.svg" alt="Twitter Icon" />
+                    <img src="/assets/svg/twitter_w.svg" alt="Twitter Icon" />
                 </a>
             </div>
         </div>

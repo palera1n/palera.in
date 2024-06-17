@@ -1,0 +1,26 @@
+---
+import Header from '../components/Header.astro';
+import Head from '../components/Head.astro';
+import Footer from '../components/Footer.astro';
+import DocsSidebar from '../components/DocsSidebar.astro'
+import "../components/pagestyle.css";
+import "./docs.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Head/>
+    </head>
+
+    <body>
+        <Header showNavbar={true}/>
+        <DocsSidebar />
+        <div class="docs-content-container">
+            <main class="docs-content">
+                <slot/>
+                <Footer/>
+            </main>
+        </div>
+    </body>
+</html>

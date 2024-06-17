@@ -3,7 +3,7 @@ import Layout from "../layouts/Default.astro";
 import "../components/pagestyle.css";
 ---
 
-<Layout>
+<Layout showNavbar={true}>
     <style>
         .page-center {
             display: flex;
@@ -32,10 +32,9 @@ import "../components/pagestyle.css";
             <div>
                 <center>
                     <p>Very good kitty!</p>
-                    <img style="margin-bottom: 20px" src="assets/cat.png" alt="Cat Image" class="cat-image"/>
+                    <img style="margin-bottom: 20px" src="/assets/cat.png" alt="Cat" class="cat-image"/>
                     <h1>404</h1>
                     <p>Page Not Found</p>
-                    <a class="clickable-button" href="/"> Go Back to palera1n</a>
                 </center>
             </div>
         </div>

@@ -2,6 +2,8 @@
 import Header from '../components/Header.astro';
 import Head from '../components/Head.astro';
 import Footer from '../components/Footer.astro';
+
+const { showNavbar } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,7 +13,7 @@ import Footer from '../components/Footer.astro';
     </head>
 
     <body>
-        <Header/>
+        <Header showNavbar={showNavbar} />
         <main>
             <slot/>
         </main>
