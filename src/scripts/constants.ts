@@ -3,6 +3,7 @@ export const MAIN_SOURCE_CODE = "https://github.com/palera1n/palera1n";
 export const APPL_SOURCE_CODE = "https://github.com/palera1n/loader";
 
 export const MAIN_GITHUB_LINK = "https://github.com/palera1n";
+export const MAIN_DONATE_LINK = "https://patreon.com/palera1n";
 export const MAIN_DISCOR_LINK = "https://dsc.gg/palera1n";
 export const MAIN_TWITTE_LINK = "https://twitter.com/palera1n";
 export const MAIN_MASTOD_LINK = "https://procursus.social/@palera1n";
