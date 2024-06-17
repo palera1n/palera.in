@@ -3,6 +3,7 @@ import { MAIN_SOURCE_CODE } from "../scripts/constants";
 import { MAIN_TWITTE_LINK } from "../scripts/constants";
 import { MAIN_MASTOD_LINK } from "../scripts/constants";
 import { MAIN_DISCOR_LINK } from "../scripts/constants";
+import { MAIN_DONATE_LINK } from "../scripts/constants";
 
 const { showNavbar } = Astro.props;
 ---
@@ -10,7 +11,7 @@ const { showNavbar } = Astro.props;
 <style>
     .header-container {
         color: #fff;
-        background-color: #1f1f21;
+        background-color: #18181a;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,14 +84,17 @@ const { showNavbar } = Astro.props;
                 <a href={ MAIN_SOURCE_CODE }>
                     <img src="/assets/svg/github_w.svg" alt="GitHub Icon" />
                 </a>
-                <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
-                    <img src="/assets/svg/discord_w.svg" alt="Twitter Icon" />
+                <a style="margin-left: 40px;" href={ MAIN_DISCOR_LINK }>
+                    <img src="assets/svg/discord_w.svg" alt="Twitter Icon" />
                 </a>
-                <a style="margin-left: 20px;" href={ MAIN_MASTOD_LINK }>
-                    <img src="/assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
+                <a style="margin-left: 40px;" href={ MAIN_MASTOD_LINK }>
+                    <img src="assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
                 </a>
-                <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
-                    <img src="/assets/svg/twitter_w.svg" alt="Twitter Icon" />
+                <a style="margin-left: 40px;" href={ MAIN_TWITTE_LINK }>
+                    <img src="assets/svg/twitter_w.svg" alt="Twitter Icon" />
+                </a>
+                <a style="margin-left: 40px;" href={ MAIN_DONATE_LINK }>
+                    <img src="assets/svg/heart_w.svg" alt="Patreon Icon" />
                 </a>
             </div>
         </div>
