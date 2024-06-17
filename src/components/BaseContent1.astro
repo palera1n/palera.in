@@ -78,6 +78,11 @@
         transform: rotate(-45deg);
     }
 
+    .vertical-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 </style>
 
@@ -86,10 +91,10 @@
     <div class="basecontainer">
 
         <div class="basecontainer2">
-            <div>
+            <div class="vertical-align">
                 <img src="/assets/examples/web_dropbear.png" class="baseimagecontainer" alt="Demonstration of running sw_vers and neofetch on an iPhone">
             </div>
-            <div>
+            <div class="vertical-align">
                 <h1>Gain access to your devices shell.</h1>
                 <h2>palera1n includes tools like dropbear (port 44), a rather (insecure) telnet option if specified, and a binpack with basic command line utilities.</h2>
                 <h1>Customize like never before.</h1>
