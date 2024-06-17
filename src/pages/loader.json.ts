@@ -1,5 +1,9 @@
 import loader from "../lib/loader.json";
 
-export async function get({ params, request }) {
-    return { body: JSON.stringify(loader) };
+export async function GET({ params, request }) {
+    return new Response(JSON.stringify(loader), {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
 }

@@ -1,5 +1,9 @@
-import credits from "../../lib/credits.json";
+import loader from "../../lib/credits.json";
 
-export async function get({ params, request }) {
-    return { body: JSON.stringify(credits) };
+export async function GET({ params, request }) {
+    return new Response(JSON.stringify(loader), {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
 }
