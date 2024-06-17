@@ -187,7 +187,7 @@
                     {
                         "name": "PurePKG",
                         "uri": "https://github.com/Lrdsnow/PurePKG/releases/latest/download/uwu.lrdsnow.purepkg_appletvos-arm64.deb",
-                        "icon": "https://github.com/Lrdsnow/PurePKG/raw/215b3f4b0b3c86a7637d8013305c58da9d08d4a8/PurePKG/Assets.xcassets/AppIcon.appiconset/Untitled%20drawing-29-2.png",
+                        "icon": "https://palera.in/assets-config/purepkg-tv.png",
                         "filePath": "/Applications/PurePKG.app"
                     }
                 ],
