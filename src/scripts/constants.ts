@@ -1,4 +1,4 @@
-export const SITE_SOURCE_CODE = "https://github.com/palera1n/website";
+export const SITE_SOURCE_CODE = "https://github.com/palera1n/palera.in";
 export const MAIN_SOURCE_CODE = "https://github.com/palera1n/palera1n";
 export const APPL_SOURCE_CODE = "https://github.com/palera1n/loader";
 
