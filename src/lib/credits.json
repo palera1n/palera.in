@@ -1,7 +1,7 @@
 {
     "sections": [
         {
-            "name": "Made By",
+            "name": "Developers",
             "data": [
                 {
                     "name": "Nick Chan",
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "name": "Thanks",
+            "name": "Thank You",
             "data": [
                 {
                     "name": "Nebula",
@@ -69,7 +69,7 @@
                     "desc": "jbinit v1"
                 },
                 {
-                    "name": "libimobiledevice",
+                    "name": "lmd",
                     "github": "libimobiledevice",
                     "desc": ""
                 },
@@ -114,14 +114,14 @@
                     "desc": "Sileo"
                 },
                 {
-                    "name": "Zebra",
+                    "name": "Zebra Team",
                     "github": "zbrateam",
                     "desc": "Zebra"
                 }
             ]
         },
         {
-            "name": "Translations",
+            "name": "Translations (App)",
             "data": [
                 {
                     "name": "hg13",

@@ -6,3 +6,15 @@ body {
     margin:0%;
 }
 
+.coolshit {
+    color: #e2962b;
+    text-decoration: none;
+}
+
+.coolshit:hover {
+    text-decoration: underline;
+}
+
+.coolshit:visited {
+    color: #a226af;
+}

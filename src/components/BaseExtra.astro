@@ -4,11 +4,7 @@
 
 <style>
     .baseextracontainer {
-         padding-inline: 20px;
-         max-width: 800px;
-         padding-bottom: 30px;
-         margin: 0 auto;
-         text-align: left;
+        background-color: #151517;
     }
  
     .baseextracontainer h1 {
@@ -23,26 +19,31 @@
     }
  
     .baseextracontainer2 {
-         display: block;
+         display: flex;
+         padding-inline: 20px;
+         max-width: 800px;
+         padding-bottom: 30px;
+         margin: 0 auto;
+         text-align: left;
     }
  
-    .baseimagecontainer {
-         width: 100%; 
-         height: 100%;
-         margin-left: 0; 
-         margin-right: 0;
+    .baseimagecontainer2 {
+        width: 150px; 
+        height: 250px;
+        display: none;
     }
  
     @media screen and (min-width: 800px) {
          .baseextracontainer2 {
              display: flex;
          }
-         .baseimagecontainer {
-             width: 250px; 
-             height: 100%;
-             margin-left: -30px; 
-             margin-right: 18px;
-         }
+         .baseimagecontainer2 {
+            display: block;
+            width: 250px; 
+            height: 410px;
+            margin-left: -30px; 
+            margin-right: 18px;
+        }
     }
  
      .button-container {
@@ -71,13 +72,34 @@
      .graph-icon {
          transform: rotate(-45deg);
      }
- 
+
  
  </style>
  
  <asdsadsad>
      <div class="baseextracontainer">
+        
         <div class="baseextracontainer2">
+
+            <div>
+                <img src="/assets/examples/web_iphone.png" class="baseimagecontainer2">
+            </div>
+
+            <div>
+                <h1>Default package managers come included inside of palera1n. Can be installed through the app.</h1>
+                <h2>Those package managers are <a class="coolshit" href="https://github.com/Sileo/Sileo" target="_blank">Sileo</a> & <a class="coolshit" href="https://github.com/zbrateam/Zebra" target="_blank">Zebra</a>.</h2>
+                
+                <h1>Multiple environments!</h1>
+                <h2>
+                    We provide and maintain two different environments you can choose from (iOS/iPadOS only).<br/><br/>
+                    - Rootless (the new default jailbreak on iOS 15.x+, used by many other jailbreaks such as Dopamine).<br/><br/>
+                    - Rootful (the classic jailbreak experience).<br/>
+                </h2>
+
+                <h1>palera1n is open source!</h1>
+                <h2>Source code can be found on the github organization <a class="coolshit" target="_blank" href="https://github.com/palera1n">here</a>!</h2>
+            </div>
+
         </div>
      </div>
  </asdsadsad>

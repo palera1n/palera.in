@@ -1,0 +1,62 @@
+---
+import "./pagestyle.css";
+const jsonData = await import('../lib/credits.json');
+const sections = jsonData.sections;
+---
+<style>
+  .normal {
+    padding-block: 1px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+
+  .credit-item {
+    padding: 12px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #151517;
+    border-radius:10px;
+  }
+
+  .credit-item img {
+    border-radius: 10%;
+    margin-right: 10px;
+  }
+ul {
+  padding-inline-start: 0;
+}
+
+</style>
+
+
+  <credits>
+<div style="background-color: #1f1f21;">
+    <div class="normal">
+      {sections.map((section, index) => {
+        return (
+          <div key={section.name}>
+            <h2>{section.name}</h2>
+            <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+              {section.data.map((item, itemIndex) => (
+                <li key={item.name} class="credit-item">
+                  <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
+                    <img src={`https://github.com/${item.github}.png`} alt={`${item.name}'s GitHub`} width="45" height="45" />
+                  </a>
+                  <div>
+                    <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
+                      {item.name}
+                    </a>
+                    <br/>
+                    {item.desc}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+  </credits>
+
