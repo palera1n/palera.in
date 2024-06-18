@@ -46,17 +46,17 @@
                 {
                     "name": "Nebula",
                     "github": "itsnebulalol",
-                    "desc": "palera1n Legacy"
+                    "desc": "palera1n 1.x"
                 },
                 {
                     "name": "Nathan",
                     "github": "verygenericname",
-                    "desc": "palera1n Legacy"
+                    "desc": "palera1n 1.x"
                 },
                 {
                     "name": "Lakhan Lothiyi",
                     "github": "llsc12",
-                    "desc": "loader Legacy"
+                    "desc": "palera1n 1.x"
                 },
                 {
                     "name": "Alexia",
@@ -69,9 +69,9 @@
                     "desc": "jbinit v1"
                 },
                 {
-                    "name": "lmd",
+                    "name": "libimobiledevice",
                     "github": "libimobiledevice",
-                    "desc": ""
+                    "desc": "libimobiledevice"
                 },
                 {
                     "name": "checkra1n",
@@ -96,12 +96,12 @@
                 {
                     "name": "raspberry",
                     "github": "raspberryenvoie",
-                    "desc": "odysseyn1x"
+                    "desc": "Odysseyn1x"
                 },
                 {
                     "name": "asineth0",
                     "github": "asineth0",
-                    "desc": "checkn1x"
+                    "desc": "Checkn1x"
                 },
                 {
                     "name": "opa334",
@@ -117,6 +117,11 @@
                     "name": "Zebra Team",
                     "github": "zbrateam",
                     "desc": "Zebra"
+                },
+                {
+                    "name": "lrdsnow",
+                    "github": "Lrdsnow",
+                    "desc": "purepkg"
                 }
             ]
         },

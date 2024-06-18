@@ -37,6 +37,9 @@ body {
 
 .docs-content {
     padding: 2rem 3rem;
+    padding: 2rem;
+    max-width: 730px;
+    margin: 0 auto;
 }
 
 html {

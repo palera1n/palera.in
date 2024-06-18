@@ -5,14 +5,13 @@
 }
 
 table {
-    border-radius: 8px;
-    background:#404040;
+    border-radius: 18px;
     margin: 2em 0;
 }
 
 td, th {
     padding: 1rem;
-    background: #24292e;
+    background: #1c1c1e;
 }
 
 p code {
@@ -36,8 +35,9 @@ blockquote {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     padding-left: 1.5rem;
-    border-left: 0.25em solid #808080;
-    background: #303030;
+    border: 0.11em solid #699fa7;
+    border-radius: 8px;
+    background: #202429;
 }
 blockquote:before {
     content: "";
