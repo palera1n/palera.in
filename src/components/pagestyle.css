@@ -28,8 +28,8 @@ body {
     bottom: 0;
     border-top: 1px solid #101010;
     z-index: 0;
-    overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
