@@ -28,7 +28,15 @@ body {
     bottom: 0;
     border-right: 1px solid #404040;
     z-index: 0;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .docs-content-container {
