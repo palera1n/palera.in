@@ -7,8 +7,16 @@
                 "url": "/docs/intro"
             },
             {
-                "name": "Installing palera1n",
-                "url": "/docs/installation"
+                "name": "Installing palera1n (macOS)",
+                "url": "/docs/get-started/installing-palera1n-macos"
+            },
+            {
+                "name": "Installing palera1n (Linux)",
+                "url": "/docs/get-started/installing-palera1n-linux"
+            },
+            {
+                "name": "Installing palera1n (Windows)",
+                "url": "/docs/get-started/installing-palera1n-windows"
             }
         ]
     },
@@ -17,8 +25,22 @@
         "children": [
             {
                 "name": "Compatibility Chart",
-                "url": "/docs/compatibility-chart"
+                "url": "/docs/reference/compatibility-chart"
+            },
+            {
+                "name": "Jailbreak Types",
+                "url": "/docs/reference/jailbreak-types"
+            },
+            {
+                "name": "Environment Types",
+                "url": "/docs/reference/environment-types"
             }
+        ]
+    },
+    {
+        "name": "Troubleshooting",
+        "children": [
+
         ]
     }
 ]

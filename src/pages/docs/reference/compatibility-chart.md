@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DocsLayout.astro
+layout: ../../../layouts/DocsLayout.astro
 title: Compatibility Chart
 ---
 
@@ -25,6 +25,8 @@ This page shows the compatible devices supported by palera1n.
 > Note that on `A11` (iPhone X, 8, 8 Plus), **you must disable your passcode while in the jailbroken state** (on iOS 16, you need to **reset your device** before proceeding with palera1n).
 
 ## Apple T2
+
+Some macbooks a
 
 | MacBook Pro               | iMac		             	| MacBook Air	          	| (i)Mac Pros             	| Other		              	|
 |-							|-							|-							|-							|-							|
