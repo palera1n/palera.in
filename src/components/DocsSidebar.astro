@@ -8,7 +8,7 @@ const pathname = Astro.url.pathname;
 <aside class="sidebar">
     { sidebarContents.map(s => {
         return <div class="sidebar-category">
-            <div class="sidebar-category-title">{ s.name }</div>
+            <div class="sidebar-category-title" onclick="toggleCategory(this)">{ s.name }</div>
             <div class="sidebar-category-items">
                 { s.children.map(c => {
                     return <a class={"sidebar-item" + (Astro.url.pathname == c.url ? " sidebar-item-active" : "")} href={c.url}>

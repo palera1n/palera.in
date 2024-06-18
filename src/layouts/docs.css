@@ -1,27 +1,46 @@
+/* 
+```
+sh
+```
+*/
+
 .astro-code {
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid #404040;
+    border: 1px solid #4a4d56;
 }
 
-table {
+/* 
+| Table | eow |
+| ----- | --- |
+*/
+
+.docs-content table {
     border-radius: 18px;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
-td, th {
+.docs-content td, th {
     padding: 1rem;
-    background: #1c1c1e;
+    background: #18181a;
 }
 
-p code {
+/* 
+`sh`
+*/
+
+.docs-content p code {
     padding: 0.1rem 0.3rem;
     border-radius: 2px;
-    border: 1px solid #404040;
+    border: 1px solid #2d2d2d;
     color: #79B8FF;
 }
 
-blockquote {
+/* 
+>
+*/
+
+.docs-content blockquote {
     margin-inline: 0;
     margin-inline-start: 0;
     margin-block-start: 0;
@@ -31,14 +50,16 @@ blockquote {
     -webkit-margin-before: 0;
     -webkit-margin-end: 0;
     margin-top: 1rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
     margin-bottom: 1rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     padding-left: 1.5rem;
-    border: 0.11em solid #699fa7;
-    border-radius: 8px;
-    background: #202429;
+    border-left: 0.3em solid #333643;
+    background: #15171a;
 }
+
 blockquote:before {
     content: "";
     width: 0.25em;
@@ -58,11 +79,129 @@ blockquote:before {
     padding-right: 0.5em;
 }
 
-*:hover > .anchor {
+.docs-content *:hover > .anchor {
     opacity: 1
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* Basic text */
+
+.docs-content h1{
     position: relative;
     scroll-margin-top: 56px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid #3a3c46;
+}
+
+.docs-content h2 {
+    position: relative;
+    scroll-margin-top: 56px;
+    margin-top: 30px;
+    padding-bottom: 3px;
+    font-weight: 500;
+}
+
+
+.docs-content h3,.docs-content h4,.docs-content h5,.docs-content h6 {
+    position: relative;
+    scroll-margin-top: 56px;
+}
+
+.docs-content p {
+    line-height: 1.6;
+    color: #b8bdc5;
+}
+
+/* 
+<p class="markdown-{something}">
+*here be dragons*
+</p>
+*/
+
+.markdown-warning {
+    border-left: 4px solid #ffa726;
+    background-color: #3f3b35;
+    padding: 1em;
+    margin: 1em 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #ecc7b4;
+    font-family: Arial, sans-serif;
+}
+
+.markdown-warning p {
+    margin: 0;
+}
+
+.markdown-info {
+    border-left: 4px solid #268bff;
+    background-color: #35373f;
+    padding: 1em;
+    margin: 1em 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #b4c9ec;
+    font-family: Arial, sans-serif;
+}
+
+.markdown-info p {
+    margin: 0;
+}
+
+.markdown-tip {
+    border-left: 4px solid #26ff59;
+    background-color: #363f35;
+    padding: 1em;
+    margin: 1em 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #b4ecc0;
+    font-family: Arial, sans-serif;
+}
+
+.markdown-tip p {
+    margin: 0;
+}
+
+/* 
+---
+*/
+
+.docs-content hr {
+    border: none;
+    height: 3px;
+    background-color: #3a3c46;
+    margin: 1rem 0;
+}
+
+/* 
+image
+*/
+
+.docs-content img {
+    max-width: 20%;
+}
+
+/* 
+Links 
+*/
+
+.docs-content a {
+    color: #79B8FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.docs-content a:hover {
+    color: #ffa726;
+    text-decoration: underline;
+}
+
+.docs-content a:visited {
+    color: #b072d1;
+}
+
+.docs-content a:active {
+    color: #ff5722;
 }
