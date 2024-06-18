@@ -32,8 +32,11 @@ body {
 .docs-content-container {
     padding-left: 300px;
     padding-top: 56px;
+    background-color: #000000;
 }
 
 .docs-content {
     padding: 2rem;
+    max-width: 730px;
+    margin: 0 auto;
 }
