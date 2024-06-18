@@ -21,12 +21,13 @@ body {
 
 
 .sidebar {
-    position: fixed;
+    position: absolute;
     width: 300px;
     left: 0;
     top: 56px;
     bottom: 0;
     border-right: 1px solid #404040;
+    z-index: 0;
 }
 
 .docs-content-container {
@@ -35,5 +36,10 @@ body {
 }
 
 .docs-content {
-    padding: 2rem;
+    padding: 2rem 3rem;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }

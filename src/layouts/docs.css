@@ -44,3 +44,25 @@ blockquote:before {
     width: 0.25em;
     
 }
+
+.anchor {
+    color: #79B8FF;
+    text-decoration: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.25s;
+    padding-right: 0.5em;
+}
+
+*:hover > .anchor {
+    opacity: 1
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    scroll-margin-top: 56px;
+}
