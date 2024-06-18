@@ -3,11 +3,11 @@
         "name": "Getting Started",
         "children": [
             {
-                "name": "Intro",
+                "name": "Introduction",
                 "url": "/docs/intro"
             },
             {
-                "name": "Installation",
+                "name": "Installing palera1n",
                 "url": "/docs/installation"
             }
         ]
@@ -18,10 +18,6 @@
             {
                 "name": "Compatibility Chart",
                 "url": "/docs/compatibility-chart"
-            },
-            {
-                "name": "palera1n CLI Arguments",
-                "url": "/docs/cli-args"
             }
         ]
     }

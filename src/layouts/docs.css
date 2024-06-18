@@ -6,12 +6,12 @@
 
 table {
     border-radius: 18px;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 td, th {
     padding: 1rem;
-    background: #1c1c1e;
+    background: #18181a;
 }
 
 p code {

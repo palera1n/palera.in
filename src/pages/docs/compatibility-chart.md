@@ -7,7 +7,7 @@ title: Compatibility Chart
 
 This page shows the compatible devices supported by palera1n.
 
-## Mobile Devices & Tvs
+## Mobile Devices & TVs
 
 | iPhone(s)                 | iPad(s)                        		| iPod(s)   					| Apple TV(s) 					|
 |-							|-										|-								|-								|
