@@ -15,8 +15,8 @@
                 "url": "/docs/get-started/installing-palera1n-linux"
             },
             {
-                "name": "Installing palera1n (Windows)",
-                "url": "/docs/get-started/installing-palera1n-windows"
+                "name": "Installing palen1x (Windows)",
+                "url": "/docs/get-started/installing-palen1x-windows"
             },
             {
                 "name": "Post Install",
@@ -45,8 +45,12 @@
         "name": "Troubleshooting",
         "children": [
             {
-                "name": "Troubleshooting Steps",
+                "name": "General Troubleshooting",
                 "url": "/docs/troubleshoot/troubleshooting-steps"
+            },
+            {
+                "name": "Submit an Issue",
+                "url": "/docs/troubleshoot/submit-an-issue"
             }
         ]
     }

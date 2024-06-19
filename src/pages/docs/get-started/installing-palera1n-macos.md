@@ -7,11 +7,13 @@ title: Installing palera1n (macOS)
 This will guide you through the process of downloading the **latest** version of palera1n, and then using palera1n. If successful you should be able to jailbreak your device afterwards.
 
 ## Prerequisites
-- __[macOS](https://nodeca.github.io/pica/demo/)__ - Check the Compatibility Chart  for information on which macOS versions are recommended to use.
+- __[macOS](/docs/reference/compatibility-chart)__ - Check the Compatibility Chart  for information on which macOS versions are recommended to use.
 
-- __[Compatible checkm8 device](/docs/reference/compatibility-chart)__ - Check the Compatibility Chart for information on what devices are supported.
+> If you are using a computer with an **AMD Ryzen CPU**, you will likely run into issues. If you do run into issues, you should use a computer with an Intel CPU or Apple Silicon.
 
 - __[USB-A to lightning cable](/docs/reference/compatibility-chart)__ - Check the Compatibility Chart for information on what cables are recommended to use.
+
+- __[Compatible checkm8 device](/docs/reference/compatibility-chart)__ - Check the Compatibility Chart for information on what devices are supported.
 
 > On `A11 devices`, you must disable your passcode and will not be able to use your passcode, or other SEP functionality, until you boot into a stock iOS state. SEP functionality includes things such as a passcode, Face ID/Touch ID, and Apple Pay.<br/><br/>Additionally, if your device is an `A11 device on iOS 16` and you've set a passcode before, you will need to **erase all content and settings** in order to be able to jailbreak.
 
@@ -71,6 +73,9 @@ curl -LO <link to binary>
 # This will give it the necessary permissions to execute
 chmod +x /path/to/binary 
 ```
+
+> If you're not using curl to download, and rather would just click on the file and download through your browser, you would need to run `xattr -c /path/to/binary` as well as the chmod command so you are able to get through macOS's gatekeeper.
+
 If all goes well the binary should be able to be executed now.
 
 ## Using palera1n
@@ -114,13 +119,11 @@ If all goes well, **your device should enter DFU mode and start jailbreaking wit
 |Example of **palera1n** being used in the terminal|
 
 ## Troubleshooting
-
 <p class="markdown-info">
 You can find troubleshooting steps <a href="/docs/troubleshoot/troubleshooting-steps">step-by-step troubleshooting help</a>, this is in case you ever encounter more issues when trying to use palera1n.
 </p>
 
 ## Post Install
-
 <p class="markdown-tip">
 Post install information can be found <a href="/docs/get-started/post-install">here</a>.
 </p>
