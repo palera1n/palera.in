@@ -17,6 +17,10 @@
             {
                 "name": "Installing palera1n (Windows)",
                 "url": "/docs/get-started/installing-palera1n-windows"
+            },
+            {
+                "name": "Post Install",
+                "url": "/docs/get-started/post-install"
             }
         ]
     },
@@ -40,7 +44,10 @@
     {
         "name": "Troubleshooting",
         "children": [
-
+            {
+                "name": "Troubleshooting Steps",
+                "url": "/docs/troubleshoot/troubleshooting-steps"
+            }
         ]
     }
 ]

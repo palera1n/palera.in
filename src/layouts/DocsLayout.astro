@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Head from "../components/Head.astro";
 import Footer from "../components/Footer.astro";
 import DocsSidebar from "../components/DocsSidebar.astro";
+
 import "../components/pagestyle.css";
 import "./docs.css";
 ---
@@ -10,43 +11,20 @@ import "./docs.css";
 <!doctype html>
 <html lang="en">
     <head>
-        <Head />
+        <Head/>
     </head>
-
+    <script src="../scripts/scrolltotop.js"/>
     <body style="background-color: #101010;">
         <Header showNavbar={true} />
-        <DocsSidebar />
+        <DocsSidebar/>
         <div class="docs-content-container">
-            <main class="docs-content">
+            <main class="docs-content docs-stuff">
                 <slot />
-                <Footer />
+                <Footer/>
             </main>
         </div>
         <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
     </body>
+    
 </html>
 
-<script>
-    let mybutton = document.getElementById("scrollToTopBtn");
-    window.onscroll = function () { scrollFunction(); };
-
-    function scrollFunction() {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.opacity = "1";
-            mybutton.style.visibility = "visible";
-        } else {
-            mybutton.style.opacity = "0";
-            mybutton.style.visibility = "hidden";
-        }
-    }
-
-    mybutton.onclick = function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-</script>
