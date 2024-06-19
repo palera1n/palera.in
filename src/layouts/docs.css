@@ -90,10 +90,6 @@ sh
 */
 
 .docs-stuff blockquote {
-    margin-inline: 0;
-    margin-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
     -webkit-margin-start: 0;
     -webkit-margin-after: 0;
     -webkit-margin-before: 0;
@@ -102,6 +98,7 @@ sh
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
     margin-bottom: 1rem;
+    padding-right: 1rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     padding-left: 1.5rem;
@@ -254,4 +251,35 @@ Links
 
 .docs-stuff a:active {
     color: #ff5722;
+}
+
+.docs-stuff .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.docs-stuff .card {
+    background-color: #18181a;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    padding: 16px;
+}
+
+.docs-stuff .card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.docs-stuff .card-title {
+    margin-top: 8px;
+    color: #cbcbcb;
+    font-size: 26px;
+    text-align: center;
 }
