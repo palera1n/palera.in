@@ -17,7 +17,7 @@ import "./docs.css";
     <body style="background-color: #101010;">
         <Header showNavbar={true} showMenuIcon={true} />
         <DocsSidebar/>
-        <div class="docs-content-container">
+        <div class="docs-content-container" onclick="document.body.classList.remove('sidebar-open')">
             <main class="docs-content docs-stuff">
                 <slot />
                 <Footer/>
