@@ -5,6 +5,10 @@ title: Uninstalling palen1x (Windows)
 
 # Uninstalling palen1x (Windows)
 
+This guide assumes you have palen1x installed and have already booted it with a usb drive.
+
+After removing palera1n, there is a short guide to reformat the drive to its original state from before you tried to install palen1x.
+
 ## Removing palera1n
 
 Please select the environment type you want to remove.
