@@ -3,19 +3,28 @@ import sidebarContents from '../lib/docs_sidebar.json';
 import './sidebar.css';
 
 const pathname = Astro.url.pathname;
+
+function normalizePath(path) {
+    return path.replace(/\/+$/, '');
+}
+
+const normalizedPathname = normalizePath(pathname);
 ---
 
 <aside class="sidebar">
-    { sidebarContents.map(s => {
-        return <div class="sidebar-category">
-            <div class="sidebar-category-title" onclick="toggleCategory(this)">{ s.name }</div>
+    {sidebarContents.map(s => (
+        <div class="sidebar-category" key={s.name}>
+            <div class="sidebar-category-title" onclick="toggleCategory(this)">{s.name}</div>
             <div class="sidebar-category-items">
-                { s.children.map(c => {
-                    return <a class={"sidebar-item" + (Astro.url.pathname == c.url ? " sidebar-item-active" : "")} href={c.url}>
-                        { c.name }
-                    </a>
-                }) }
+                {s.children.map(c => {
+                    const normalizedUrl = normalizePath(c.url);
+                    return (
+                        <a class={"sidebar-item" + (normalizedPathname === normalizedUrl ? " sidebar-item-active" : "")} href={c.url} key={c.url}>
+                            {c.name}
+                        </a>
+                    );
+                })}
             </div>
         </div>
-    }) }
+    ))}
 </aside>

@@ -32,12 +32,11 @@ const { showNavbar } = Astro.props;
     .header-icons {
         display: flex;
         align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     .header-icons img {
-        width: 27px;
+        width: 22px;
         height: auto;
     }
 
@@ -49,13 +48,14 @@ const { showNavbar } = Astro.props;
 }
 
 .navbar-logo {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin-right: 0.5rem;
 }
 
 .navbar-link h1 {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 500;
     display: inline;
         padding-right: 0.5rem;
 }
@@ -63,7 +63,8 @@ const { showNavbar } = Astro.props;
 .navbar-link {
     color: white;
     text-decoration: none;
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: 300;
 }
 
 .header-fixed {
@@ -85,16 +86,16 @@ const { showNavbar } = Astro.props;
                 <a href={ MAIN_SOURCE_CODE }>
                     <img src="/assets/svg/github_w.svg" alt="GitHub Icon" />
                 </a>
-                <a style="margin-left: 40px;" href={ MAIN_DISCOR_LINK }>
+                <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
                     <img src="/assets/svg/discord_w.svg" alt="Twitter Icon" />
                 </a>
-                <a style="margin-left: 40px;" href={ MAIN_MASTOD_LINK }>
+                <a style="margin-left: 20px;" href={ MAIN_MASTOD_LINK }>
                     <img src="/assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
                 </a>
-                <a style="margin-left: 40px;" href={ MAIN_TWITTE_LINK }>
+                <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
                     <img src="/assets/svg/twitter_w.svg" alt="Twitter Icon" />
                 </a>
-                <a style="margin-left: 40px;" href={ MAIN_DONATE_LINK }>
+                <a style="margin-left: 20px;" href={ MAIN_DONATE_LINK }>
                     <img src="/assets/svg/heart_w.svg" alt="Patreon Icon" />
                 </a>
             </div>
