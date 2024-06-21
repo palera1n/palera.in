@@ -20,20 +20,6 @@ body {
 }
 
 
-.sidebar {
-    position: fixed;
-    width: 300px;
-    left: 0;
-    top: 56px;
-    bottom: 0;
-    border-top: 1px solid #101010;
-    z-index: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
 .sidebar::-webkit-scrollbar {
     display: none;
@@ -42,6 +28,17 @@ body {
 .docs-content-container {
     padding-left: 300px;
     padding-top: 56px;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 1000px) {
+    .docs-content-container {
+        padding-left: 0;
+    }
+
+    .sidebar-open .docs-content-container {
+        opacity: 0.25;
+    }
 }
 
 .docs-content {

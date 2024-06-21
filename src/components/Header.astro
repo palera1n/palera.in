@@ -5,7 +5,7 @@ import { MAIN_MASTOD_LINK } from "../scripts/constants";
 import { MAIN_DISCOR_LINK } from "../scripts/constants";
 import { MAIN_DONATE_LINK } from "../scripts/constants";
 
-const { showNavbar } = Astro.props;
+const { showNavbar, showMenuIcon } = Astro.props;
 ---
 
 <style>
@@ -47,11 +47,24 @@ const { showNavbar } = Astro.props;
     align-items: center;
 }
 
-.navbar-logo {
+.navbar-logo, .menu-icon {
     width: 30px;
     height: 30px;
     margin-right: 0.5rem;
 }
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+
 
 .navbar-link h1 {
     font-size: 22px;
@@ -78,6 +91,7 @@ const { showNavbar } = Astro.props;
         <div class="header-content">
             <div class="header-content">
                 { showNavbar && <div class="navbar-content">
+                    { showMenuIcon && <img class="menu-icon" src="/assets/svg/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon" onclick="document.body.classList.toggle('sidebar-open');" /> }
                     <img class="navbar-logo" src="/favicons/128@2x.png" alt="palera1n logo" />
                     <a href="/" class="navbar-link"><h1>palera1n</h1>docs</a>
                 </div> }
