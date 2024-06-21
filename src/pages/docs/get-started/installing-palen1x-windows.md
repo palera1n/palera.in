@@ -56,13 +56,61 @@ When you boot palen1x you will see an interface with various options, the main o
 
 Once you press that a new screen will appear. This screen will show the current Jailbreak Type and Arguments to use for palera1n.
 
+## Using palera1n
+
+Please select your preferred environment type, if this is your first time it is recommended you try **Rootless** before going the ladder.
+
+<tab-container>
+    <input type="radio" id="tabToggle01" name="tabs" value="1" checked />
+    <label for="tabToggle01" checked="checked">Rootless</label>
+    <input type="radio" id="tabToggle02" name="tabs" value="2" />
+    <label for="tabToggle02">Rootful</label>
+    <tab-content>
+<MarkdownRenderer class="docs-stuff">
+
 | ![palen1x-palera1n-menu](https://github.com/palera1n/palera.in/assets/97859147/ee1d2f6a-f5e4-48dc-9289-1fe63de621c9)|
 |:-:|
 | Example screenshot of what the palera1n menu would look like. |
 
 Pressing `1 Start` will start the jailbreak process by running palera1n.
 
-## Using palera1n
+</MarkdownRenderer>
+    </tab-content>
+    <tab-content>
+<MarkdownRenderer class="docs-stuff">
+
+| ![palen1x-palera1n-menu](https://github.com/palera1n/palera.in/assets/97859147/ee1d2f6a-f5e4-48dc-9289-1fe63de621c9)|
+|:-:|
+| Example screenshot of what the palera1n menu would look like. |
+
+Pressing `3 Switch` and choose 'Rootful', this will switch you to the rootful jailbreak environment type.
+
+<p class="markdown-warning">
+Due to the limitations of the rootful environment on iOS/iPadOS 15 and above, there is a case where you're required to have a copied filesystem on your device.<br/><br/><strong>Make sure you have a significant amount of storage available on your device before proceeding.</strong>
+</p>
+
+|Arguments|Explanation|
+|-|-|
+|`fakeFS (-c)`|Creates the new APFS volume required for rootful. Will fail if one already exists. This flag is only supported on iOS/iPadOS.|
+|`(partial) fakeFS (-B)`|Similar to `-c` but the size of the created fakefs is smaller at the expense of having unwritable parts in rarely-written paths. When jailbreaking 16 GB devices, this option must be used when setting up fakefs for rootful, as they do not have enough storage for full fakefs. This flag is only supported on iOS/iPadOS.|
+
+Pressing `2 Options` and choose whatever fakeFS option you would prefer
+
+Press `1 Start` to start creating the fakeFS.
+
+Once that is finally finished, move on to the next steps.
+
+<p class="markdown-warning">
+<strong>appleTV</strong>  and <strong>Apple T2 (iBridge)</strong>  are NOT required to have storage available for the jailbreak, this <strong>ONLY</strong> applies to devices running iOS/iPadOS 15 and higher. If you have one of these devices please skip the above information and steps.
+</p>
+
+Press `1 Start` to start the jailbreak process.
+
+</MarkdownRenderer>
+    </tab-content>
+</tab-container>
+
+
 **Connect your device** and palera1n will attempt to put the device into recovery mode, then follow the instructions that are provided to enter DFU.
 
 > This step is to ensure there isn't any corruption issues when attempting to enter DFU via force reset/reboot.

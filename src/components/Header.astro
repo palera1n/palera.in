@@ -39,6 +39,12 @@ const { showNavbar, showMenuIcon } = Astro.props;
         width: 22px;
         height: auto;
     }
+    @media screen and (max-width: 500px) {
+        .header-icons img {
+            display: none;
+        }
+    }
+
 
 
 .navbar-content {
@@ -89,6 +95,7 @@ const { showNavbar, showMenuIcon } = Astro.props;
 <header>
     <div class={"header-container" + (showNavbar ? " header-fixed" : "")}>
         <div class="header-content">
+
             <div class="header-content">
                 { showNavbar && <div class="navbar-content">
                     { showMenuIcon && <img class="menu-icon" src="/assets/svg/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon" onclick="document.body.classList.toggle('sidebar-open');" /> }
@@ -96,12 +103,10 @@ const { showNavbar, showMenuIcon } = Astro.props;
                     <a href="/" class="navbar-link"><h1>palera1n</h1>docs</a>
                 </div> }
             </div>
+
             <div class="header-icons">
                 <a href={ MAIN_SOURCE_CODE }>
                     <img src="/assets/svg/github_w.svg" alt="GitHub Icon" />
-                </a>
-                <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
-                    <img src="/assets/svg/discord_w.svg" alt="Twitter Icon" />
                 </a>
                 <a style="margin-left: 20px;" href={ MAIN_MASTOD_LINK }>
                     <img src="/assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
@@ -109,10 +114,15 @@ const { showNavbar, showMenuIcon } = Astro.props;
                 <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
                     <img src="/assets/svg/twitter_w.svg" alt="Twitter Icon" />
                 </a>
+                
+                <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
+                    <img src="/assets/svg/discord_w.svg" alt="Twitter Icon" />
+                </a>
                 <a style="margin-left: 20px;" href={ MAIN_DONATE_LINK }>
                     <img src="/assets/svg/heart_w.svg" alt="Patreon Icon" />
                 </a>
             </div>
+
         </div>
     </div>
 </header>

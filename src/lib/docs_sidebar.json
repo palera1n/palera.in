@@ -25,6 +25,23 @@
         ]
     },
     {
+        "name": "Uninstallation",
+        "children": [
+            {
+                "name": "Uninstalling palera1n (macOS)",
+                "url": "/docs/removal/removing-palera1n-macos"
+            },
+            {
+                "name": "Uninstalling palera1n (Linux)",
+                "url": "/docs/removal/removing-palera1n-linux"
+            },
+            {
+                "name": "Uninstalling palen1x (Windows)",
+                "url": "/docs/removal/removing-palen1x-windows"
+            }
+        ]
+    },
+    {
         "name": "Reference",
         "children": [
             {

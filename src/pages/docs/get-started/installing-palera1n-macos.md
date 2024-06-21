@@ -18,27 +18,6 @@ This will guide you through the process of downloading the **latest** version of
 > On `A11 devices`, you must disable your passcode and will not be able to use your passcode, or other SEP functionality, until you boot into a stock iOS state. SEP functionality includes things such as a passcode, Face ID/Touch ID, and Apple Pay.<br/><br/>Additionally, if your device is an `A11 device on iOS 16` and you've set a passcode before, you will need to **erase all content and settings** in order to be able to jailbreak.
 
 ## Downloading palera1n
-
-Please select your preferred download method:
-
-
-
-
-
-
-
-
-
-
-
-<tab-container>
-    <input type="radio" id="tabToggle01" name="tabs" value="1" checked />
-    <label for="tabToggle01" checked="checked">Automatic</label>
-    <input type="radio" id="tabToggle02" name="tabs" value="2" />
-    <label for="tabToggle02">Manual</label>
-    <tab-content>
-<MarkdownRenderer class="docs-stuff">
-
 Open `Terminal.app` and copy & paste the following command. This will download palera1n to your system and let you jailbreak.
 
 ```sh
@@ -47,23 +26,8 @@ sudo /bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
 
 You can now run **palera1n** anywhere on your machine, so theres no need to re-run the previous download command when trying to re-jailbreak. Only use that command again if you're on an *outdated* version of palera1n and want to update.
 
-## Using palera1n
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
-
-```sh
-palera1n -l
-```
-
-</MarkdownRenderer>
-    </tab-content>
-    <tab-content>
-<MarkdownRenderer class="docs-stuff">
-
-There are some cases where you would want to manually download palera1n, to either use an old version or just for nostalgic purposes.
-
-<p class="markdown-warning">
-It is recommended you use the automatic method if this is your first time. It is not recommended to try to troubleshoot issues when using an older version as a lot of given information will not match.
-</p>
+### Manual method (Alternative) (Advanced)
+Incase you want to instead download palera1n manually, thats also an option too!
 
 You can find the links to the raw binaries [here](https://github.com/palera1n/palera1n/releases). Make sure to tick the "Assets" to expand and see all of the files.
 
@@ -79,27 +43,54 @@ chmod +x /path/to/binary
 If all goes well the binary should be able to be executed now.
 
 ## Using palera1n
+Please select your preferred environment type, if this is your first time it is recommended you try **Rootless** before going the ladder.
+
+<tab-container>
+    <input type="radio" id="tabToggle01" name="tabs" value="1" checked />
+    <label for="tabToggle01" checked="checked">Rootless</label>
+    <input type="radio" id="tabToggle02" name="tabs" value="2" />
+    <label for="tabToggle02">Rootful</label>
+    <tab-content>
+<MarkdownRenderer class="docs-stuff">
+
 Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
 
 ```sh
-# Find the path for the binary, or drag it in the terminal
-/path/to/palera1n -l
+palera1n -l
 ```
 
 </MarkdownRenderer>
     </tab-content>
+    <tab-content>
+<MarkdownRenderer class="docs-stuff">
+
+<p class="markdown-warning">
+Due to the limitations of the rootful environment on iOS/iPadOS 15 and above, there is a case where you're required to have a copied filesystem on your device.<br/><br/><strong>Make sure you have a significant amount of storage available on your device before proceeding.</strong>
+</p>
+
+|Arguments|Explanation|
+|-|-|
+|`palera1n -f -c`|Creates the new APFS volume required for rootful. Will fail if one already exists. This flag is only supported on iOS/iPadOS.|
+|`palera1n -f -B`|Similar to `-c` but the size of the created fakefs is smaller at the expense of having unwritable parts in rarely-written paths. When jailbreaking 16 GB devices, this option must be used when setting up fakefs for rootful, as they do not have enough storage for full fakefs. This flag is only supported on iOS/iPadOS.|
+
+If you've ran these commands you will be presented with your device being booted back into stock, but no worries you may keep following the guide after you got the fake filesystem ready.
+
+<p class="markdown-warning">
+<strong>appleTV</strong>  and <strong>Apple T2 (iBridge)</strong>  are NOT required to have storage available for the jailbreak, this <strong>ONLY</strong> applies to devices running iOS/iPadOS 15 and higher. If you have one of these devices please skip the above information and steps.
+</p>
+
+Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+
+```sh
+palera1n -f
+```
+
+
+
+
+</MarkdownRenderer>
+    </tab-content>
 </tab-container>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

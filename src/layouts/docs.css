@@ -41,9 +41,7 @@ tab-content {
 }
 
 input#tabToggle01:checked ~ tab-content:not(:nth-of-type(1)),
-input#tabToggle02:checked ~ tab-content:not(:nth-of-type(2)),
-input#tabToggle03:checked ~ tab-content:not(:nth-of-type(3)),
-input#tabToggle04:checked ~ tab-content:not(:nth-of-type(4)) {
+input#tabToggle02:checked ~ tab-content:not(:nth-of-type(2)) {
     display: none;
 }
 
@@ -272,7 +270,7 @@ Links
 }
 
 .docs-stuff .card img {
-    width: 60%;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }
