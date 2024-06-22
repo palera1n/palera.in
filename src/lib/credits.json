@@ -1,42 +1,52 @@
 {
     "sections": [
         {
-            "name": "Developers",
+            "name": "Current Developers",
             "data": [
                 {
                     "name": "Nick Chan",
-                    "github": "asdfugil",
-                    "desc": "Lead Developer"
-                },
-                {
-                    "name": "Tom",
-                    "github": "plooshi",
-                    "desc": "Developer"
+                    "github": "asdfugil"
                 },
                 {
                     "name": "Samara",
-                    "github": "khcrysalis",
-                    "desc": "Developer"
+                    "github": "khcrysalis"
                 },
                 {
                     "name": "mineek",
-                    "github": "mineek",
-                    "desc": "Developer"
-                },
-                {
-                    "name": "staturnz",
-                    "github": "staturnzz",
-                    "desc": "Developer"
-                },
-                {
-                    "name": "kok3shidoll",
-                    "github": "kok3shidoll",
-                    "desc": "Developer"
+                    "github": "mineek"
                 },
                 {
                     "name": "HAHALOSAH",
-                    "github": "HAHALOSAH",
-                    "desc": "Developer"
+                    "github": "HAHALOSAH"
+                }
+            ]
+        },
+        {
+            "name": "Special Thanks To",
+            "data": [
+                {
+                    "name": "staturnz",
+                    "github": "staturnzz"
+                },
+                {
+                    "name": "kok3shidoll",
+                    "github": "kok3shidoll"
+                },
+                {
+                    "name": "Tom",
+                    "github": "plooshi"
+                },
+                {
+                    "name": "Nebula",
+                    "github": "itsnebulalol"
+                },
+                {
+                    "name": "Nathan",
+                    "github": "verygenericname"
+                },
+                {
+                    "name": "Lakhan Lothiyi",
+                    "github": "llsc12"
                 }
             ]
         },
@@ -44,39 +54,12 @@
             "name": "Thank You",
             "data": [
                 {
-                    "name": "Nebula",
-                    "github": "itsnebulalol",
-                    "desc": "palera1n 1.x"
-                },
-                {
-                    "name": "Nathan",
-                    "github": "verygenericname",
-                    "desc": "palera1n 1.x"
-                },
-                {
-                    "name": "Lakhan Lothiyi",
-                    "github": "llsc12",
-                    "desc": "palera1n 1.x"
-                },
-                {
-                    "name": "Alexia",
-                    "github": "0xallie",
-                    "desc": "Contributions"
-                },
-                {
-                    "name": "tihmstar",
-                    "github": "tihmstar",
-                    "desc": "jbinit v1"
+                    "name": "checkra1n",
+                    "github": "checkra1n"
                 },
                 {
                     "name": "libimobiledevice",
-                    "github": "libimobiledevice",
-                    "desc": "libimobiledevice"
-                },
-                {
-                    "name": "checkra1n",
-                    "github": "checkra1n",
-                    "desc": "1337"
+                    "github": "libimobiledevice"
                 },
                 {
                     "name": "Procursus",
@@ -94,21 +77,6 @@
                     "desc": "Substitute"
                 },
                 {
-                    "name": "raspberry",
-                    "github": "raspberryenvoie",
-                    "desc": "Odysseyn1x"
-                },
-                {
-                    "name": "asineth0",
-                    "github": "asineth0",
-                    "desc": "Checkn1x"
-                },
-                {
-                    "name": "opa334",
-                    "github": "opa334",
-                    "desc": "cfprefs hook"
-                },
-                {
                     "name": "Amy While",
                     "github": "elihwyma",
                     "desc": "Sileo"
@@ -122,6 +90,31 @@
                     "name": "lrdsnow",
                     "github": "Lrdsnow",
                     "desc": "purepkg"
+                },
+                {
+                    "name": "opa334",
+                    "github": "opa334",
+                    "desc": "cfprefs hook"
+                },
+                {
+                    "name": "tihmstar",
+                    "github": "tihmstar",
+                    "desc": "jbinit v1"
+                },
+                {
+                    "name": "raspberry",
+                    "github": "raspberryenvoie",
+                    "desc": "Odysseyn1x"
+                },
+                {
+                    "name": "asineth0",
+                    "github": "asineth0",
+                    "desc": "Checkn1x"
+                },
+                {
+                    "name": "Alexia",
+                    "github": "0xallie",
+                    "desc": "Contributions"
                 }
             ]
         },

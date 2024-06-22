@@ -17,47 +17,51 @@ const sections = jsonData.sections;
     display: flex;
     align-items: flex-start;
     background-color: #151517;
-    border-radius:10px;
+    border-radius: 10px;
   }
 
   .credit-item img {
     border-radius: 10%;
     margin-right: 10px;
   }
-ul {
-  padding-left: 0;
-}
+
+  .centered {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
 
 </style>
 
-
-  <credits>
+<credits>
 <div style="background-color: #18181a;">
-    <div class="normal">
-      {sections.map((section, index) => {
-        return (
-          <div key={section.name}>
-            <h2>{section.name}</h2>
-            <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
-              {section.data.map((item, itemIndex) => (
-                <li key={item.name} class="credit-item">
+  <div class="normal">
+    {sections.map((section) => {
+      return (
+        <div key={section.name}>
+          <h2>{section.name}</h2>
+          <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+            {section.data.map((item) => (
+              <li key={item.name} class={`credit-item ${!item.desc ? 'centered' : ''}`}>
+                <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
+                  <img src={`https://github.com/${item.github}.png`} width="35" height="35" />
+                </a>
+                <div>
                   <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
-                    <img src={`https://github.com/${item.github}.png`} alt={`${item.name}'s GitHub`} width="45" height="45" />
+                    {item.name}
                   </a>
-                  <div>
-                    <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
-                      {item.name}
-                    </a>
-                    <br/>
-                    {item.desc}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        );
-      })}
-    </div>
+                  <br/>
+                  {item.desc}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
   </div>
-  </credits>
-
+</div>
+</credits>
