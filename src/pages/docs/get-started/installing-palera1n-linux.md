@@ -60,7 +60,7 @@ sudo systemctl stop usbmuxd
 sudo usbmuxd -f -p
 ```
 
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+Run this command in the terminal of your choice.
 
 ```sh
 sudo palera1n -l
@@ -93,7 +93,7 @@ sudo systemctl stop usbmuxd
 sudo usbmuxd -f -p
 ```
 
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+Run this command in the terminal of your choice.
 
 ```sh
 sudo palera1n -f

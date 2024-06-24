@@ -53,7 +53,7 @@ Please select your preferred environment type, if this is your first time it is 
     <tab-content>
 <MarkdownRenderer class="docs-stuff">
 
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+Run this command in the terminal of your choice.
 
 ```sh
 palera1n -l
@@ -79,7 +79,7 @@ If you've ran these commands you will be presented with your device being booted
 <strong>appleTV</strong>  and <strong>Apple T2 (iBridge)</strong>  are NOT required to have storage available for the jailbreak, this <strong>ONLY</strong> applies to devices running iOS/iPadOS 15 and higher. If you have one of these devices please skip the above information and steps.
 </p>
 
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+Run this command in the terminal of your choice.
 
 ```sh
 palera1n -f
