@@ -59,6 +59,15 @@
         ]
     },
     {
+        "name": "Developer",
+        "children": [
+            {
+                "name": "Configuring the Loader",
+                "url": "/docs/developer/loader-configuration"
+            }
+        ]
+    },
+    {
         "name": "Troubleshooting",
         "children": [
             {
