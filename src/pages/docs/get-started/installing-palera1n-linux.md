@@ -9,7 +9,7 @@ This will guide you through the process of downloading the **latest** version of
 ## Prerequisites
 - __[Linux](/docs/reference/compatibility-chart)__ - It is recommended you use [Ubuntu](https://ubuntu.com/), [Mint](https://linuxmint.com/), or [EndeavourOS](https://endeavouros.com/) for when using palera1n on Linux. However, any other distribution should work as intended provided that you follow the rest of the instructions.
 
-> If the provided guide does *not* work for you, then you can instead boot into our custom made palera1n iso file, however we would recommend just following this guide for simplicity sake.
+> If the provided guide does *not* work for you, then you can instead boot into our custom made palera1n iso file, however we would recommend just following this guide for simplicity sake. Located [here](/docs/get-started/installing-palen1x-windows)
 
 > If you are using a computer with an **AMD Ryzen CPU**, you will likely run into issues. If you do run into issues, you should use a computer with an Intel CPU.
 
