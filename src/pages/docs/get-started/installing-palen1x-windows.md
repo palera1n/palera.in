@@ -1,11 +1,13 @@
 ---
 layout: ../../../layouts/DocsLayout.astro
-title: Installing palen1x (Windows)
+title: Installing palen1x
 ---
 
-# Installing palen1x (Windows)
+# Installing palen1x
 
 Sadly, palera1n does not have a build available for windows machines. However, theres an **alternative way** to use palera1n by booting into another operating system using a usb drive.
+
+> This guide also will work on Linux machines, and Mac machines provided you are able to boot palen1x with a USB thumb drive.
 
 ## Prerequisites
 

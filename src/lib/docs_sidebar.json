@@ -15,7 +15,7 @@
                 "url": "/docs/get-started/installing-palera1n-linux"
             },
             {
-                "name": "Installing palen1x (Windows)",
+                "name": "Installing palen1x",
                 "url": "/docs/get-started/installing-palen1x-windows"
             },
             {
@@ -36,7 +36,7 @@
                 "url": "/docs/removal/removing-palera1n-linux"
             },
             {
-                "name": "Uninstalling palen1x (Windows)",
+                "name": "Uninstalling palen1x",
                 "url": "/docs/removal/removing-palen1x-windows"
             }
         ]
