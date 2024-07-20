@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body {
     background-color: #151517;
     color: #ffffff;
-    font-family: -apple-system-font, BlinkMacSystemFont, sans-serif;
-    padding: 0%;
-    margin: 0%;
+    font-family: -apple-system-font, BlinkMacSystemFont, Inter, sans-serif;
+    padding:0%;
+    margin:0%;
 }
 
 /* Links! */
