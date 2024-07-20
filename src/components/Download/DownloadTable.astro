@@ -1,0 +1,80 @@
+---
+const { label, assets } = Astro.props;
+---
+
+<div class="downloads">
+    {
+        assets.length > 0 ? (
+            <div class="release">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Download File</th>
+                            <th>Date</th>
+                            <th>Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {assets.map((asset) => {
+
+                            let downloadText = ``;
+                            let architecture = '';
+                            
+                            // Ensure asset.name is defined before splitting
+                            if (asset.name) {
+                                if (asset.name.includes("deb")) {
+                                    const parts = asset.name.split("_");
+                                    architecture = parts.length > 2 ? parts[2].split(".")[0] : '';
+                                } else {
+                                    const parts = asset.name.split("-");
+                                    architecture = parts.length > 1 ? parts.slice(-1)[0].split(".")[0] : '';
+                                }
+                                
+                                if (label != null) {
+                                    downloadText += `${label}`;
+                                }
+
+                                if (asset.name.includes("palera1n-")) {
+                                    downloadText += ` (CLI, ${architecture})`;
+                                } else if (asset.name.includes("palen1x-")) {
+                                    downloadText += ` (ISO, ${architecture})`;
+                                } else if (asset.name.includes("deb")) {
+                                    downloadText += ` (DEB, ${architecture})`;
+                                }
+
+                                let p = `↓`
+
+                                if (label != null) {
+                                    p += ` `+`Download for`+` `+downloadText
+                                } else if ((label != null) || (asset.name.includes("palera1n-"))) {
+                                    p += ` `+`${asset.name}`+` `+downloadText
+                                } else {
+                                    p += ` `+`${asset.name}`
+                                }
+
+                                return (
+                                    <tr key={asset.id}>
+                                        <td><a class="coolshit" href={asset.browser_download_url} target="_blank">{p}</a></td>
+                                        <td>{new Date(asset.updated_at).toLocaleDateString()}</td>
+                                        <td>{(asset.size / 1024 / 1024).toFixed(2)}{" "}MB</td>
+                                    </tr>
+                                );
+                            } else {
+                                // Handle cases where asset.name is undefined or null
+                                return (
+                                    <tr key={asset.id}>
+                                        <td><a class="coolshit" href={asset.browser_download_url} target="_blank">Unknown File</a></td>
+                                        <td>{new Date(asset.updated_at).toLocaleDateString()}</td>
+                                        <td>{(asset.size / 1024 / 1024).toFixed(2)}{" "}MB</td>
+                                    </tr>
+                                );
+                            }
+                        })}
+                    </tbody>
+                </table>
+            </div>
+        ) : (
+            <p>No downloads available for {label}.</p>
+        )
+    }
+</div>

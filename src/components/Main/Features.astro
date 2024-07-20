@@ -1,0 +1,79 @@
+---
+import '../pagestyle.css';
+const features = [
+    {
+        title: "Gain access to your devices shell",
+        description: "palera1n includes tools like dropbear (port 44), a rather (insecure) telnet option if specified, and a binpack with basic command line utilities"
+    },
+    {
+        title: "Default Package Managers",
+        icons: [
+            {
+                name: "Sileo",
+                icon: "/assets-config/sileo.png",
+                website: "https://getsileo.app/"
+            },
+            {
+                name: "Zebra",
+                icon: "/assets-config/zeeb.png",
+                website: "https://getzbra.com/"
+            }
+        ]
+    },
+    {
+        title: "Customization",
+        description: "After jailbreaking palera1n gives you options to be able to customize your device to the fullest if you choose to do so"
+    },
+    {
+        title: "Customize your experience",
+        description: "Choose your environment type through palera1n CLI, there are multiple options like Rootless and Full-root (Rootful) jailbreak types"
+    },
+    {
+        title: "Open Source",
+        description: "palera1n is open source software, along with all the other components palera1n uses to help you jailbreak. All repositories can be found on our github organization"
+    },
+    {
+        title: "Maintained",
+        description: "palera1n is actively maintained and will be updated to support new versions of iOS / iPadOS / Bridge / tvOS if they ever release and happen to break our tool"
+    }
+];
+---
+<style>
+    .normal {
+      padding-block: 1px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 70px;
+    }
+</style>
+  
+  <div class="normal">
+      <div class="features-container" id="features-container">
+        {features.map((item) => {
+            return (
+            <div class="feature-box">
+              <div class="feature-titlebar">
+                  <div class="feature-title">{item.title}</div>
+              </div>
+              <div class="feature-box-content">
+                {item.description && <p>{item.description}</p>}
+                {item.icons && 
+                  <div class="icons-container">
+                    {item.icons.map((icon) => (
+                      <div class="icon-box">
+                        <a href={icon.website} target="_blank">
+                          <img src={icon.icon} alt={icon.name} />
+                          <div>{icon.name}</div>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                }
+              </div>
+            </div>
+            )
+        })}
+      </div>
+  </div>

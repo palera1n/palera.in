@@ -1,41 +1,69 @@
 ---
-
+import "./pagestyle.css";
 ---
 
 <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        border-top: 1px solid #3b3d41; 
+        background: linear-gradient(0deg, #18181a, #1c1d20);
+        margin-top: auto;
+        width: 100%;
+    }
+    .inner-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 2rem;
+    }
     .footer-container {
         color: #fff;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 76px;
-        text-align: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .footer-bottom {
+        max-width: 1200px;
+        margin: 0 auto;
         margin-top: 2rem;
+        padding-bottom: 20px;
     }
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .footer-bottom p {
+        color: #acabb6;
     }
 
-    .footer-content > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    hr {
+        border: 0;
+        height: 1px;
+        background: #45474a;
+        max-width: 1200px;
+        margin: 0 auto;
     }
+
 </style>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-content">
-            <div>
-                <p>
-                    Copyright © 2024 palera1n team<br/>
-                    Site made by <a class="coolshit" target="_blank" href="https://github.com/khcrysalis">Samara</a> and <a class="coolshit" target="_blank" href="https://github.com/nekohaxx">HAHALOSAH</a> for palera1n.
-                </p>
-            </div>
+<div class="container">
+    <div class="inner-container">
+
+        <div class="footer-bottom">
+            <p>
+                The only official site to download palera1n is from <a class="coolshit" target="_blank" href="https://palera.in">https://palera.in</a>.<br/>
+                Please make sure to avoid similar-looking sites as they are often malicious sites and are there to mislead to user.
+            </p>
+            <hr/>
+            <p>
+                Copyright © 2024 palera1n team - Site made by <a class="coolshit" target="_blank" href="https://github.com/khcrysalis">Samara</a> and <a class="coolshit" target="_blank" href="https://github.com/nekohaxx">HAHALOSAH</a> for palera1n.
+            </p>
         </div>
     </div>
-</footer>
+</div>

@@ -1,0 +1,34 @@
+---
+import "./dlpagestyle.css";
+import "../pagestyle.css";
+import DownloadTable from "./DownloadTable.astro";
+
+const TERMINAL_CMD = `sudo /bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"`;
+const CHMOD_CMD = `chmod +x /path/to/palera1n`;
+const XATTR_CMD = `xattr -c /path/to/palera1n`;
+const { assets = [] } = Astro.props;
+---
+
+<script>
+	import "../code/copy-code-button.js";
+	import "../code/create-copy-buttons.js";
+</script>
+
+<div class="normal">
+    <h2>Direct Download</h2>
+    <hr/>
+    <p>Copy and paste the following line of code into the Terminal for direct installation.</p>
+    <pre><code>{TERMINAL_CMD}</code></pre>
+    <p>Downloading via our script will make sure you always download the latest version of palera1n is installed to your computer, if you're wary that you're outdated or are told to update you can re-run this script.</p>
+    <div class="alert-box tip">After installing the program to your computer, a new command will be available for you to run. That being "palera1n"</div>
+    <div class="alert-box notice">Having issues downloading via our script? You can manually find and download the raw binaries below.</div>
+
+    <h2>Manual Download</h2>
+    <hr/>
+    <p>Use these download links if the script ever seems to not work for you. However, when downloading via browser on macOS you may need to do some extra steps before they can run without any issues. </p>
+    <pre><code>{XATTR_CMD}</code></pre>
+    <div class="alert-box critical">Gatekeeper may prevent you from running the binary if you have not ran the xattr command, by saying that it cannot check if its malicious or zsh randomly kills it due to it being quarantined.</div>
+    <DownloadTable label="macOS" assets={assets} />
+</div>
+
+

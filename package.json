@@ -11,9 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/lit": "^4.3.0",
+    "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^4.10.2",
     "astro-icon": "^0.8.0",
-    "astro-seo": "^0.7.0"
+    "astro-remote": "^0.3.3",
+    "astro-seo": "^0.7.0",
+    "lit": "^3.1.4"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "^5.1.0"

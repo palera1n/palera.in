@@ -1,0 +1,202 @@
+---
+import Windows from "./Windows.astro";
+import Linux from "./Linux.astro";
+import Mac from "./Mac.astro";
+const { p1MacOSAssets, p1LinuxAssets, p1WindowsAssets, p1PocketAssets, p1xAssets } = Astro.props;
+
+import PocketDevice from "./PocketDevice.astro";
+const tabs = [
+  { id: 'macos', name: 'macOS' },
+  { id: 'linux', name: 'Linux' },
+  { id: 'windows', name: 'Windows' },
+  { id: 'pocket', name: 'Mobile' }
+];
+---
+
+<style>
+    .container {
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        max-height: 50vh;
+        background: linear-gradient(0deg, #1c1d20, #18181a);
+        display: flex;
+        border-bottom: 1px solid #3b3d41;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 700px;
+        color: #fff;
+    }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        .tabs {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 1225px) {
+        .tabs {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .tab {
+        position: relative; /* Position relative to contain the pseudo-element */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        cursor: pointer;
+        color: #bdbdbd;
+        border: 2px solid transparent;
+        border-radius: 7px;
+        text-align: center;
+        height: 100px;
+    }
+
+    .tab.active {
+        font-weight: bold;
+        color: #e6e6e6;
+    }
+
+    .tab.active::after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -41px;
+        left: 50%;
+        transform: translateX(-50%);
+         width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-bottom-width: 12px;
+        border-bottom-color: #17181b;
+    }
+
+    .tab.active::before {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -41px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        border-bottom-color: #3b3d41;
+    }
+
+    @media (max-width: 768px) {
+        .tab.active::after {
+            display: none;
+        }
+        .tab.active::before {
+            display: none;
+        }
+    }
+
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+    .tab img {
+        width: 65px;
+        height: auto;
+        margin-bottom: 5px;
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
+    }
+
+</style>
+
+<div>
+<div class="container">
+    <div class="content">
+        <div class="tabs" id="tab-buttons">
+            {tabs.map((tab) => (
+                <div class="tab" data-tab-id={tab.id}>
+                    <img src={`/assets/logos/${tab.id}_logo.png`} alt={`${tab.name} Logo`} />
+                    {tab.name}
+                </div>
+            ))}
+        </div>
+    </div>
+</div>
+<div class="tab-contents" id="tab-content">
+    <div class="tab-content" data-tab-id="windows">
+        <Windows assets={p1xAssets} />
+    </div>
+    <div class="tab-content" data-tab-id="linux">
+        <Linux assets={p1LinuxAssets} />
+    </div>
+    <div class="tab-content" data-tab-id="macos">
+        <Mac assets={p1MacOSAssets} />
+    </div>
+    <div class="tab-content" data-tab-id="pocket">
+        <PocketDevice assets={p1PocketAssets} />
+    </div>
+</div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        function updateContent(tabId) {
+            tabs.forEach(tab => tab.classList.toggle('active', tab.getAttribute('data-tab-id') === tabId));
+            tabContents.forEach(content => content.classList.toggle('active', content.getAttribute('data-tab-id') === tabId));
+            updateUrl(tabId);
+        }
+    
+        function updateUrl(tabId) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('tab', tabId);
+            window.history.pushState({}, '', url);
+        }
+    
+        document.getElementById('tab-buttons').addEventListener('click', (event) => {
+            const tab = event.target.closest('.tab');
+            if (tab) {
+                const tabId = tab.getAttribute('data-tab-id');
+                updateContent(tabId);
+            }
+        });
+
+        const osRegex = {
+            macos: /Mac OS X/,
+            linux: /Linux/,
+            windows: /Windows/
+        };
+
+        const os = Object.keys(osRegex).find(key => osRegex[key].test(window.navigator.userAgent));
+    
+        const initialTab = new URLSearchParams(window.location.search).get('tab') || os || 'macos';
+        updateContent(initialTab);
+    });
+</script>
+    

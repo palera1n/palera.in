@@ -1,0 +1,30 @@
+---
+import "./dlpagestyle.css";
+import "../pagestyle.css";
+import DownloadTable from "./DownloadTable.astro";
+
+const TERMINAL_CMD = `sudo /bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"`;
+const CHMOD_CMD = `chmod +x /path/to/palera1n`;
+
+const { assets = [] } = Astro.props;
+---
+
+<script>
+	import "../code/copy-code-button.js";
+	import "../code/create-copy-buttons.js";
+</script>
+
+<div class="normal">
+    <h2>Direct Download</h2>
+    <hr/>
+    <p>Copy and paste the following line of code into the Terminal for direct installation.</p>
+    <pre><code>{TERMINAL_CMD}</code></pre>
+    <p>Downloading via our script will make sure you always download the latest version of palera1n is installed to your computer, if you're wary that you're outdated or are told to update you can re-run this script.</p>
+    <div class="alert-box tip">After installing the program to your computer, a new command will be available for you to run. That being "palera1n"</div>
+    <div class="alert-box notice">Having issues downloading via our script? You can manually find and download the raw binaries below.</div>
+
+    <h2>Manual Download</h2>
+    <hr/>
+    <p>Use these download links if the script ever seems to not work for you.</p>
+    <DownloadTable label="Linux" assets={assets} />
+</div>

@@ -1,0 +1,107 @@
+---
+import "../pagestyle.css";
+---
+
+<style>
+    .hero-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        min-height: 600px;
+        background-image: linear-gradient(to top, #151517, rgba(0, 0, 0, 0),#18181a), url("/assets/Untitled.png");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+        width: 1200px;
+        display: flex;
+    }
+
+    .hero-content-left {
+        flex: 1;
+    }
+
+    .hero-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: -10px;
+    }
+
+    .hero-title img {
+        height: 65px;
+        width: 65px;
+        padding-top: 20px;
+        margin-left: -5px;
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
+    }
+
+    .hero-title h1 {
+        padding-bottom: 10px;
+        margin-left: 10px;
+        font-size: 40px;
+        color: #e6e6e6;
+        font-weight: 600;
+    }
+
+    .hero-description h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #e6e6e6;
+        margin-bottom: -5px;
+    }
+
+    .hero-description h3 {
+        font-size: 20px;
+        font-weight: 300;
+        color: #767676;
+        margin-top: 10px;
+    }
+
+    .baseimagecontainer {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .baseimagecontainer {
+            display: block;
+            width: 750px;
+            height: 500px;
+            margin-right: -35px;
+        }
+    }
+</style>
+
+<div class="hero-container">
+    <div class="hero-content">
+        <div class="hero-content-left">
+            <div class="hero-title">
+                <img style="margin-top: -22px;" src="/favicons/128@2x.png" alt="palera1n logo" />
+                <h1>palera1n</h1>
+            </div>
+
+            <div class="hero-description">
+                <h1>Jailbreak for iPhone, iPad, Macbooks, and AppleTV's for versions 15 and higher</h1>
+                <h3>Compatible with devices ranging from A8 to A11, and apple T2.</h3>
+            </div>
+
+            <div class="button-container">
+                <a href="/download" class="hero-button download-button">Download</a>
+                <a href="https://github.com/palera1n/palera1n" class="hero-button github-button" target="_blank">View on Github</a>
+                
+            </div>
+            <div class="button-container-top">
+                <a class="coolshit" href="/" target="_blank">→ What's New</a>
+                <a class="coolshit" href="/" target="_blank">→ Compatibility Chart</a>
+                <a class="coolshit" href="/" target="_blank">→ Frequently Asked Questions</a>
+            </div>
+        </div>
+        <img src="/assets/examples/web_terminal.png" class="baseimagecontainer" alt="macOS terminal running palera1n">
+    </div>
+</div>

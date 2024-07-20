@@ -1,0 +1,39 @@
+---
+import "./dlpagestyle.css";
+import "../pagestyle.css";
+import Code from "../Code.astro";
+import DownloadTable from "./DownloadTable.astro";
+
+const { assets = [] } = Astro.props;
+---
+
+<script>
+	import "../code/copy-code-button.js";
+	import "../code/create-copy-buttons.js";
+</script>
+
+<div class="normal">
+    <h2>Information</h2>
+    <hr/>
+    <div class="alert-box critical">Sadly, proper windows support is <bold>not yet available</bold>. Instead, we have a solution that requires you to have a USB thumb drive to boot into another operating system so you're able to run palera1n.</div>
+    <div class="alert-box notice">You will need a USB thumb drive with at least 32GB of storage.</div>
+    <div class="alert-box tip"><a href="https://etcher.balena.io/" target="_blank"><img class="alert-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Etcher-icon.png" alt="Balena Etcher" /></a>
+        <a href="https://rufus.ie/en/" target="_blank"><img class="alert-icon" src="https://rufus.ie/pics/rufus-128.png" alt="Rufus" /></a>
+        You can use tools like Balena Etcher or Rufus to flash the <Code>.ISO</Code> files to your USB drive.
+    </div>
+    <div class="alert-box notice">If you choose to use Rufus, you must use <Code>DD Mode</Code> when flashing.</div>
+    <h2>Help</h2>
+    <hr/>
+    <div class="button-container-top">
+        <a class="coolshit" href="https://ios.cfw.guide/using-palen1x/" target="_blank">→ Guide on using palen1x</a>
+        <a class="coolshit" href="https://www.disk-image.com/faq-bootmenu.htm" target="_blank">→ Hot keys for BootMenu / BIOS Settings</a>
+    </div>
+
+    <h2>Files</h2>
+    <hr/>
+    <div class="alert-box basic"> Certain downloads are for certain computers, make sure you get the right one for your computer.
+    • <Code>x86_64</Code> if you have a 64 bit computer
+    • <Code>x86</Code> if you have a 32 bit computer
+    </div>
+    <DownloadTable label="USB Drive" assets={assets} />
+</div>

@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Default.astro";
+import BaseCredits from "../components/Main/Credits.astro";
+import "../components/pagestyle.css";
+---
+
+<style>
+  .centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #8d8d8d;
+    height: 400px;
+    text-align: center;
+    background-color: #18181a;;
+  }
+</style>
+
+<Layout>
+  <div class="centered-div">
+    <div style="max-width: 500px;padding: 20px;">
+        <p style="font-size: 3rem;color:#db8d8d">♡</p>
+        <p>This tool wouldn't be possible without these people, thank you to everyone involved in the palera1n project.</p>
+    </div>
+  </div>
+  <BaseCredits/>
+</Layout>

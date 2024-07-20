@@ -1,128 +1,90 @@
 ---
-import { MAIN_SOURCE_CODE } from "../scripts/constants";
-import { MAIN_TWITTE_LINK } from "../scripts/constants";
-import { MAIN_MASTOD_LINK } from "../scripts/constants";
-import { MAIN_DISCOR_LINK } from "../scripts/constants";
-import { MAIN_DONATE_LINK } from "../scripts/constants";
-
-const { showNavbar, showMenuIcon } = Astro.props;
+import { MAIN_SOURCE_CODE, MAIN_TWITTE_LINK, MAIN_MASTOD_LINK, MAIN_DISCOR_LINK, MAIN_DONATE_LINK } from "../scripts/constants";
+import "./pagestyle.css";
 ---
 
 <style>
     .header-container {
+        position: relative;
         color: #fff;
         background-color: #18181a;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 56px;
+        min-height: 56px;
         z-index: 1;
     }
 
     .header-content {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        width: 100%;
+        padding: 0 1.5rem;
+        width: 1200px;
         height: 100%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
 
-    .header-icons {
+    .tabs {
         display: flex;
-        align-items: center;
-        padding-right: 10px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .header-icons img {
-        width: 22px;
-        height: auto;
+    .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #bdbdbd;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s;
     }
-    @media screen and (max-width: 500px) {
-        .header-icons img {
+
+    .tab:hover {
+        color: #fff;
+    }
+
+    .tab.active {
+        font-weight:500;
+        color: #fff;
+        border-bottom: 2px solid #8ad1d1;
+    }
+
+    @media screen and (max-width: 800px) {
+        .header-dl-button {
             display: none;
         }
     }
-
-
-
-.navbar-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.navbar-logo, .menu-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5rem;
-}
-
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-@media (max-width: 1000px) {
-    .menu-icon {
-        display: block;
-    }
-}
-
-
-
-.navbar-link h1 {
-    font-size: 22px;
-    font-weight: 500;
-    display: inline;
-        padding-right: 0.5rem;
-}
-
-.navbar-link {
-    color: white;
-    text-decoration: none;
-        font-size: 20px;
-        font-weight: 300;
-}
-
-.header-fixed {
-    position: fixed;
-    width: 100vw;
-}
 </style>
 
-<header>
-    <div class={"header-container" + (showNavbar ? " header-fixed" : "")}>
+<div>
+    <div class="header-container">
         <div class="header-content">
-
-            <div class="header-content">
-                { showNavbar && <div class="navbar-content">
-                    { showMenuIcon && <img class="menu-icon" src="/assets/svg/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon" onclick="document.body.classList.toggle('sidebar-open');" /> }
-                    <img class="navbar-logo" src="/favicons/128@2x.png" alt="palera1n logo" />
-                    <a href="/" class="navbar-link"><h1>palera1n</h1>docs</a>
-                </div> }
+            <div class="tabs">
+                <a href="/" class="tab" data-path="/">/</a>
+                <a href="/about" class="tab" data-path="/about">credits</a>
+                <a href="https://github.com/palera1n/palera1n/releases" target="_blank" class="tab" data-path="https://github.com/palera1n/palera1n/releases">changelog</a>
+                <a href={MAIN_TWITTE_LINK} target="_blank" class="tab" data-path={MAIN_TWITTE_LINK}>twitter</a>
+                <a href={MAIN_SOURCE_CODE} target="_blank" class="tab" data-path={MAIN_SOURCE_CODE}>github</a>
+                <a href="/more" class="tab" data-path="/more">more</a>
             </div>
-
-            <div class="header-icons">
-                <a href={ MAIN_SOURCE_CODE }>
-                    <img src="/assets/svg/github_w.svg" alt="GitHub Icon" />
-                </a>
-                <a style="margin-left: 20px;" href={ MAIN_MASTOD_LINK }>
-                    <img src="/assets/svg/mastodon_w.svg" alt="Mastodon Icon" />
-                </a>
-                <a style="margin-left: 20px;" href={ MAIN_TWITTE_LINK }>
-                    <img src="/assets/svg/twitter_w.svg" alt="Twitter Icon" />
-                </a>
-                
-                <a style="margin-left: 20px;" href={ MAIN_DISCOR_LINK }>
-                    <img src="/assets/svg/discord_w.svg" alt="Twitter Icon" />
-                </a>
-                <a style="margin-left: 20px;" href={ MAIN_DONATE_LINK }>
-                    <img src="/assets/svg/heart_w.svg" alt="Patreon Icon" />
-                </a>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="/download" class="header-dl-button">Download</a>
             </div>
-
         </div>
     </div>
-</header>
+</div>
+
+<script>
+    const currentPath = window.location.pathname;
+    const tabs = document.querySelectorAll('.tab');
+    
+    tabs.forEach(tab => {
+        const tabPath = tab.getAttribute('data-path');
+        
+        if (tabPath === '/' && currentPath === '/') {
+            tab.classList.add('active');
+        } else if (tabPath !== '/' && currentPath.startsWith(tabPath)) {
+            tab.classList.add('active');
+        }
+    });
+</script>
+

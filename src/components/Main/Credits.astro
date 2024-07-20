@@ -1,12 +1,12 @@
 ---
-import "./pagestyle.css";
-const jsonData = await import('../lib/credits.json');
+import "../pagestyle.css";
+const jsonData = await import('../../lib/credits.json');
 const sections = jsonData.sections;
 ---
 <style>
   .normal {
     padding-block: 1px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -16,7 +16,7 @@ const sections = jsonData.sections;
     padding: 12px;
     display: flex;
     align-items: flex-start;
-    background-color: #151517;
+    background-color: #26262a;
     border-radius: 10px;
   }
 
@@ -36,8 +36,8 @@ const sections = jsonData.sections;
 
 </style>
 
-<credits>
-<div style="background-color: #18181a;">
+<div>
+<div style="background-color: #18181a;padding-bottom: 70px;">
   <div class="normal">
     {sections.map((section) => {
       return (
@@ -64,4 +64,4 @@ const sections = jsonData.sections;
     })}
   </div>
 </div>
-</credits>
+</div>

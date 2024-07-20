@@ -3,13 +3,13 @@ import Layout from "../layouts/Default.astro";
 import "../components/pagestyle.css";
 ---
 
-<Layout showNavbar={true}>
+<Layout>
     <style>
         .page-center {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 94vh;
+            height: 74vh;
             min-width: 400px;
             margin: 0 auto;
         }
@@ -56,8 +56,6 @@ import "../components/pagestyle.css";
             <div>
                 <h1>Could not find page</h1>
                 <p>Was unable to locate the page, you should go back home.</p>
-
-                <img src="/assets/cat.png" alt="404" style="width: 100%; max-width: 300px; margin-top: 20px;">
 
                 <div class="button-container">
                     <a href="/" class="base-button download-button">

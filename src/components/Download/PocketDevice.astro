@@ -1,0 +1,103 @@
+---
+import "./dlpagestyle.css";
+import "../pagestyle.css";
+import DownloadTable from "./DownloadTable.astro";
+
+const addmanagers = {
+    title: "Default Package Managers",
+    icons: [
+        {
+            name: "Cydia",
+            icon: "https://repo.palera.in/styles/cydia.png",
+            open: "cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.palera.in/"
+        },
+        {
+            name: "Installer",
+            icon: "https://repo.palera.in/styles/installer5.png",
+            open: "installer://add/https://repo.palera.in/"
+        },
+        {
+            name: "Saily",
+            icon: "https://repo.palera.in/styles/saily.png",
+            open: "apt-repo://https://repo.palera.in/"
+        },
+        {
+            name: "Sileo",
+            icon: "/assets-config/sileo.png",
+            open: "sileo://source/https://repo.palera.in/"
+        },
+        {
+            name: "Zebra",
+            icon: "/assets-config/zeeb.png",
+            open: "zbra://sources/add/https://repo.palera.in/"
+        }
+    ]
+}
+const REPO = `https://repo.palera.in`;
+
+const { assets = [] } = Astro.props;
+---
+
+<script>
+	import "../code/copy-code-button.js";
+	import "../code/create-copy-buttons.js";
+</script>
+
+<style>
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    @media (max-width: 568px) {
+        .icons-container {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+    }
+</style>
+
+<div class="normal">
+    <div class="alert-box critical">This download section is for devices that are already jailbroken and are able to access the command-line through an app (such as Newterm 2).
+
+If you're looking to jailbreak with a semi-untethered then you have come to the wrong place.
+    </div>
+
+    <h2>Add Repository</h2>
+    <hr/>
+    <p>Add this repository to your preferred package manager on a jailbroken device</p>
+
+    <div class="feature-box">
+        <div class="feature-titlebar">
+            <div class="feature-title">Add Repository To</div>
+        </div>
+        <div class="feature-box-content">
+            <div class="icons-container">
+                {addmanagers.icons.map((icon) => (
+                    <div class="icon-box">
+                        <a href={icon.open} target="_blank">
+                        <img src={icon.icon} alt={icon.name} />
+                        <div>{icon.name}</div>
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+
+    <p>If your package manager is not listed here you may add the repository manually via this link</p>
+
+    <pre><code>{REPO}</code></pre>
+    
+    <div class="alert-box tip">
+        <a href="https://chariz.com/get/newterm" target="_blank"><img class="alert-icon" src="https://cdn.chariz.cloud/icon/newterm/icon@3x.png" alt="Newterm 2" /></a>
+        After installing the program to your computer, a new command will be available for you to run. That being "palera1n". Use a terminal like Newterm 2 on your jailbroken device, or any other terminal application if available.
+    </div>
+
+
+    <h2>Manual Download</h2>
+    <hr/>
+    <DownloadTable assets={assets} />
+</div>

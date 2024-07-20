@@ -1,0 +1,29 @@
+---
+import MainLayout from './DownloadSelection.astro';
+
+const p1 = await fetch('https://api.github.com/repos/palera1n/palera1n/releases');
+if (!p1.ok) {
+  throw new Error('maybe dont build 20 billion fucking times so you wont be rate limited');
+}
+
+const p1x = await fetch('https://api.github.com/repos/palera1n/palen1x/releases');
+if (!p1x.ok) {
+  throw new Error('literally how are you getting this error you would need to get past the first rate limit which is the same amount of requests here?');
+}
+
+const p1Releases = await p1.json();
+const p1LatestRelease = p1Releases[0];
+
+const p1xReleases = await p1x.json();
+const p1xLatestRelease = p1xReleases[0];
+
+const p1MacOSAssets = p1LatestRelease.assets.filter(asset => asset.name.includes('macos'));
+const p1LinuxAssets = p1LatestRelease.assets.filter(asset => asset.name.includes('linux'));
+const p1WindowsAssets = p1LatestRelease.assets.filter(asset => asset.name.includes('windows'));
+const p1PocketAssets = p1LatestRelease.assets.filter(asset => asset.name.includes('iphoneos'));
+
+const p1xAssets = p1xLatestRelease.assets.filter(asset => asset.name.includes('palen1x'));
+
+---
+
+<MainLayout p1xAssets={p1xAssets} p1LatestRelease={p1LatestRelease} p1MacOSAssets={p1MacOSAssets} p1LinuxAssets={p1LinuxAssets} p1WindowsAssets={p1WindowsAssets} p1PocketAssets={p1PocketAssets} />

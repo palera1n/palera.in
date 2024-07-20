@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Default.astro";
+import "../components/pagestyle.css";
+import "../components/Download/dlpagestyle.css";
+
+const more = {
+    urls: [
+        {
+            name: "Frequency Asked Questions",
+            open: "https://exmaple.com",
+        },
+        {
+            name: "Documentation",
+            open: "https://docs.palera.in",
+        },
+        {
+            name: "Troubleshooting",
+            open: "https://docs.palera.in/docs/troubleshoot/troubleshooting-steps/",
+        },
+    ],
+};
+---
+
+<style>
+    .normal {
+        padding-block: 1px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+</style>
+
+<Layout>
+    <div style="background-color: #18181a; padding-bottom: 70px;">
+        <div class="normal">
+            <div class="downloads">
+                <div>
+                    <table>
+                        <tbody>
+                            {more.urls.map(url => (
+                                <tr>
+                                    <td><a class="coolshit" href={url.open} target="_blank" rel="noopener noreferrer">→ {url.name}</a></td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
