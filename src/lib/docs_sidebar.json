@@ -55,6 +55,10 @@
             {
                 "name": "Environment Types",
                 "url": "/docs/reference/environment-types"
+            },
+            {
+                "name": "Frequently Asked Questions",
+                "url": "/docs/reference/faq"
             }
         ]
     },
