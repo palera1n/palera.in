@@ -21,6 +21,7 @@ import "./pagestyle.css";
         height: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .tabs {
@@ -43,15 +44,68 @@ import "./pagestyle.css";
     }
 
     .tab.active {
-        font-weight:500;
+        font-weight: 500;
         color: #fff;
         border-bottom: 2px solid #8ad1d1;
     }
 
+    .header-dl-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 1px;
+        background-color: #c5c5c5;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .responsive-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #18181a;
+        width: 100%;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        box-shadow: #18181a 10px 10px 10px;
+    }
+
+    .responsive-menu .tab {
+        padding: 15px;
+        border-bottom: 1px solid #333;
+    }
+
     @media screen and (max-width: 800px) {
+        .header-content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .tabs {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
         .header-dl-button {
             display: none;
         }
+    }
+
+    .show {
+        display: flex !important;
     }
 </style>
 
@@ -61,13 +115,24 @@ import "./pagestyle.css";
             <div class="tabs">
                 <a href="/" class="tab" data-path="/">/</a>
                 <a href="/about" class="tab" data-path="/about">credits</a>
-                <a href="https://github.com/palera1n/palera1n/releases" target="_blank" class="tab" data-path="https://github.com/palera1n/palera1n/releases">changelog</a>
-                <a href={MAIN_TWITTE_LINK} target="_blank" class="tab" data-path={MAIN_TWITTE_LINK}>twitter</a>
-                <a href={MAIN_SOURCE_CODE} target="_blank" class="tab" data-path={MAIN_SOURCE_CODE}>github</a>
+                <a href="https://docs.website-msw.pages.dev/" target="_blank" class="tab">docs</a>
+                <a href={MAIN_TWITTE_LINK} target="_blank" class="tab">twitter</a>
+                <a href={MAIN_SOURCE_CODE} target="_blank" class="tab">github</a>
                 <a href="/more" class="tab" data-path="/more">more</a>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <a href="/download" class="header-dl-button">Download</a>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="responsive-menu" id="responsive-menu">
+                <a href="/" class="tab" data-path="/">home</a>
+                <a href="/about" class="tab" data-path="/about">credits</a>
+                <a href="https://docs.website-msw.pages.dev/" target="_blank" class="tab">docs</a>
+                <a href={MAIN_TWITTE_LINK} target="_blank" class="tab">twitter</a>
+                <a href={MAIN_SOURCE_CODE} target="_blank" class="tab">github</a>
+                <a href="/more" class="tab" data-path="/more">more</a>
+                <a href="/download" style="color: aqua;" class="tab" data-path="/download">download ←</a>
             </div>
         </div>
     </div>
@@ -86,5 +151,11 @@ import "./pagestyle.css";
             tab.classList.add('active');
         }
     });
-</script>
 
+    const hamburger = document.getElementById('hamburger');
+    const responsiveMenu = document.getElementById('responsive-menu');
+    
+    hamburger.addEventListener('click', () => {
+        responsiveMenu.classList.toggle('show');
+    });
+</script>

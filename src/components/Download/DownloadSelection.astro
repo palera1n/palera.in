@@ -54,7 +54,7 @@ const tabs = [
     }
 
     .tab {
-        position: relative; /* Position relative to contain the pseudo-element */
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -66,6 +66,7 @@ const tabs = [
         border-radius: 7px;
         text-align: center;
         height: 100px;
+        background: transparent;
     }
 
     .tab.active {
@@ -105,6 +106,17 @@ const tabs = [
     }
 
     @media (max-width: 768px) {
+        .container {
+            border-bottom: 0px solid #00000000;
+            background: linear-gradient(0deg, #17181b, #18181a);
+        }
+        .tab {
+            background: #1c1d20;
+        }
+        .tab.active {
+            border: 2px solid #87c3ff8b;
+            background: #87c3ff1d;
+        }
         .tab.active::after {
             display: none;
         }
