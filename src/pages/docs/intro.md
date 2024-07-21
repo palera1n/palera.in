@@ -21,7 +21,7 @@ title: palera1n
   </a>
   <a href="/docs/get-started/installing-palen1x-windows" class="card">
     <img src="/assets/logos/windows_logo.png" alt="windows_logo" />
-    <div class="card-title">Windows</div>
+    <div class="card-title">Other PC</div>
   </a>
 </div>
 
