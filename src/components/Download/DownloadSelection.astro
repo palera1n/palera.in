@@ -4,12 +4,11 @@ import Linux from "./Linux.astro";
 import Mac from "./Mac.astro";
 const { p1MacOSAssets, p1LinuxAssets, p1WindowsAssets, p1PocketAssets, p1xAssets } = Astro.props;
 
-import PocketDevice from "./PocketDevice.astro";
 const tabs = [
   { id: 'macos', name: 'macOS' },
   { id: 'linux', name: 'Linux' },
   { id: 'windows', name: 'Other PC' }
-//   ,{ id: 'pocket', name: 'Mobile' }
+
 ];
 ---
 
@@ -36,7 +35,7 @@ const tabs = [
 
     .tabs {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         justify-content: center;
     }
@@ -166,9 +165,6 @@ const tabs = [
     </div>
     <div class="tab-content" data-tab-id="macos">
         <Mac assets={p1MacOSAssets} />
-    </div>
-    <div class="tab-content" data-tab-id="pocket">
-        <PocketDevice assets={p1PocketAssets} />
     </div>
 </div>
 </div>
