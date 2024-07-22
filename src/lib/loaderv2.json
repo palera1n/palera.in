@@ -96,6 +96,14 @@
                             "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
                             "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
                         ]
+                    },
+                    {
+                        "cfver": 3000,
+                        "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
+                        "bootstrap-debs": [
+                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
+                        ]
                     }
                 ],
                 "managers": [
