@@ -46,13 +46,19 @@ const sections = jsonData.sections;
           <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
             {section.data.map((item) => (
               <li key={item.name} class={`credit-item ${!item.desc ? 'centered' : ''}`}>
-                <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
+                <a href={item.intent ? `https://twitter.com/intent/follow?screen_name=${item.intent}` : `https://github.com/${item.github}`} 
+                    class="coolshit" target="_blank" rel="noopener noreferrer">
                   <img src={`https://github.com/${item.github}.png`} width="35" height="35" />
                 </a>
                 <div>
-                  <a href={`https://github.com/${item.github}`} class="coolshit" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={item.intent ? `https://twitter.com/intent/follow?screen_name=${item.intent}` : `https://github.com/${item.github}`} 
+                    class="coolshit" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
                     {item.name}
                   </a>
+
                   <br/>
                   {item.desc}
                 </div>

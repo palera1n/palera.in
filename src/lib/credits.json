@@ -5,19 +5,23 @@
             "data": [
                 {
                     "name": "Nick Chan",
-                    "github": "asdfugil"
+                    "github": "asdfugil",
+                    "intent": "riscv64"
                 },
                 {
                     "name": "Samara",
-                    "github": "khcrysalis"
+                    "github": "khcrysalis",
+                    "intent": "khcrysalis"
                 },
                 {
                     "name": "mineek",
-                    "github": "mineek"
+                    "github": "mineek",
+                    "intent": "mineekdev"
                 },
                 {
                     "name": "HAHALOSAH",
-                    "github": "HAHALOSAH"
+                    "github": "HAHALOSAH",
+                    "intent": "HAHALOSAH"
                 }
             ]
         },
@@ -26,11 +30,13 @@
             "data": [
                 {
                     "name": "staturnz",
-                    "github": "staturnzz"
+                    "github": "staturnzz",
+                    "intent": "staturnzdev"
                 },
                 {
                     "name": "kok3shidoll",
-                    "github": "kok3shidoll"
+                    "github": "kok3shidoll",
+                    "intent": "dora2ios"
                 },
                 {
                     "name": "Tom",
@@ -38,15 +44,18 @@
                 },
                 {
                     "name": "Nebula",
-                    "github": "itsnebulalol"
+                    "github": "itsnebulalol",
+                    "intent": "itsnebulalol"
                 },
                 {
                     "name": "Nathan",
-                    "github": "verygenericname"
+                    "github": "verygenericname",
+                    "intent": "dedbeddedbed"
                 },
                 {
                     "name": "Lakhan Lothiyi",
-                    "github": "llsc12"
+                    "github": "llsc12",
+                    "intent": "llsc121"
                 }
             ]
         },
