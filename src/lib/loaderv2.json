@@ -208,7 +208,7 @@
                 "managers": [
                     {
                         "name": "PurePKG",
-                        "uri": "https://github.com/Lrdsnow/PurePKG/releases/latest/download/uwu.lrdsnow.purepkg_appletvos-arm64.deb",
+                        "uri": "https://static.palera.in/purepkg-tv.deb",
                         "icon": "https://palera.in/assets-config/purepkg-tv.png",
                         "filePath": "/Applications/PurePKG.app"
                     }
