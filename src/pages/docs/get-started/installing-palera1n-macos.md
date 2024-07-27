@@ -59,6 +59,10 @@ Run this command in the terminal of your choice.
 palera1n -l
 ```
 
+<p class="markdown-warning">
+<strong>appleTV</strong> and <strong>Apple T2 (iBridge)</strong> does not support Rootless! Go to the Rootful tab to get started.
+</p>
+
 </MarkdownRenderer>
     </tab-content>
     <tab-content>

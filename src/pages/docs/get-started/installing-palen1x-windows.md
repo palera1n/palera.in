@@ -76,6 +76,10 @@ Please select your preferred environment type, if this is your first time it is 
 
 Pressing `1 Start` will start the jailbreak process by running palera1n.
 
+<p class="markdown-warning">
+<strong>appleTV</strong> and <strong>Apple T2 (iBridge)</strong> does not support Rootless! Go to the Rootful tab to get started.
+</p>
+
 </MarkdownRenderer>
     </tab-content>
     <tab-content>
