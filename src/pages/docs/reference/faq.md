@@ -13,18 +13,18 @@ title: Frequently Asked Questions
 
 
 ## Q: Is palera1n safe?
-Like all jailbreaks, all of them are flawed in someway. We are NOT responsible for any data loss, or the result of a device being bricked. When using palera1n, the user should accept responsibility if anything happens to their device during the process.
+Like all jailbreaks, each one of them is flawed in some way. We are NOT responsible for any data loss, or the result of a device being bricked. When using palera1n, the user should accept responsibility if anything happens to their device during the process.
 
 ## Q: Why do updates take so long?
 We do our best to release a high quality product for use for the public, small hotfixes for previous builds of palera1n will be available if we find any issues. Bigger changes coming soon :D
 
 ## Q: Will palera1n ever support AMD? (or VMs?)
-Due to the precision that `checkm8` needs in order to exploit the device, theres nothing we can do to attempt to fix the issue apart from telling you to either get an intel machine or an AMD mobile computer. Sorry.
+Due to the precision that `checkm8` needs in order to exploit the device, theres nothing we can do to attempt to fix the issue apart from telling you to either get an Intel machine, an AMD mobile computer, or an Apple Silicon Mac. Sorry.
 
 The same applies for virtual machines, we cannot fix the issues that come from using any virtual machine software due to the exploit. So please, either use macOS or Linux on real hardware.
 
 ## Q: Why is there problems with USB-C cables and ports?
-Due to apple! They messed up on their USB-C cables and now there's issues when getting into DFU.
+Due to Apple! They messed up on their USB-C cables and now there's issues when getting into DFU.
 
 USB-C port on Apple Silicon Macs may require manual unplugging and replugging of the lightning cable after checkm8 exploit, though this problem may be solved by connecting via USB hub, though extensions can vary.
 

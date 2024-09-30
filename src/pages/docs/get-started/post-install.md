@@ -18,7 +18,7 @@ The modern jailbreak package manager, most commonly used in jailbreaks for the m
 Meant to be a more modern, similar feel to the outdated package manager Cydia! 
 
 ## Post-bootstrap install
-You've made it through the whole entire jailbreaking process! You can now customize your device to your hearts desire, have fun!
+You've made it through the whole entire jailbreaking process! You can now customize your device to your heart's desire, have fun!
 
 > Please leave us a star on github if possible: https://github.com/palera1n/palera1n
 > 

@@ -4,7 +4,7 @@ title: Compatibility Chart
 ---
 
 # Compatibility Chart
-This page shows the general compatibility on OS's, mobile devices, cables, and macbooks for when jailbreaking with palera1n.
+This page shows the general compatibility on OS's, mobile devices, cables, and MacBooks for when jailbreaking with palera1n.
 
 ## palera1n Device Compatibility
 

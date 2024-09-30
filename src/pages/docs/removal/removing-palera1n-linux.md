@@ -24,7 +24,7 @@ sudo systemctl stop usbmuxd
 sudo usbmuxd -f -p
 ```
 
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+Run this command in the terminal of your choice. This is probably one of Terminal, Console, Konsole, Kitty, Alacritty, or WezTerm.
 
 ```sh
 sudo palera1n -l --force-revert
@@ -44,7 +44,7 @@ sudo systemctl stop usbmuxd
 sudo usbmuxd -f -p
 ```
 
-Run this command in the terminal of your choice. By default, macOS has a terminal built in so search for it using Spotlight or Launchpad.
+Run this command in the terminal of your choice.
 
 ```sh
 sudo palera1n -f --force-revert
@@ -54,15 +54,15 @@ sudo palera1n -f --force-revert
     </tab-content>
 </tab-container>
 
-**Connect your device** and palera1n will attempt to put the device into recovery mode, then follow the instructions that are provided to enter DFU.
+**Connect your device** and palera1n will attempt to put the device into recovery mode, then follow the instructions that are provided to enter DFU mode.
 
-> This step is to ensure there isn't any corruption issues when attempting to enter DFU via force reset/reboot.
+> This step is to ensure there isn't any corruption issues when attempting to enter DFU mode via force reset/reboot.
 
 If all goes well, **your device should enter DFU mode and start jailbreaking with palera1n**, this is the most important step in making sure it actually works correctly.
 
 > `A9(X) and earlier` devices have an issue where they will get stuck midway through this process in **pongoOS**. To work around this issue, you'll need to do the following:<br/><br/>1. In the terminal window, press `CTRL + C`<br/>2. Rerun the palera1n command<br/><br/>You'll need to do this every time you rejailbreak your device.
 
-After the entire process is complete, please reboot the device manually to finish the process of removing the jailbreak.
+After the entire process is completed, please reboot the device manually to finish the process of removing the jailbreak.
 
 ## Uninstalling the binary
 
@@ -72,5 +72,5 @@ sudo rm /usr/local/bin/palera1n
 ```
 
 <p class="markdown-warning">
-This will most likely not work if you've installed it by other means, such as using the provided debian packages in releases. So you will need to use <code>sudo apt remove palera1n</code>
+This will most likely not work if you've installed it by other means, such as using the provided Debian packages in Releases. So you will need to use, e.g. <code>sudo apt remove palera1n</code>
 </p>
