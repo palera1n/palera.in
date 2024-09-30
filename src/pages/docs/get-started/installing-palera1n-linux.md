@@ -20,7 +20,7 @@ This will guide you through the process of downloading the **latest** version of
 > On `A11 devices`, you must disable your passcode and will not be able to use your passcode, or other SEP functionality, until you boot into a stock iOS state. SEP functionality includes things such as a passcode, Face ID/Touch ID, and Apple Pay.<br/><br/>Additionally, if your device is an `A11 device on iOS 16` and you've set a passcode before, you will need to **erase all content and settings** in order to be able to jailbreak.
 
 ## Downloading palera1n
-Open `Terminal.app` and copy & paste the following command. This will download palera1n to your system and let you jailbreak.
+Open your terminal (probably one of Terminal, Console, Konsole, Kitty, Alacritty, or WezTerm) and copy & paste the following command. This will download palera1n to your system and let you jailbreak.
 
 ```sh
 sudo /bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
@@ -39,8 +39,6 @@ curl -LO <link to binary>
 # This will give it the necessary permissions to execute
 chmod +x /path/to/binary 
 ```
-
-> If you're not using curl to download, and rather would just click on the file and download through your browser, you would need to run `xattr -c /path/to/binary` as well as the chmod command so you are able to get through macOS's gatekeeper.
 
 If all goes well the binary should be able to be executed now.
 
