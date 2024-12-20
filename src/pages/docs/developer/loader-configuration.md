@@ -11,14 +11,14 @@ Depending on the data received the loader will change functionality. The default
 The configuration was updated as of June 5th 2024, previous documentation on lower beta versions of palera1n can be found in older commits.
 </p>
 
-Example JSON thats valid and used by default inside the app: https://palera.in/loaderv2.json
+Example JSON that's valid and used by default inside the app: https://palera.in/loaderv2.json
 
 
 ## Instructions
 
-1. Create the file, and make sure its in a JSON format.
+1. Create the file, and make sure it's in the JSON format.
 
-2. Make sure the file is hosted on a secure server or webpage, to easily host somewhere with no extra cost look into making sites via Cloudflare or Github pages.
+2. Make sure the file is hosted on a secure server or webpage; to easily host somewhere with no extra cost look into making sites via [Cloudflare](https://pages.cloudflare.com/) or [Github Pages](https://pages.github.com/).
 
 3. Follow the documentation carefully.
 
@@ -37,7 +37,7 @@ Example JSON thats valid and used by default inside the app: https://palera.in/l
 
 ## Metadata
 
-When making a configuration it is recommended you consider possibilities of what palera1n version they're using, platform, and iOS they would be running.
+When making a configuration, it is recommended you consider possibilities of what palera1n version they're using, platform, and iOS they would be running.
 
 ---
 
@@ -67,7 +67,7 @@ The minimum loader version the latest version of palera1n supports. -- As of the
 
 Message displayed in a section footer. -- Usually used as a means of telling users emergency or important messages related to palera1n/jailbreaking in general.
 
-- Any link added will not be clickable, requiring the user to manually type in the url in their browser.
+- Any link added will not be clickable, requiring the user to manually type in the URL in their browser.
 
 - Anything more than 40+ characters is not recommended, as it would seem overwhelming to the user trying to bootstrap. (No information overload!)
 
@@ -195,7 +195,7 @@ Main bootstrap URL. -- Needs to be either a `tar` or `tar.gz` file.
 Bootstrap array that contains strings to debs. -- These are force installed using `dpkg -i`.
 
 <p class="markdown-info">
-<strong>libkrw0-tfp0</strong> is required to be installed when bootstrapping, if its missing then the provided managers will yell at you.
+<strong>libkrw0-tfp0</strong> is required to be installed when bootstrapping, if it's missing then the provided managers will yell at you.
 </p>
 
 ---
@@ -227,7 +227,7 @@ Valid image file that is displayed in the table.
 
 `filePath` **(string)** <sup>required</sup>
 
-This is so the loader determines if you have the package manager installed. Although, its very pointless in reality, as all it does is change a string showing that its installed. It will be force installed the same way as if its not installed.
+This is so the loader determines if you have the package manager installed. Although, it's very pointless in reality, as all it does is change a string showing that it's installed. It will be force installed the same way as if it's not installed.
 
 
 ---
