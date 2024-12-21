@@ -39,14 +39,6 @@
                             "https://static.palera.in/bootstraps/iphoneos-arm64/2000/dhinakg-keyring_2023.04.02_all.deb",
                             "https://static.palera.in/bootstraps/iphoneos-arm64/2000/libkrw0-tfp0_1.1.1_iphoneos-arm.deb"
                         ]
-                    },
-                    {
-                        "cfver": 3000,
-                        "uri": "https://static.palera.in/bootstraps/iphoneos-arm64/3000/bootstrap-3000.tar.zst",
-                        "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/iphoneos-arm64/3000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/iphoneos-arm64/3000/libkrw0-tfp0_1.1.1_iphoneos-arm.deb"
-                        ]
                     }
                 ],
                 "managers": [
@@ -99,18 +91,18 @@
                     },
                     {
                         "cfver": 2000,
-                        "uri": "https://static.palera.in/bootstraps/2000/bootstrap-iphoneos-arm64.tar.zst",
+                        "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
                         "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/2000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/2000/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
+                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
                         ]
                     },
                     {
                         "cfver": 3000,
-                        "uri": "https://static.palera.in/bootstraps/3000/bootstrap-iphoneos-arm64.tar.zst",
+                        "uri": "https://static.palera.in/bootstraps/1900/bootstrap-iphoneos-arm64.tar.zst",
                         "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/3000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/3000/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
+                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_iphoneos-arm64.deb"
                         ]
                     }
                 ],
@@ -200,16 +192,16 @@
                     },
                     {
                         "cfver": 3000,
-                        "uri": "https://static.palera.in/bootstraps/appletvos-arm64/3000/tvbootstrap-ssh-3000.tar.zst",
+                        "uri": "https://static.palera.in/bootstraps/appletvos-arm64/2000/tvbootstrap-ssh-2000.tar.zst",
                         "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/autosign_2.0.3_appletvos-arm64.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/ellekit_1.1.3-palera1n1_appletvos-arm64.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/ldid_2.1.5-procursus7_appletvos-arm64.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/palera1n-keyring_2024.03.23_all.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/3000/lrdsnow-keyring_2024.03.28_all.deb"
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/autosign_2.0.3_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/dhinakg-keyring_2023.04.02_all.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/ellekit_1.1.3-palera1n1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/ldid_2.1.5-procursus7_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/palera1n-keyring_2024.03.23_all.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/lrdsnow-keyring_2024.03.28_all.deb"
                         ]
                     }
                 ],
@@ -217,65 +209,6 @@
                     {
                         "name": "PurePKG",
                         "uri": "https://static.palera.in/purepkg-tv.deb",
-                        "icon": "https://palera.in/assets-config/purepkg-tv.png",
-                        "filePath": "/Applications/PurePKG.app"
-                    }
-                ],
-                "repositories": [
-                    {
-                        "Types": "deb",
-                        "URIs": "https://repo.palera.in",
-                        "Suites": "./",
-                        "Components": ""
-                    },
-                    {
-                        "Types": "deb",
-                        "URIs": "https://lrdsnow.github.io/purepkg",
-                        "Suites": "./",
-                        "Components": ""
-                    }
-                ]
-            },
-            "rootless": {
-                "dotfile": "/var/jb/.procursus_strapped",
-                "bootstraps": [
-                    {
-                        "cfver": 1800,
-                        "uri": "https://static.palera.in/bootstraps/1800/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
-                        "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/1800/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1800/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
-                        ]
-                    },
-                    {
-                        "cfver": 1900,
-                        "uri": "https://static.palera.in/bootstraps/1900/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
-                        "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
-                        ]
-                    },
-                    {
-                        "cfver": 2000,
-                        "uri": "https://static.palera.in/bootstraps/2000/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
-                        "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
-                        ]
-                    },
-                    {
-                        "cfver": 3000,
-                        "uri": "https://static.palera.in/bootstraps/3000/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
-                        "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
-                        ]
-                    }
-                ],
-                "managers": [
-                    {
-                        "name": "PurePKG",
-                        "uri": "https://static.palera.in/rootless/purepkg-tv.deb",
                         "icon": "https://palera.in/assets-config/purepkg-tv.png",
                         "filePath": "/Applications/PurePKG.app"
                     }
