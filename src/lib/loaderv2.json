@@ -244,7 +244,7 @@
                         "uri": "https://static.palera.in/bootstraps/1800/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/1800/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1800/libkrw0-tfp0_1.1.1-2_appletvos-arm64-rootless.deb"
+                            "https://static.palera.in/bootstraps/1800/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
                         ]
                     },
                     {
@@ -252,23 +252,23 @@
                         "uri": "https://static.palera.in/bootstraps/1900/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1-2_appletvos-arm64-rootless.deb"
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
                         ]
                     },
                     {
                         "cfver": 2000,
                         "uri": "https://static.palera.in/bootstraps/2000/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
                         "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/2000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/2000/libkrw0-tfp0_1.1.1-2_appletvos-arm64-rootless.deb"
+                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
                         ]
                     },
                     {
                         "cfver": 3000,
                         "uri": "https://static.palera.in/bootstraps/3000/bootstrap-ssh-appletvos-arm64-rootless.tar.zst",
                         "bootstrap-debs": [
-                            "https://static.palera.in/bootstraps/3000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/3000/libkrw0-tfp0_1.1.1-2_appletvos-arm64-rootless.deb"
+                            "https://static.palera.in/bootstraps/1900/dhinakg-keyring_2023.04.02_all.deb",
+                            "https://static.palera.in/bootstraps/1900/libkrw0-tfp0_1.1.1_appletvos-arm64-rootless.deb"
                         ]
                     }
                 ],
