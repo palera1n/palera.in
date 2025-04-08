@@ -154,7 +154,7 @@
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/appletvos-arm64/1800/autosign_2.0.3_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1800/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/1800/ellekit_1.1.3-palera1n1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/1800/ellekit_1.1.3-palera1n2_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1800/ldid_2.1.5-procursus7_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1800/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1800/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb",
@@ -168,7 +168,7 @@
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/appletvos-arm64/1900/autosign_2.0.3_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1900/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/1900/ellekit_1.1.3-palera1n1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/1900/ellekit_1.1.3-palera1n2_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1900/ldid_2.1.5-procursus7_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1900/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/1900/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb",
@@ -182,7 +182,7 @@
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/autosign_2.0.3_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/ellekit_1.1.3-palera1n1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/ellekit_1.1.3-palera1n2_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/ldid_2.1.5-procursus7_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb",
@@ -196,7 +196,7 @@
                         "bootstrap-debs": [
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/autosign_2.0.3_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/dhinakg-keyring_2023.04.02_all.deb",
-                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/ellekit_1.1.3-palera1n1_appletvos-arm64.deb",
+                            "https://static.palera.in/bootstraps/appletvos-arm64/2000/ellekit_1.1.3-palera1n2_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/ldid_2.1.5-procursus7_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/libkrw0-tfp0_1.1.1_appletvos-arm64.deb",
                             "https://static.palera.in/bootstraps/appletvos-arm64/2000/libplist3_2.2.0+git20230130.4b50a5a_appletvos-arm64.deb",
