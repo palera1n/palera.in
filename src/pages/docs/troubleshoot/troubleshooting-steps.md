@@ -12,6 +12,7 @@ This section is for when you're having problems jailbreaking with palera1n, this
 - [Could not connect to lockdownd](#could-not-connect-to-lockdownd)
 - [Device boots out of DFU](#device-boots-out-of-dfu)
 - [palen1x boots into grub rescue shell](#palen1x-boots-into-grub-rescue-shell)
+- [fwupd preventing rebooting into/out of DFU mode](#fwupd-preventing-rebooting-intoout-of-dfu-mode)
 
 ### During-jailbreak
 - [Timed out waiting for download mode](#timed-out-waiting-for-download-mode)
@@ -211,6 +212,19 @@ Get the [Dopamine](https://ellekit.space/dopamine/) jailbreak and jailbreak with
 
 ## Jailbreak dies after restart
 It's a feature, not a bug.
+
+## fwupd preventing rebooting into/out of DFU mode
+re: https://github.com/checkra1n/BugTracker/issues/2410#issuecomment-2563506275 
+`fwupd` may cause issues when going into/out of DFU mode, you can disable it temporarily by writing 
+```sh
+[fwupd]
+# use `man 5 fwupd.conf` for documentation
+DisabledPlugins = dfu
+```
+to `/etc/fwupd/fwupd.conf`, make sure you restart the service afterwards with `systemctl reload`.
+
+#### Fedora
+On Fedora, you can temporarily disable this service instead by using `systemctl stop fwupd`.
 
 ## Loader application not appearing
 
