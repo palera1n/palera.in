@@ -107,7 +107,7 @@ Press `1 Start` to start creating the fakeFS.
 Once that is finally finished, move on to the next steps.
 
 <p class="markdown-warning">
-<strong>appleTV</strong>  and <strong>Apple T2 (iBridge)</strong>  are NOT required to have storage available for the jailbreak, this <strong>ONLY</strong> applies to devices running iOS/iPadOS 15 and higher. If you have one of these devices, please skip the above information and steps.
+<strong>appleTV</strong>  and <strong>Apple T2 (iBridge)</strong> on 18.1 and below are NOT required to have storage available for the jailbreak, this <strong>ONLY</strong> applies to devices running iOS/iPadOS 15 and higher. If you have one of these devices, please skip the above information and steps.
 </p>
 
 Press `1 Start` to start the jailbreak process.
