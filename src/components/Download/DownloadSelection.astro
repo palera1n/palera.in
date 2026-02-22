@@ -107,7 +107,7 @@ const tabs = [
     @media (max-width: 768px) {
         .container {
             border-bottom: 0px solid #00000000;
-            background: linear-gradient(0deg, #17181b, #18181a);
+            background: #151516;
         }
         .tab {
             background: #1c1d20;
@@ -174,19 +174,19 @@ const tabs = [
 
         const tabs = document.querySelectorAll('.tab');
         const tabContents = document.querySelectorAll('.tab-content');
-    
+
         function updateContent(tabId) {
             tabs.forEach(tab => tab.classList.toggle('active', tab.getAttribute('data-tab-id') === tabId));
             tabContents.forEach(content => content.classList.toggle('active', content.getAttribute('data-tab-id') === tabId));
             updateUrl(tabId);
         }
-    
+
         function updateUrl(tabId) {
             const url = new URL(window.location.href);
             url.searchParams.set('tab', tabId);
             window.history.pushState({}, '', url);
         }
-    
+
         document.getElementById('tab-buttons').addEventListener('click', (event) => {
             const tab = event.target.closest('.tab');
             if (tab) {
@@ -202,9 +202,9 @@ const tabs = [
         };
 
         const os = Object.keys(osRegex).find(key => osRegex[key].test(window.navigator.userAgent));
-    
+
         const initialTab = new URLSearchParams(window.location.search).get('tab') || os || 'macos';
         updateContent(initialTab);
     });
 </script>
-    
+

@@ -1,73 +1,95 @@
 ---
 import "../pagestyle.css";
-const jsonData = await import('../../lib/credits.json');
+const jsonData = await import("../../lib/credits.json");
 const sections = jsonData.sections;
 ---
+
 <style>
-  .normal {
-    padding-block: 1px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .normal {
+        padding-block: 1px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-  .credit-item {
-    padding: 12px;
-    display: flex;
-    align-items: flex-start;
-    background-color: #26262a;
-    border-radius: 10px;
-  }
+    .credit-item {
+        padding: 12px;
+        display: flex;
+        align-items: flex-start;
+        background-color: #26262a;
+        border-radius: 10px;
+    }
 
-  .credit-item img {
-    border-radius: 10%;
-    margin-right: 10px;
-  }
+    .credit-item img {
+        border-radius: 10%;
+        margin-right: 10px;
+    }
 
-  .centered {
-    display: flex;
-    align-items: center;
-  }
+    .centered {
+        display: flex;
+        align-items: center;
+    }
 
-  ul {
-    padding-left: 0;
-  }
-
+    ul {
+        padding-left: 0;
+    }
 </style>
 
 <div>
-<div style="background-color: #18181a;padding-bottom: 70px;">
-  <div class="normal">
-    {sections.map((section) => {
-      return (
-        <div key={section.name}>
-          <h2>{section.name}</h2>
-          <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
-            {section.data.map((item) => (
-              <li key={item.name} class={`credit-item ${!item.desc ? 'centered' : ''}`}>
-                <a href={item.intent ? `https://twitter.com/intent/follow?screen_name=${item.intent}` : `https://github.com/${item.github}`} 
-                    class="coolshit" target="_blank" rel="noopener noreferrer">
-                  <img src={`https://github.com/${item.github}.png`} width="35" height="35" />
-                </a>
-                <div>
-                  <a 
-                    href={item.intent ? `https://twitter.com/intent/follow?screen_name=${item.intent}` : `https://github.com/${item.github}`} 
-                    class="coolshit" 
-                    target="_blank" 
-                    rel="noopener noreferrer">
-                    {item.name}
-                  </a>
+    <div style="background-color: #18181a;padding-bottom: 70px;">
+        <div class="normal">
+            {
+                sections.map((section) => {
+                    return (
+                        <div key={section.name}>
+                            <h2>{section.name}</h2>
+                            <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+                                {section.data.map((item) => (
+                                    <li
+                                        key={item.name}
+                                        class={`credit-item ${!item.desc ? "centered" : ""}`}
+                                    >
+                                        <a
+                                            href={
+                                                item.intent
+                                                    ? `https://twitter.com/intent/follow?screen_name=${item.intent}`
+                                                    : `https://github.com/${item.github}`
+                                            }
+                                            class="coolshit"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src={`https://github.com/${item.github}.png`}
+                                                width="35"
+                                                height="35"
+                                            />
+                                        </a>
+                                        <div>
+                                            <a
+                                                href={
+                                                    item.intent
+                                                        ? `https://twitter.com/intent/follow?screen_name=${item.intent}`
+                                                        : `https://github.com/${item.github}`
+                                                }
+                                                class="coolshit"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                {item.name}
+                                            </a>
 
-                  <br/>
-                  {item.desc}
-                </div>
-              </li>
-            ))}
-          </ul>
+                                            <br />
+                                            {item.desc}
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    );
+                })
+            }
         </div>
-      );
-    })}
-  </div>
-</div>
+    </div>
 </div>

@@ -5,8 +5,8 @@ export const copyIcon = html`<svg xmlns="http://www.w3.org/2000/svg" height="18p
 export const checkIcon = html`<svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="#00FF00"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`
 
 export class CopyCodeButton extends LitElement {
-  static styles = [
-    css`
+    static styles = [
+        css`
       :host {
         display: inline-flex;
       }
@@ -25,48 +25,48 @@ export class CopyCodeButton extends LitElement {
         font-weight: 600;
       }
     `
-  ];
+    ];
 
-  constructor() {
-    super();
-    this._isCopied = false;
-  }
-
-  static get properties(){
-    return {
-      _isCopied: { type: Boolean }
+    constructor() {
+        super();
+        this._isCopied = false;
     }
-  }
 
-  copyCode() {
-    this._isCopied = true;
-    const pre = this.parentElement;
-    let code = pre.querySelector('code');
-    const range = document.createRange();
-    range.selectNode(code);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-
-    // check if the browser supports clipboard API
-    if (!navigator.clipboard) {
-      // if not use the old commandExec() way
-      document.execCommand('copy');
-    } else {
-      try {
-        navigator.clipboard.writeText(range.toString());
-      } catch (error) {
-        console.error(error);
-      }
+    static get properties() {
+        return {
+            _isCopied: { type: Boolean }
+        }
     }
-    window.getSelection().removeAllRanges();
-    setTimeout(() => {
-      this._isCopied = false;
-    }, 1000);
-  }
-  render() {
-    return html`
+
+    copyCode() {
+        this._isCopied = true;
+        const pre = this.parentElement;
+        let code = pre.querySelector('code');
+        const range = document.createRange();
+        range.selectNode(code);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        // check if the browser supports clipboard API
+        if (!navigator.clipboard) {
+            // if not use the old commandExec() way
+            document.execCommand('copy');
+        } else {
+            try {
+                navigator.clipboard.writeText(range.toString());
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        window.getSelection().removeAllRanges();
+        setTimeout(() => {
+            this._isCopied = false;
+        }, 1000);
+    }
+    render() {
+        return html`
     <button @click=${this.copyCode}>${this._isCopied ? checkIcon : copyIcon}</button>
     `;
-  }
+    }
 }
 customElements.define('copy-code-button', CopyCodeButton);
