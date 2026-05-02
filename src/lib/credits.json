@@ -9,7 +9,7 @@
                     "intent": "riscv64"
                 },
                 {
-                    "name": "Samara",
+                    "name": "CLARATION",
                     "github": "claration",
                     "intent": "khcrysalis"
                 },
@@ -17,11 +17,6 @@
                     "name": "mineek",
                     "github": "mineek",
                     "intent": "mineekdev"
-                },
-                {
-                    "name": "HAHALOSAH",
-                    "github": "HAHALOSAH",
-                    "intent": "HAHALOSAH"
                 }
             ]
         },
@@ -56,6 +51,11 @@
                     "name": "Lakhan Lothiyi",
                     "github": "llsc12",
                     "intent": "llsc121"
+                },
+                {
+                    "name": "HAHALOSAH",
+                    "github": "HAHALOSAH",
+                    "intent": "HAHALOSAH"
                 }
             ]
         },
@@ -77,7 +77,7 @@
                 },
                 {
                     "name": "Evelyn",
-                    "github": "evelyneee",
+                    "github": "tealbathingsuit",
                     "desc": "ElleKit"
                 },
                 {
