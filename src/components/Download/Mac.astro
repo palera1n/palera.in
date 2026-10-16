@@ -3,7 +3,7 @@ import "./dlpagestyle.css";
 import "../pagestyle.css";
 import DownloadTable from "./DownloadTable.astro";
 
-const TERMINAL_CMD = `/bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"`;
+const TERMINAL_CMD = `sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"`;
 const XATTR_CMD = `xattr -c /path/to/palera1n`;
 const { assets = [] } = Astro.props;
 ---
